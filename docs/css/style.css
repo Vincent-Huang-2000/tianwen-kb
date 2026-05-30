@@ -374,6 +374,8 @@ p {
    HOMEPAGE: HERO SECTION
    ============================================================ */
 .hero-section {
+    position: relative;
+    overflow: hidden;
     margin-top: var(--nav-height);
     padding: 80px 24px 64px;
     text-align: center;

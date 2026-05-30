@@ -174,6 +174,39 @@
                 font-size: 0.62rem;
             }
         }
+
+        /* ============================================================
+           DUNHUANG STAR SCROLL CANVAS
+           ============================================================ */
+        #dunhuang-stars {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+            opacity: 0.35;
+            mask-image: linear-gradient(to bottom, 
+                transparent 0%, 
+                rgba(0,0,0,0.4) 15%, 
+                rgba(0,0,0,0.8) 40%, 
+                rgba(0,0,0,1) 70%, 
+                transparent 100%);
+            -webkit-mask-image: linear-gradient(to bottom, 
+                transparent 0%, 
+                rgba(0,0,0,0.4) 15%, 
+                rgba(0,0,0,0.8) 40%, 
+                rgba(0,0,0,1) 70%, 
+                transparent 100%);
+        }
+        .hero-section h1,
+        .hero-section .hero-subtitle,
+        .hero-section .hero-search,
+        .hero-section .hero-stats {
+            position: relative;
+            z-index: 1;
+        }
     </style>
 </head>
 <body>
@@ -195,6 +228,10 @@
          HERO SECTION
          ============================================================ -->
     <section class="hero-section" aria-label="首页标题区">
+
+        <!-- 敦煌星图风格星宿滚动动画 -->
+        <canvas id="dunhuang-stars" aria-hidden="true"></canvas>
+
         <h1>古天文知识库</h1>
         <p class="hero-subtitle">
             汇集二十四史中天文志、天官书、历象志、司天考等天文专篇，
@@ -436,6 +473,153 @@
     <footer role="contentinfo">
         <p>古天文知识库 &copy; 2026 · 汇历代天文志，承千古观星学</p>
     </footer>
+
+    <!-- ============================================================
+         DUNHUANG STAR SCROLL ANIMATION
+         ============================================================ -->
+    <script>
+    (function() {
+        const canvas = document.getElementById('dunhuang-stars');
+        if (!canvas) return;
+        const ctx = canvas.getContext('2d');
+        const hero = canvas.parentElement;
+
+        // 二十八宿星座图案 — 敦煌星图风格：每个星座由若干星点+连线组成
+        const constellations = [
+            // 东方青龙七宿
+            { name:'角', stars:[[0,0],[12,8],[5,-10],[-8,-5]], color:'#4a9b8e' },
+            { name:'亢', stars:[[0,0],[10,12],[-10,5],[0,-8],[15,0]], color:'#4a9b8e' },
+            { name:'氐', stars:[[0,0],[8,10],[-8,4],[15,-6],[-15,-4]], color:'#4a9b8e' },
+            { name:'房', stars:[[0,0],[6,8],[-6,8],[0,-10]], color:'#4a9b8e' },
+            { name:'心', stars:[[0,0],[8,-5],[-8,-5],[0,-15],[5,5]], color:'#4a9b8e' },
+            { name:'尾', stars:[[0,0],[5,7],[10,14],[15,21],[20,28],[8,18]], color:'#4a9b8e' },
+            { name:'箕', stars:[[0,0],[10,8],[20,0],[10,-8]], color:'#4a9b8e' },
+            // 北方玄武七宿
+            { name:'斗', stars:[[0,0],[8,5],[16,10],[8,-8],[16,-3],[24,5]], color:'#6b8db5' },
+            { name:'牛', stars:[[0,0],[8,10],[-8,5],[12,-4]], color:'#6b8db5' },
+            { name:'女', stars:[[0,0],[6,8],[-6,5],[0,-8],[-10,-3]], color:'#6b8db5' },
+            { name:'虚', stars:[[0,0],[8,0],[-8,0],[0,-10]], color:'#6b8db5' },
+            { name:'危', stars:[[0,0],[5,8],[10,5],[5,-6],[15,-2]], color:'#6b8db5' },
+            { name:'室', stars:[[0,0],[8,5],[16,0],[8,-8],[0,-5],[-8,-3]], color:'#6b8db5' },
+            { name:'壁', stars:[[0,0],[7,7],[-7,4],[14,0]], color:'#6b8db5' },
+            // 西方白虎七宿
+            { name:'奎', stars:[[0,0],[5,8],[12,10],[18,5],[10,-5],[3,-8]], color:'#c4a35a' },
+            { name:'娄', stars:[[0,0],[8,5],[-8,5],[0,-8]], color:'#c4a35a' },
+            { name:'胃', stars:[[0,0],[6,8],[-6,8],[12,0],[-12,0]], color:'#c4a35a' },
+            { name:'昴', stars:[[0,0],[5,5],[10,0],[5,-5],[0,8],[-5,-3],[12,2]], color:'#c4a35a' },
+            { name:'毕', stars:[[0,0],[5,5],[12,3],[8,-5],[3,-10],[-3,-5]], color:'#c4a35a' },
+            { name:'觜', stars:[[0,0],[6,6],[-6,4],[0,-8]], color:'#c4a35a' },
+            { name:'参', stars:[[0,0],[6,6],[0,12],[-6,6],[-6,-6],[0,-12],[6,-6]], color:'#c4a35a' },
+            // 南方朱雀七宿
+            { name:'井', stars:[[0,0],[5,5],[12,3],[16,8],[8,-5],[15,-2],[3,-8],[20,0]], color:'#c46b5a' },
+            { name:'鬼', stars:[[0,0],[6,5],[-6,5],[0,-8],[8,-2]], color:'#c46b5a' },
+            { name:'柳', stars:[[0,0],[5,6],[10,10],[5,-5],[12,-2]], color:'#c46b5a' },
+            { name:'星', stars:[[0,0],[6,6],[12,0],[6,-6],[0,8]], color:'#c46b5a' },
+            { name:'张', stars:[[0,0],[5,5],[10,8],[5,-4],[12,-8],[18,0]], color:'#c46b5a' },
+            { name:'翼', stars:[[0,0],[4,6],[10,5],[6,-5],[14,-3],[20,2],[8,10],[16,6]], color:'#c46b5a' },
+            { name:'轸', stars:[[0,0],[6,4],[12,0],[6,-6],[0,-3]], color:'#c46b5a' },
+        ];
+
+        let scrollOffset = 0;
+        const SCROLL_SPEED = 0.15; // pixels per frame — slow drift
+
+        function resize() {
+            const rect = hero.getBoundingClientRect();
+            canvas.width = rect.width * (window.devicePixelRatio || 1);
+            canvas.height = rect.height * (window.devicePixelRatio || 1);
+            canvas.style.width = rect.width + 'px';
+            canvas.style.height = rect.height + 'px';
+            ctx.setTransform(1, 0, 0, 1, 0, 0);
+            ctx.scale(window.devicePixelRatio || 1, window.devicePixelRatio || 1);
+        }
+
+        function drawConstellation(cx, cy, scale, stars, color) {
+            if (stars.length < 2) return;
+            const alpha = 0.7;
+            ctx.strokeStyle = color + '66';
+            ctx.lineWidth = 0.8 * scale;
+            ctx.beginPath();
+            for (let i = 0; i < stars.length - 1; i++) {
+                const [x1, y1] = stars[i];
+                const [x2, y2] = stars[i + 1];
+                ctx.moveTo(cx + x1 * scale, cy + y1 * scale);
+                ctx.lineTo(cx + x2 * scale, cy + y2 * scale);
+            }
+            ctx.stroke();
+
+            for (const [sx, sy] of stars) {
+                const x = cx + sx * scale;
+                const y = cy + sy * scale;
+                const r = 1.5 * scale;
+                // Glow
+                const grad = ctx.createRadialGradient(x, y, 0, x, y, r * 2.5);
+                grad.addColorStop(0, color);
+                grad.addColorStop(0.4, color + '88');
+                grad.addColorStop(1, 'transparent');
+                ctx.fillStyle = grad;
+                ctx.beginPath();
+                ctx.arc(x, y, r * 2.5, 0, Math.PI * 2);
+                ctx.fill();
+                // Core
+                ctx.fillStyle = color;
+                ctx.beginPath();
+                ctx.arc(x, y, r, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+
+        function drawLabel(cx, cy, text, color) {
+            ctx.fillStyle = color + '99';
+            ctx.font = '11px "Noto Serif SC", "SimSun", serif';
+            ctx.textAlign = 'center';
+            ctx.fillText(text, cx, cy);
+        }
+
+        function animate() {
+            resize();
+            const W = canvas.width / (window.devicePixelRatio || 1);
+            const H = canvas.height / (window.devicePixelRatio || 1);
+            ctx.clearRect(0, 0, W, H);
+
+            scrollOffset += SCROLL_SPEED;
+
+            // Draw constellations in a repeating scroll
+            const spacing = W / 7; // 7 constellations visible at a time
+            const scale = Math.min(W, H) / 80;
+
+            // Total pattern width
+            const totalConst = constellations.length;
+            const patternWidth = totalConst * spacing;
+
+            for (let i = 0; i < totalConst + 8; i++) {
+                const ci = i % totalConst;
+                const c = constellations[ci];
+                // Position: start from right edge, scroll left
+                let x = W + spacing * 1.5 + i * spacing - (scrollOffset % patternWidth);
+                if (x < -spacing) x += patternWidth;
+                if (x > W + spacing * 2) x -= patternWidth;
+
+                // Vertical: distribute into 3 rows
+                const row = i % 3;
+                const baseY = H * 0.15;
+                const rowH = H * 0.35;
+                const y = baseY + row * rowH;
+
+                // Slight vertical wave
+                const waveY = y + Math.sin(scrollOffset * 0.02 + i * 0.5) * 15;
+
+                drawConstellation(x, waveY, scale * 0.65, c.stars, c.color);
+                drawLabel(x, waveY - 20 * scale * 0.65, c.name, c.color);
+            }
+
+            requestAnimationFrame(animate);
+        }
+
+        resize();
+        window.addEventListener('resize', resize);
+        animate();
+    })();
+    </script>
 
 </body>
 </html>
