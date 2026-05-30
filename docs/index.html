@@ -608,13 +608,6 @@
             }
         }
 
-        function drawLabel(cx, cy, text, color) {
-            ctx.fillStyle = color + 'aa';
-            ctx.font = '13px "Noto Serif SC", "SimSun", serif';
-            ctx.textAlign = 'center';
-            ctx.fillText(text, cx, cy);
-        }
-
         function animate() {
             resize();
             const W = canvas.width / (window.devicePixelRatio || 1);
@@ -623,32 +616,21 @@
 
             scrollOffset += 0.12; // slow drift
 
-            // Each constellation appears exactly once — all 28 span the full scroll cycle
-            const spacing = W / 6; // show ~6 at a time
-            const scale = Math.min(W, H) / 40; // doubled from /80
+            // 28 mansions in strict order, single row — each appears exactly once
+            const spacing = W / 6;
+            const scale = Math.min(W, H) / 57; // reduced 30% from /40
             const patternWidth = TOTAL * spacing;
+            const cy = H * 0.5; // single centered row
 
             for (let i = 0; i < TOTAL; i++) {
                 const c = constellations[i];
-                // Position: each constellation gets one unique slot in the pattern
                 let x = W - 20 + i * spacing - (scrollOffset % patternWidth);
-                // Wrap around — exactly one complete set
                 if (x < -spacing) x += patternWidth;
 
-                // Vertical distribution: 3 rows
-                const row = i % 3;
-                const baseY = H * 0.12;
-                const rowH = H * 0.38;
-                const y = baseY + row * rowH;
-
-                // Gentle vertical oscillation
-                const waveY = y + Math.sin(scrollOffset * 0.015 + i * 0.45) * 12;
+                // Gentle vertical wave for visual interest
+                const waveY = cy + Math.sin(scrollOffset * 0.015 + i * 0.45) * 10;
 
                 drawConstellation(x, waveY, scale * 0.7, c);
-
-                // Label below constellation
-                const labelY = waveY + 28 * scale * 0.7;
-                drawLabel(x, labelY, c.name, c.color);
             }
 
             requestAnimationFrame(animate);
