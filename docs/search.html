@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>搜索 — 古天文知识库</title>
+    <title>搜索 — 星庐·中国古天文学知识库</title>
     <meta name="description" content="全文搜索十七部天文志/天官书，跨越西汉至清代的天象记录。">
     <link rel="stylesheet" href="css/style.css">
     <style>
@@ -253,7 +253,7 @@
          ============================================================ -->
     <nav class="top-nav" aria-label="主导航">
         <div class="nav-inner">
-            <a href="index.html" class="nav-logo" aria-label="古天文知识库首页">&#9737; 古天文知识库</a>
+            <a href="index.html" class="nav-logo" aria-label="星庐·中国古天文学知识库首页">&#9737; 星庐·中国古天文学知识库</a>
             <div class="nav-links">
                 <a href="index.html">首页</a>
                 <a href="search.html">搜索</a>
@@ -301,310 +301,79 @@
          FOOTER
          ============================================================ -->
     <footer role="contentinfo">
-        <p>古天文知识库 &copy; 2026 · 汇历代天文志，承千古观星学</p>
+        <p>星庐·中国古天文学知识库 &copy; 2026 · 汇历代天文志，承千古观星学</p>
     </footer>
 
     <!-- ============================================================
          LUNR.JS from CDN
          ============================================================ -->
-    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    
 
-    <script>
-    (function() {
-        'use strict';
+<script>
+(function(){
+var docs = [{"id": "01", "book": "史记", "chapter": "天官书", "dynasty": "西汉", "author": "司马迁", "year": "约前91年", "volumes": 1, "description": "中国现存最早的系统性天文学著作。将全天星官分为五宫（中东南西北），记录约90多个星官、500余颗恒星，叙述五星运行规律。", "url": "chapters/01_史记_天官书第五.html"}, {"id": "02", "book": "汉书", "chapter": "天文志", "dynasty": "东汉", "author": "班固", "year": "82年", "volumes": 1, "description": "沿用史记天官书体系，补充汉代天象记录，含太阳黑子早期观测、分野学说。", "url": "chapters/02_汉书_天文志.html"}, {"id": "03", "book": "后汉书", "chapter": "天文志", "dynasty": "南朝宋", "author": "范晔、司马彪", "year": "445年", "volumes": 3, "description": "司马彪续汉书八志之一。记载东汉天象，含著名的公元185年超新星记录（SN 185）。", "url": "chapters/03_后汉书_天文志.html"}, {"id": "04", "book": "晋书", "chapter": "天文志", "dynasty": "唐", "author": "房玄龄、李淳风等", "year": "648年", "volumes": 3, "description": "李淳风撰写，体系完整。介绍盖天说、浑天说、宣夜说，详述浑天仪，载283官1464星。", "url": "chapters/04_晋书_天文志.html"}, {"id": "05", "book": "宋书", "chapter": "天文志", "dynasty": "南朝梁", "author": "沈约", "year": "488年", "volumes": 4, "description": "记录南朝刘宋天象，追述三国西晋天象以补前史之缺。", "url": "chapters/05_宋书_天文志.html"}, {"id": "06", "book": "南齐书", "chapter": "天文志", "dynasty": "南朝梁", "author": "萧子显", "year": "537年", "volumes": 2, "description": "记录南齐（479-502年）天象，含日食、星变、分野占验。", "url": "chapters/06_南齐书_天文志.html"}, {"id": "07", "book": "魏书", "chapter": "天象志", "dynasty": "北齐", "author": "魏收", "year": "554年", "volumes": 4, "description": "记录北魏时期（386-550年）天象，含日食、月食、五星、彗星、流星，按年月日排序。", "url": "chapters/07_魏书_天象志.html"}, {"id": "08", "book": "隋书", "chapter": "天文志", "dynasty": "唐", "author": "魏徵、李淳风等", "year": "656年", "volumes": 3, "description": "李淳风续作。天文学理论和仪器部分极为详尽，记载浑天仪、浑象、漏刻，三分法宇宙理论。", "url": "chapters/08_隋书_天文志.html"}, {"id": "09", "book": "旧唐书", "chapter": "天文志", "dynasty": "后晋", "author": "刘昫等", "year": "945年", "volumes": 2, "description": "记录唐代天象，含僧一行的天文学贡献、浑天仪、黄道游仪等仪器。", "url": "chapters/09_旧唐书_天文志.html"}, {"id": "10", "book": "新唐书", "chapter": "天文志", "dynasty": "宋", "author": "欧阳修、宋祁等", "year": "1060年", "volumes": 3, "description": "与旧唐书互补，更重天文学理论。记录一行的大地测量工作，详载天文仪器和历法。", "url": "chapters/10_新唐书_天文志.html"}, {"id": "11", "book": "旧五代史", "chapter": "天文志", "dynasty": "宋", "author": "薛居正等", "year": "974年", "volumes": 1, "description": "记录五代时期（907-960年）天象，以日食、彗星、星变为主要内容。", "url": "chapters/11_旧五代史_天文志.html"}, {"id": "12", "book": "新五代史", "chapter": "司天考", "dynasty": "宋", "author": "欧阳修", "year": "1053年", "volumes": 2, "description": "偏重天文学理论探讨，讨论天人关系、灾异学说，记录五代天象。", "url": "chapters/12_新五代史_司天考.html"}, {"id": "13", "book": "宋史", "chapter": "天文志", "dynasty": "元", "author": "脱脱等", "year": "1345年", "volumes": 13, "description": "二十四史中篇幅最大的天文志（13卷）。记录北宋南宋320年天象，含1054年超新星（蟹状星云），记载苏颂水运仪象台。", "url": "chapters/13_宋史_天文志.html"}, {"id": "14", "book": "辽史", "chapter": "历象志", "dynasty": "元", "author": "脱脱等", "year": "1344年", "volumes": 3, "description": "记录辽代（907-1125年）天文历法，含日食等天象。", "url": "chapters/14_辽史_历象志.html"}, {"id": "15", "book": "金史", "chapter": "天文志", "dynasty": "元", "author": "脱脱等", "year": "1345年", "volumes": 1, "description": "记录金代（1115-1234年）天象，含日食、月食、星变等。", "url": "chapters/15_金史_天文志.html"}, {"id": "16", "book": "元史", "chapter": "天文志", "dynasty": "明", "author": "宋濂等", "year": "1370年", "volumes": 2, "description": "记载郭守敬的天文仪器（简仪、仰仪等），介绍西域天文学传入，记载札马鲁丁的西域天文仪器。", "url": "chapters/16_元史_天文志.html"}, {"id": "17", "book": "明史", "chapter": "天文志", "dynasty": "清", "author": "张廷玉等", "year": "1739年", "volumes": 3, "description": "二十四史最后一部天文志。介绍利玛窦带来的西方天文学，记载徐光启与崇祯历书，反映中西天文学融合。", "url": "chapters/17_明史_天文志.html"}, {"id": "18", "book": "步天歌", "chapter": "步天歌", "dynasty": "唐", "author": "丹元子（王希明）", "year": "约7世纪", "volumes": 1, "description": "唐代天文学诗歌，以七言诗形式描述全天星官。涵盖三垣及二十八宿，是古代学习认星的入门读物。", "url": "chapters/18_步天歌.html"}, {"id": "19", "book": "乙巳占", "chapter": "乙巳占", "dynasty": "唐", "author": "李淳风", "year": "约645年", "volumes": 10, "description": "唐代李淳风所著天文星占学集大成之作。全书十卷一百节，系统总结了唐以前的天文占验理论。", "url": "chapters/19_乙巳占.html"}, {"id": "20", "book": "星庐概论", "chapter": "中国古天文学概论", "dynasty": "当代", "author": "桐安大司空（星庐）", "year": "2025年", "volumes": 1, "description": "基于太乙观星法的中国古天文整合观测体系实证研究。", "url": "chapters/20_星庐中国古天文学概论.html"}];
+var sf = document.getElementById('search-form');
+var si = document.getElementById('search-input');
+var ra = document.getElementById('results-area');
+var sinfo = document.getElementById('search-info');
+var hc = document.getElementById('hit-count');
+var st = document.getElementById('search-time');
 
-        // ============================================================
-        // DOM References
-        // ============================================================
-        var searchForm   = document.getElementById('search-form');
-        var searchInput  = document.getElementById('search-input');
-        var searchButton = document.getElementById('search-button');
-        var resultsArea  = document.getElementById('results-area');
-        var placeholder  = document.getElementById('search-placeholder');
-        var searchInfo   = document.getElementById('search-info');
-        var hitCount     = document.getElementById('hit-count');
-        var searchTime   = document.getElementById('search-time');
+function esc(s) {
+  var d = document.createElement('div');
+  d.appendChild(document.createTextNode(s));
+  return d.innerHTML;
+}
 
-        // ============================================================
-        // Application State
-        // ============================================================
-        var idx      = null;   // Lunr index
-        var docs     = [];     // array of chapter objects
-        var ready    = false;  // index built?
+function doSearch(q) {
+  q = q.trim();
+  if (!q) { sinfo.style.display = 'none'; ra.innerHTML = ''; return; }
+  si.value = q;
+  var t0 = performance.now();
+  var terms = q.split(/\s+/);
+  var results = [];
+  docs.forEach(function(doc) {
+    var score = 0;
+    var txt = doc.book + ' ' + doc.chapter + ' ' + doc.dynasty + ' ' + doc.author + ' ' + doc.description;
+    terms.forEach(function(t) {
+      if (txt.indexOf(t) !== -1) score++;
+      if (doc.book === t || doc.chapter === t) score += 5;
+    });
+    if (score > 0) results.push({doc: doc, score: score});
+  });
+  results.sort(function(a, b) { return b.score - a.score; });
+  var el = (performance.now() - t0).toFixed(0);
+  sinfo.style.display = 'flex';
+  hc.textContent = results.length;
+  st.textContent = el + ' ms';
+  if (results.length === 0) {
+    ra.innerHTML = '<div class="search-empty"><div class="empty-icon">&#9789;</div><p>未找到匹配「<strong>' + esc(q) + '</strong>」的结果</p><p style="margin-top:8px;font-size:0.85rem;color:var(--text-dim);">请尝试其他关键词，如：超新星、分野、浑天仪、星官、日食</p></div>';
+    return;
+  }
+  var h = '';
+  results.forEach(function(r) {
+    var d = r.doc;
+    var sn = d.description.length > 120 ? d.description.substring(0, 120) + '\u2026' : d.description;
+    h += '<a href="' + esc(d.url) + '" class="result-link">' +
+      '<div class="result-title">' + esc(d.book) + ' \u00b7 ' + esc(d.chapter) +
+      '<span class="result-dynasty">' + esc(d.dynasty) + '</span></div>' +
+      '<div class="result-meta">' + esc(d.author) + ' \u00b7 ' + esc(d.year) + '</div>' +
+      '<p class="result-snippet">' + esc(sn) + '</p></a>';
+  });
+  ra.innerHTML = h;
+}
 
-        // ============================================================
-        // Build Lunr Index
-        // ============================================================
-        function buildIndex(chapters) {
-            docs = chapters;
+sf.addEventListener('submit', function(e) { e.preventDefault(); doSearch(si.value); });
+var tt = null;
+si.addEventListener('input', function() { clearTimeout(tt); tt = setTimeout(function() { doSearch(si.value); }, 300); });
 
-            idx = lunr(function() {
-                // Configure for Chinese text: no stemmer, position data for snippets
-                this.pipeline.remove(lunr.stemmer);
-                this.pipeline.remove(lunr.stopWordFilter);
-
-                this.ref('id');
-                this.field('book',       { boost: 10 });
-                this.field('chapter',    { boost: 10 });
-                this.field('dynasty',    { boost: 5 });
-                this.field('author',     { boost: 3 });
-                this.field('description');
-                this.field('year');
-
-                this.metadataWhitelist = ['position'];
-
-                chapters.forEach(function(ch) {
-                    this.add(ch);
-                }, this);
-            });
-
-            ready = true;
-        }
-
-        // ============================================================
-        // Fetch chapters.json
-        // ============================================================
-        function loadData() {
-            return fetch('data/chapters.json')
-                .then(function(resp) {
-                    if (!resp.ok) {
-                        throw new Error('无法加载章节数据 (HTTP ' + resp.status + ')');
-                    }
-                    return resp.json();
-                })
-                .then(function(data) {
-                    buildIndex(data);
-                });
-        }
-
-        // ============================================================
-        // Generate Snippet
-        // ============================================================
-        function generateSnippet(doc, terms) {
-            var desc = doc.description;
-
-            if (!terms || terms.length === 0) {
-                return desc.length > 150 ? desc.substring(0, 150) + '…' : desc;
-            }
-
-            // Find the first position of any search term in description
-            var bestPos = -1;
-            var foundTerm = '';
-
-            for (var i = 0; i < terms.length; i++) {
-                var pos = desc.indexOf(terms[i]);
-                if (pos !== -1 && (bestPos === -1 || pos < bestPos)) {
-                    bestPos = pos;
-                    foundTerm = terms[i];
-                }
-            }
-
-            if (bestPos === -1) {
-                return desc.length > 150 ? desc.substring(0, 150) + '…' : desc;
-            }
-
-            // Extract a snippet centered around the match
-            var snipLen = 120;
-            var start = Math.max(0, bestPos - 20);
-            var end = Math.min(desc.length, bestPos + foundTerm.length + snipLen);
-
-            // Adjust start to not break mid-character (Chinese chars)
-            var snippet = desc.substring(start, end);
-
-            if (start > 0) {
-                snippet = '…' + snippet;
-            }
-            if (end < desc.length) {
-                snippet = snippet + '…';
-            }
-
-            // Highlight matching terms in the snippet
-            var highlighted = escapeHTML(snippet);
-            terms.forEach(function(term) {
-                var escapedTerm = escapeRegex(term);
-                highlighted = highlighted.replace(
-                    new RegExp('(' + escapedTerm + ')', 'gi'),
-                    '<mark>$1</mark>'
-                );
-            });
-
-            return highlighted;
-        }
-
-        // ============================================================
-        // Perform Search
-        // ============================================================
-        function doSearch(query) {
-            if (!ready) {
-                return;
-            }
-
-            var q = query.trim();
-
-            // Empty query -> show placeholder
-            if (!q) {
-                showPlaceholder();
-                return;
-            }
-
-            var startTime = performance.now();
-
-            // Lunr search
-            var results = idx.search(q);
-
-            var elapsed = (performance.now() - startTime).toFixed(1);
-
-            // Show info bar
-            searchInfo.style.display = 'flex';
-            hitCount.textContent = results.length;
-            searchTime.textContent = elapsed + ' ms';
-
-            // No results
-            if (results.length === 0) {
-                resultsArea.innerHTML =
-                    '<div class="search-empty">' +
-                        '<div class="empty-icon">&#9789;</div>' +
-                        '<p>未找到匹配「<strong>' + escapeHTML(q) + '</strong>」的结果</p>' +
-                        '<p style="margin-top:8px;font-size:0.85rem;color:var(--text-dim);">请尝试其他关键词，如：超新星、分野、浑天仪、星官、日食</p>' +
-                    '</div>';
-                return;
-            }
-
-            // Extract unique terms from results for highlighting
-            var terms = [];
-            var seen = {};
-            results.forEach(function(r) {
-                Object.keys(r.matchData.metadata).forEach(function(field) {
-                    Object.keys(r.matchData.metadata[field]).forEach(function(term) {
-                        if (!seen[term]) {
-                            seen[term] = true;
-                            terms.push(term);
-                        }
-                    });
-                });
-            });
-
-            // Build results HTML
-            var html = '';
-            results.forEach(function(result) {
-                var doc = docs.find(function(d) { return d.id === result.ref; });
-                if (!doc) return;
-
-                var snippet = generateSnippet(doc, terms);
-
-                html +=
-                    '<a href="' + escapeHTML(doc.url) + '" class="result-link">' +
-                        '<div class="result-title">' + escapeHTML(doc.book) + ' · ' + escapeHTML(doc.chapter) +
-                            '<span class="result-dynasty">' + escapeHTML(doc.dynasty) + '</span>' +
-                        '</div>' +
-                        '<div class="result-chapter">' +
-                            escapeHTML(doc.author) + ' · ' + escapeHTML(doc.year) + ' · ' + doc.volumes + '卷' +
-                        '</div>' +
-                        '<div class="result-snippet">' + snippet + '</div>' +
-                    '</a>';
-            });
-
-            resultsArea.innerHTML = html;
-        }
-
-        // ============================================================
-        // Show Placeholder
-        // ============================================================
-        function showPlaceholder() {
-            searchInfo.style.display = 'none';
-            resultsArea.innerHTML =
-                '<div class="search-placeholder">' +
-                    '<div class="placeholder-icon">&#9737;</div>' +
-                    '<p>在上方输入关键词开始搜索</p>' +
-                    '<p class="hint">支持搜索：书名、篇名、朝代、作者、天文术语、星官名称等</p>' +
-                '</div>';
-        }
-
-        // ============================================================
-        // Show Error
-        // ============================================================
-        function showError(msg) {
-            searchInfo.style.display = 'none';
-            resultsArea.innerHTML =
-                '<div class="search-error">' +
-                    '<p>&#9888; ' + escapeHTML(msg) + '</p>' +
-                '</div>';
-        }
-
-        // ============================================================
-        // Utilities
-        // ============================================================
-        function escapeHTML(str) {
-            var div = document.createElement('div');
-            div.appendChild(document.createTextNode(str));
-            return div.innerHTML;
-        }
-
-        function escapeRegex(str) {
-            return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-        }
-
-        // ============================================================
-        // Event Handlers
-        // ============================================================
-        searchForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            doSearch(searchInput.value);
-        });
-
-        // Debounced search-as-you-type
-        var typeTimer = null;
-        searchInput.addEventListener('input', function() {
-            clearTimeout(typeTimer);
-            typeTimer = setTimeout(function() {
-                doSearch(searchInput.value);
-            }, 300);
-        });
-
-        // ============================================================
-        // Handle URL query parameter (from homepage search box)
-        // ============================================================
-        function getQueryParam() {
-            var params = new URLSearchParams(window.location.search);
-            return params.get('q') || '';
-        }
-
-        // ============================================================
-        // Initialize
-        // ============================================================
-        function init() {
-            // Show loading state
-            resultsArea.innerHTML =
-                '<div class="search-loading">' +
-                    '<div class="spinner"></div>' +
-                    '<p>正在准备搜索索引…</p>' +
-                '</div>';
-            searchButton.disabled = true;
-
-            loadData()
-                .then(function() {
-                    searchButton.disabled = false;
-
-                    // Check if there's a q param from homepage
-                    var q = getQueryParam();
-                    if (q) {
-                        searchInput.value = q;
-                        doSearch(q);
-                    } else {
-                        showPlaceholder();
-                    }
-                })
-                .catch(function(err) {
-                    searchButton.disabled = false;
-                    showError('数据加载失败：' + err.message);
-                });
-        }
-
-        // Kick off
-        init();
-
-    })();
-    </script>
-
+function getQ() {
+  var m = window.location.search.match(/[?&]q=([^&]*)/);
+  return m ? decodeURIComponent(m[1]) : '';
+}
+var q = getQ();
+if (q) { si.value = q; doSearch(q); }
+})();
+</script>
 </body>
 </html>

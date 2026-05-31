@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>古天文知识库 — 历代天文志汇览</title>
+    <title>星庐·中国古天文学知识库 — 历代天文志汇览</title>
     <meta name="description" content="汇集二十四史中17部天文志/天官书，涵盖西汉至清代51卷天象记录，跨越1800余年。探索古代中国的星空、星官、历法与天象观测。">
     <link rel="stylesheet" href="css/style.css">
     <style>
@@ -208,6 +208,7 @@
             z-index: 1;
         }
     </style>
+<script src="js/anti-copy.js"></script>
 </head>
 <body>
 
@@ -216,10 +217,14 @@
          ============================================================ -->
     <nav class="top-nav" aria-label="主导航">
         <div class="nav-inner">
-            <a href="index.html" class="nav-logo" aria-label="古天文知识库首页">&#9737; 古天文知识库</a>
+            <a href="index.html" class="nav-logo" aria-label="星庐·中国古天文学知识库首页">&#9737; 星庐·中国古天文学知识库</a>
             <div class="nav-links">
                 <a href="index.html">首页</a>
                 <a href="search.html">搜索</a>
+                <a href="kg/timeline.html">时间线</a>
+                <a href="kg/starmap.html">古星图</a>
+                <a href="kg/network.html">关系网络</a>
+                <a href="https://github.com" target="_blank" class="nav-gh">GitHub</a>
             </div>
         </div>
     </nav>
@@ -232,10 +237,10 @@
         <!-- 敦煌星图风格星宿滚动动画 -->
         <canvas id="dunhuang-stars" aria-hidden="true"></canvas>
 
-        <h1>古天文知识库</h1>
+        <h1>星庐·中国古天文学知识库</h1>
         <p class="hero-subtitle">
             汇集二十四史中天文志、天官书、历象志、司天考等天文专篇，
-            跨越两千年，追寻古人仰望星空的智慧。
+                        跨越两千年，追寻古人仰望星空的智慧。
         </p>
 
         <!-- Search Box -->
@@ -247,11 +252,11 @@
         <!-- Stats Row -->
         <div class="hero-stats">
             <div class="stat-item">
-                <span class="stat-number">17</span>
-                <span class="stat-label">部史志</span>
+                <span class="stat-number">19</span>
+                                <span class="stat-label">部天文古籍</span>
             </div>
             <div class="stat-item">
-                <span class="stat-number">51</span>
+                <span class="stat-number">62</span>
                 <span class="stat-label">卷</span>
             </div>
             <div class="stat-item">
@@ -264,62 +269,62 @@
     <!-- ============================================================
          DYNASTY TIMELINE STRIP
          ============================================================ -->
-    <div class="hero-timeline" aria-label="编撰朝代时间线">
+    <div class="hero-timeline" aria-label="历史朝代时间线">
         <div class="timeline-strip">
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
+                <span class="timeline-dynasty">秦</span>
+                <span class="timeline-year">前221年</span>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
                 <span class="timeline-dynasty">西汉</span>
-                <span class="timeline-year">约前91年</span>
+                <span class="timeline-year">前206年</span>
             </div>
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <span class="timeline-dynasty">东汉</span>
-                <span class="timeline-year">82年</span>
+                <span class="timeline-year">25年</span>
             </div>
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
-                <span class="timeline-dynasty">南朝宋</span>
-                <span class="timeline-year">445年</span>
+                <span class="timeline-dynasty">晋</span>
+                <span class="timeline-year">265年</span>
             </div>
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
-                <span class="timeline-dynasty">南朝梁</span>
-                <span class="timeline-year">488年</span>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <span class="timeline-dynasty">北齐</span>
-                <span class="timeline-year">554年</span>
+                <span class="timeline-dynasty">隋</span>
+                <span class="timeline-year">581年</span>
             </div>
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <span class="timeline-dynasty">唐</span>
-                <span class="timeline-year">636年</span>
+                <span class="timeline-year">618年</span>
             </div>
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
-                <span class="timeline-dynasty">后晋</span>
-                <span class="timeline-year">945年</span>
+                <span class="timeline-dynasty">五代</span>
+                <span class="timeline-year">907年</span>
             </div>
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <span class="timeline-dynasty">宋</span>
-                <span class="timeline-year">974年</span>
+                <span class="timeline-year">960年</span>
             </div>
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <span class="timeline-dynasty">元</span>
-                <span class="timeline-year">1344年</span>
+                <span class="timeline-year">1271年</span>
             </div>
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <span class="timeline-dynasty">明</span>
-                <span class="timeline-year">1370年</span>
+                <span class="timeline-year">1368年</span>
             </div>
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <span class="timeline-dynasty">清</span>
-                <span class="timeline-year">1739年</span>
+                <span class="timeline-year">1644年</span>
             </div>
         </div>
     </div>
@@ -333,7 +338,7 @@
         <!-- 01 - 史记·天官书 -->
         <a href="chapters/01_史记_天官书第五.html" class="chapter-card">
             <span class="card-dynasty">西汉</span>
-            <h3>史记 · 天官书第五</h3>
+            <h3>史记 · 天官书</h3>
             <div class="card-meta">司马迁 · 约前91年 · 1卷</div>
             <p class="card-desc">中国现存最早的系统性天文学著作。将全天星官分为五宫（中东南西北），记录约90多个星官、500余颗恒星，叙述五星运行规律。</p>
         </a>
@@ -350,7 +355,7 @@
         <a href="chapters/03_后汉书_天文志.html" class="chapter-card">
             <span class="card-dynasty">南朝宋</span>
             <h3>后汉书 · 天文志</h3>
-            <div class="card-meta">范晔/司马彪 · 445年 · 3卷</div>
+            <div class="card-meta">范晔、司马彪 · 445年 · 3卷</div>
             <p class="card-desc">司马彪续汉书八志之一。记载东汉天象，含著名的公元185年超新星记录（SN 185）。</p>
         </a>
 
@@ -358,7 +363,7 @@
         <a href="chapters/04_晋书_天文志.html" class="chapter-card">
             <span class="card-dynasty">唐</span>
             <h3>晋书 · 天文志</h3>
-            <div class="card-meta">房玄龄等/李淳风 · 648年 · 3卷</div>
+            <div class="card-meta">房玄龄、李淳风等 · 648年 · 3卷</div>
             <p class="card-desc">李淳风撰写，体系完整。介绍盖天说、浑天说、宣夜说，详述浑天仪，载283官1464星。</p>
         </a>
 
@@ -390,7 +395,7 @@
         <a href="chapters/08_隋书_天文志.html" class="chapter-card">
             <span class="card-dynasty">唐</span>
             <h3>隋书 · 天文志</h3>
-            <div class="card-meta">魏徵等/李淳风 · 636年 · 3卷</div>
+            <div class="card-meta">魏徵、李淳风等 · 656年 · 3卷</div>
             <p class="card-desc">李淳风续作。天文学理论和仪器部分极为详尽，记载浑天仪、浑象、漏刻，三分法宇宙理论。</p>
         </a>
 
@@ -465,13 +470,37 @@
             <div class="card-meta">张廷玉等 · 1739年 · 3卷</div>
             <p class="card-desc">二十四史最后一部天文志。介绍利玛窦带来的西方天文学，记载徐光启与崇祯历书，反映中西天文学融合。</p>
         </a>
+
+        <!-- 18 - 步天歌 -->
+        <a href="chapters/18_步天歌.html" class="chapter-card">
+            <span class="card-dynasty">唐</span>
+            <h3>步天歌</h3>
+            <div class="card-meta">丹元子（王希明） · 约7世纪 · 1卷</div>
+            <p class="card-desc">唐代天文学诗歌，以七言诗形式描述全天星官。涵盖三垣（紫微垣、太微垣、天市垣）及二十八宿，是古代学习认星的入门读物，也是世界天文学史上独一无二的诗歌体裁星图。</p>
+        </a>
+
+        <!-- 19 - 乙巳占 -->
+        <a href="chapters/19_乙巳占.html" class="chapter-card">
+            <span class="card-dynasty">唐</span>
+            <h3>乙巳占</h3>
+            <div class="card-meta">李淳风 · 约645年 · 10卷</div>
+            <p class="card-desc">唐代李淳风所著天文星占学集大成之作。全书十卷一百节，涵盖天占、日占、月占、五星占、流星占、彗星占、云气占、风占等，系统总结了唐以前的天文占验理论。</p>
+        </a>
+        <!-- 20 - 星庐中国古天文学概论 -->
+        <a href="chapters/20_星庐中国古天文学概论.html" class="chapter-card">
+            <span class="card-dynasty">当代</span>
+            <h3>星庐·中国古天文学概论</h3>
+            <div class="card-meta">桐安大司空（星庐） · 2025年 · 7章</div>
+                        <p class="card-desc">作者有幸得先贤之伏藏，以太乙观星法为核心思想，系统性的复原了先秦时期我国真正的古天文学体系，为当代古天文领域的研究提供了全新的路径。</p>
+        </a>
     </div>
 
     <!-- ============================================================
          FOOTER
          ============================================================ -->
-    <footer role="contentinfo">
-        <p>古天文知识库 &copy; 2026 · 汇历代天文志，承千古观星学</p>
+
+<footer role="contentinfo">
+        <p>星庐·中国古天文学知识库 &copy; 2026 · 汇历代天文志，承千古观星学</p>
     </footer>
 
     <!-- ============================================================

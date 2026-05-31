@@ -2,7 +2,7 @@
   {
     "id": "01",
     "book": "史记",
-    "chapter": "天官书第五",
+    "chapter": "天官书",
     "dynasty": "西汉",
     "author": "司马迁",
     "year": "约前91年",
@@ -26,7 +26,7 @@
     "book": "后汉书",
     "chapter": "天文志",
     "dynasty": "南朝宋",
-    "author": "范晔/司马彪",
+    "author": "范晔、司马彪",
     "year": "445年",
     "volumes": 3,
     "description": "司马彪续汉书八志之一。记载东汉天象，含著名的公元185年超新星记录（SN 185）。",
@@ -37,7 +37,7 @@
     "book": "晋书",
     "chapter": "天文志",
     "dynasty": "唐",
-    "author": "房玄龄等/李淳风",
+    "author": "房玄龄、李淳风等",
     "year": "648年",
     "volumes": 3,
     "description": "李淳风撰写，体系完整。介绍盖天说、浑天说、宣夜说，详述浑天仪，载283官1464星。",
@@ -81,8 +81,8 @@
     "book": "隋书",
     "chapter": "天文志",
     "dynasty": "唐",
-    "author": "魏徵等/李淳风",
-    "year": "636年",
+    "author": "魏徵、李淳风等",
+    "year": "656年",
     "volumes": 3,
     "description": "李淳风续作。天文学理论和仪器部分极为详尽，记载浑天仪、浑象、漏刻，三分法宇宙理论。",
     "url": "chapters/08_隋书_天文志.html"
@@ -185,5 +185,38 @@
     "volumes": 3,
     "description": "二十四史最后一部天文志。介绍利玛窦带来的西方天文学，记载徐光启与崇祯历书，反映中西天文学融合。",
     "url": "chapters/17_明史_天文志.html"
+  },
+  {
+    "id": "18",
+    "book": "步天歌",
+    "chapter": "步天歌",
+    "dynasty": "唐",
+    "author": "丹元子（王希明）",
+    "year": "约7世纪",
+    "volumes": 1,
+    "description": "唐代天文学诗歌，以七言诗形式描述全天星官。涵盖三垣及二十八宿，是古代学习认星的入门读物。",
+    "url": "chapters/18_步天歌.html"
+  },
+  {
+    "id": "19",
+    "book": "乙巳占",
+    "chapter": "乙巳占",
+    "dynasty": "唐",
+    "author": "李淳风",
+    "year": "约645年",
+    "volumes": 10,
+    "description": "唐代李淳风所著天文星占学集大成之作。全书十卷一百节，系统总结了唐以前的天文占验理论。",
+    "url": "chapters/19_乙巳占.html"
+  },
+  {
+    "id": "20",
+    "book": "星庐概论",
+    "chapter": "中国古天文学概论",
+    "dynasty": "当代",
+    "author": "桐安大司空（星庐）",
+    "year": "2025年",
+    "volumes": 1,
+    "description": "基于太乙观星法的中国古天文整合观测体系实证研究。",
+    "url": "chapters/20_星庐中国古天文学概论.html"
   }
 ]
