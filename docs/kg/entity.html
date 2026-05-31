@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>实体详情 - 星庐</title>
+<link rel="stylesheet" href="../css/style.css">
+<style>
+body{background:var(--bg-deepest);color:var(--text-body);font-family:var(--font-sans);margin:0}
+.c{max-width:800px;margin:0 auto;padding:20px}
+h1{color:var(--accent-gold);font-family:var(--font-serif);margin-bottom:4px}
+.meta{color:var(--text-muted);font-size:0.85rem;margin-bottom:20px}
+.badge{display:inline-block;padding:2px 10px;border-radius:10px;font-size:0.75rem;color:#fff;margin-right:8px}
+.badge-星{background:#FFD700} .badge-官{background:#7DC2B2} .badge-曜{background:#F49B8A}
+.badge-象{background:#FF6B6B} .badge-神{background:#C9A96E} .badge-州{background:#7EB8DA}
+.badge-岁{background:#6B8DB5} .badge-器{background:#D4A574} .badge-历{background:#B39DDB}
+[data-theme="light"] .badge-星{background:#8b5cf6}
+.section{margin:20px 0}
+.section h2{color:var(--accent-gold);font-size:1rem;border-bottom:1px solid var(--border);padding-bottom:6px}
+.book-list{display:flex;flex-wrap:wrap;gap:8px}
+.book-item{padding:6px 14px;background:var(--bg-card);border:1px solid var(--border);border-radius:6px;font-size:0.82rem;text-decoration:none;color:var(--text-body);transition:all 0.2s}
+.book-item:hover{background:var(--accent-gold);color:#0a0e1a}
+.book-count{font-weight:700;color:var(--accent-gold);margin-left:4px}
+.book-item.current{border-color:var(--accent-gold);background:rgba(201,169,110,0.1)}
+.ctx-seq{display:inline-block;min-width:36px;color:var(--accent-gold);font-size:0.7rem;font-weight:700;margin-right:6px}
+.ctx-item.current-book{border-color:var(--accent-gold);background:rgba(201,169,110,0.08)}
+.ctx-item{padding:8px 12px;margin:4px 0;background:var(--bg-card);border:1px solid var(--border);border-radius:4px;font-size:0.82rem;line-height:1.5;display:block;text-decoration:none;color:var(--text-body);transition:all 0.2s}
+.ctx-item:hover{background:var(--bg-hover);border-color:var(--accent-gold)}
+.ctx-item small{color:var(--accent-gold)}
+.notfound{text-align:center;padding:60px;color:var(--text-muted)}
+.back{display:inline-block;margin-bottom:16px;color:var(--accent-gold);text-decoration:none;font-size:0.9rem}
+.back:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+<nav class="top-nav"><div class="nav-inner">
+<a href="../index.html" class="nav-logo">&#9737; 星庐</a>
+<div class="nav-links"><a href="../index.html">首页</a><a href="../search.html">搜索</a>
+<a href="../kg/timeline.html">天象事件</a><a href="../kg/network.html">知识图谱</a> <span class="nav-theme" style="color:var(--text-muted);margin-left:2px"><a id="theme-day" href="javascript:_switchTheme('light')" style="color:var(--text-muted);text-decoration:none" title="日间模式">昼</a>/<a id="theme-night" href="javascript:_switchTheme('dark')" style="color:var(--accent-gold);text-decoration:none;font-weight:700" title="夜间模式">夜</a></span></div>
+</div></nav>
+<div class="c">
+<a id="back-link" href="javascript:history.back()" class="back">&#8592; 返回原文</a>
+<div id="content"><p class="notfound">加载中...</p></div>
+</div>
+<script defer src="entity_data.js"></script>
+<script defer src="entity_app.js"></script>
+<script src="../js/qr-popup.js"></script>
+
+<script src="../js/theme.js"></script>
+</body>
+</html>

@@ -1,0 +1,2743 @@
+[
+  {
+    "year": 477,
+    "type": "encroach",
+    "count": 2,
+    "sources": [
+      "宋书·天文志",
+      "魏书·天象志"
+    ],
+    "events": [
+      {
+        "year": 477,
+        "type": "encroach",
+        "reign": "泰始",
+        "reign_year": 13,
+        "description": "十三年五月丙子，月犯軒轅",
+        "source": "宋书·天文志",
+        "omen": "「天下有大誅",
+        "url": "../chapters/05_宋书_天文志.html#find=%E5%8D%81%E4%B8%89%E5%B9%B4%E4%BA%94%E6%9C%88%E4%B8%99%E5%AD%90%EF%BC%8C%E6%9C%88%E7%8A%AF%E8%BB%92%E8%BD%85"
+      },
+      {
+        "year": 477,
+        "type": "encroach",
+        "reign": "太和",
+        "reign_year": 1,
+        "description": "太和元年五月庚子，太白犯熒惑，在張，南國之次也",
+        "source": "魏书·天象志",
+        "url": "../chapters/07_魏书_天象志.html#find=%E5%A4%AA%E5%92%8C%E5%85%83%E5%B9%B4%E4%BA%94%E6%9C%88%E5%BA%9A%E5%AD%90%EF%BC%8C%E5%A4%AA%E7%99%BD%E7%8A%AF%E7%86%92%E6%83%91%EF%BC%8C%E5%9C%A8%E5%BC%B5%EF%BC%8C%E5%8D%97%E5%9C%8B"
+      }
+    ]
+  },
+  {
+    "year": 479,
+    "type": "encroach",
+    "count": 6,
+    "sources": [
+      "南齐书·天文志",
+      "魏书·天象志"
+    ],
+    "events": [
+      {
+        "year": 479,
+        "type": "encroach",
+        "reign": "建元",
+        "reign_year": 1,
+        "description": "月犯列星建元元年七月丁未，月犯心大星北一寸",
+        "source": "南齐书·天文志",
+        "url": "../chapters/06_南齐书_天文志.html#find=%E6%9C%88%E7%8A%AF%E5%88%97%E6%98%9F%E5%BB%BA%E5%85%83%E5%85%83%E5%B9%B4%E4%B8%83%E6%9C%88%E4%B8%81%E6%9C%AA%EF%BC%8C%E6%9C%88%E7%8A%AF%E5%BF%83%E5%A4%A7%E6%98%9F%E5%8C%97%E4%B8%80"
+      },
+      {
+        "year": 479,
+        "type": "encroach",
+        "reign": "建元",
+        "reign_year": 1,
+        "description": "永元元年正月己亥，月犯心後星",
+        "source": "南齐书·天文志",
+        "url": "../chapters/06_南齐书_天文志.html#find=%E6%B0%B8%E5%85%83%E5%85%83%E5%B9%B4%E6%AD%A3%E6%9C%88%E5%B7%B1%E4%BA%A5%EF%BC%8C%E6%9C%88%E7%8A%AF%E5%BF%83%E5%BE%8C%E6%98%9F"
+      },
+      {
+        "year": 479,
+        "type": "encroach",
+        "reign": "建元",
+        "reign_year": 1,
+        "description": "建元元年八月辛亥，太白犯軒轅大星",
+        "source": "南齐书·天文志",
+        "url": "../chapters/06_南齐书_天文志.html#find=%E5%BB%BA%E5%85%83%E5%85%83%E5%B9%B4%E5%85%AB%E6%9C%88%E8%BE%9B%E4%BA%A5%EF%BC%8C%E5%A4%AA%E7%99%BD%E7%8A%AF%E8%BB%92%E8%BD%85%E5%A4%A7%E6%98%9F"
+      },
+      {
+        "year": 479,
+        "type": "encroach",
+        "reign": "建元",
+        "reign_year": 1,
+        "description": "建元元年五月己未，熒惑犯太微西蕃上將，又犯東蕃上將",
+        "source": "南齐书·天文志",
+        "url": "../chapters/06_南齐书_天文志.html#find=%E5%BB%BA%E5%85%83%E5%85%83%E5%B9%B4%E4%BA%94%E6%9C%88%E5%B7%B1%E6%9C%AA%EF%BC%8C%E7%86%92%E6%83%91%E7%8A%AF%E5%A4%AA%E5%BE%AE%E8%A5%BF%E8%95%83%E4%B8%8A%E5%B0%87%EF%BC%8C%E5%8F%88"
+      },
+      {
+        "year": 479,
+        "type": "encroach",
+        "reign": "太和",
+        "reign_year": 3,
+        "description": "三年三月，月犯心",
+        "source": "魏书·天象志",
+        "omen": "「主以淫泆失政，相死之」",
+        "url": "../chapters/07_魏书_天象志.html#find=%E4%B8%89%E5%B9%B4%E4%B8%89%E6%9C%88%EF%BC%8C%E6%9C%88%E7%8A%AF%E5%BF%83"
+      },
+      {
+        "year": 479,
+        "type": "encroach",
+        "reign": "太和",
+        "reign_year": 3,
+        "description": "三年九月庚子，太白犯左執法",
+        "source": "魏书·天象志",
+        "url": "../chapters/07_魏书_天象志.html#find=%E4%B8%89%E5%B9%B4%E4%B9%9D%E6%9C%88%E5%BA%9A%E5%AD%90%EF%BC%8C%E5%A4%AA%E7%99%BD%E7%8A%AF%E5%B7%A6%E5%9F%B7%E6%B3%95"
+      }
+    ]
+  },
+  {
+    "year": 480,
+    "type": "encroach",
+    "count": 4,
+    "sources": [
+      "南齐书·天文志",
+      "魏书·天象志"
+    ],
+    "events": [
+      {
+        "year": 480,
+        "type": "encroach",
+        "reign": "建元",
+        "reign_year": 2,
+        "description": "二年三月癸卯，月犯心大星，又犯後星",
+        "source": "南齐书·天文志",
+        "url": "../chapters/06_南齐书_天文志.html#find=%E4%BA%8C%E5%B9%B4%E4%B8%89%E6%9C%88%E7%99%B8%E5%8D%AF%EF%BC%8C%E6%9C%88%E7%8A%AF%E5%BF%83%E5%A4%A7%E6%98%9F%EF%BC%8C%E5%8F%88%E7%8A%AF%E5%BE%8C%E6%98%9F"
+      },
+      {
+        "year": 480,
+        "type": "encroach",
+        "reign": "建元",
+        "reign_year": 2,
+        "description": "二年二月甲子，月犯南斗第四星，又犯第三星",
+        "source": "南齐书·天文志",
+        "url": "../chapters/06_南齐书_天文志.html#find=%E4%BA%8C%E5%B9%B4%E4%BA%8C%E6%9C%88%E7%94%B2%E5%AD%90%EF%BC%8C%E6%9C%88%E7%8A%AF%E5%8D%97%E6%96%97%E7%AC%AC%E5%9B%9B%E6%98%9F%EF%BC%8C%E5%8F%88%E7%8A%AF%E7%AC%AC%E4%B8%89%E6%98%9F"
+      },
+      {
+        "year": 480,
+        "type": "encroach",
+        "reign": "太和",
+        "reign_year": 4,
+        "description": "四年二月，又犯軒轅第二星",
+        "source": "魏书·天象志",
+        "url": "../chapters/07_魏书_天象志.html#find=%E5%9B%9B%E5%B9%B4%E4%BA%8C%E6%9C%88%EF%BC%8C%E5%8F%88%E7%8A%AF%E8%BB%92%E8%BD%85%E7%AC%AC%E4%BA%8C%E6%98%9F"
+      },
+      {
+        "year": 480,
+        "type": "encroach",
+        "reign": "太和",
+        "reign_year": 4,
+        "description": "四年二月辛巳，月又犯之",
+        "source": "魏书·天象志",
+        "url": "../chapters/07_魏书_天象志.html#find=%E5%9B%9B%E5%B9%B4%E4%BA%8C%E6%9C%88%E8%BE%9B%E5%B7%B3%EF%BC%8C%E6%9C%88%E5%8F%88%E7%8A%AF%E4%B9%8B"
+      }
+    ]
+  },
+  {
+    "year": 481,
+    "type": "encroach",
+    "count": 5,
+    "sources": [
+      "南齐书·天文志",
+      "魏书·天象志"
+    ],
+    "events": [
+      {
+        "year": 481,
+        "type": "encroach",
+        "reign": "建元",
+        "reign_year": 3,
+        "description": "三年二月癸巳，月犯太微上將",
+        "source": "南齐书·天文志",
+        "url": "../chapters/06_南齐书_天文志.html#find=%E4%B8%89%E5%B9%B4%E4%BA%8C%E6%9C%88%E7%99%B8%E5%B7%B3%EF%BC%8C%E6%9C%88%E7%8A%AF%E5%A4%AA%E5%BE%AE%E4%B8%8A%E5%B0%87"
+      },
+      {
+        "year": 481,
+        "type": "encroach",
+        "reign": "建元",
+        "reign_year": 3,
+        "description": "三年二月己未，月犯南斗第五星",
+        "source": "南齐书·天文志",
+        "url": "../chapters/06_南齐书_天文志.html#find=%E4%B8%89%E5%B9%B4%E4%BA%8C%E6%9C%88%E5%B7%B1%E6%9C%AA%EF%BC%8C%E6%9C%88%E7%8A%AF%E5%8D%97%E6%96%97%E7%AC%AC%E4%BA%94%E6%98%9F"
+      },
+      {
+        "year": 481,
+        "type": "encroach",
+        "reign": "太和",
+        "reign_year": 5,
+        "description": "五年二月癸卯，月犯太微西蕃南頭第一星",
+        "source": "魏书·天象志",
+        "omen": "「大臣有憂」",
+        "url": "../chapters/07_魏书_天象志.html#find=%E4%BA%94%E5%B9%B4%E4%BA%8C%E6%9C%88%E7%99%B8%E5%8D%AF%EF%BC%8C%E6%9C%88%E7%8A%AF%E5%A4%AA%E5%BE%AE%E8%A5%BF%E8%95%83%E5%8D%97%E9%A0%AD%E7%AC%AC%E4%B8%80%E6%98%9F"
+      },
+      {
+        "year": 481,
+        "type": "encroach",
+        "reign": "太和",
+        "reign_year": 5,
+        "description": "五年二月癸卯，月犯太微西蕃上將",
+        "source": "魏书·天象志",
+        "omen": "「為饑，為內亂，且有壅",
+        "url": "../chapters/07_魏书_天象志.html#find=%E4%BA%94%E5%B9%B4%E4%BA%8C%E6%9C%88%E7%99%B8%E5%8D%AF%EF%BC%8C%E6%9C%88%E7%8A%AF%E5%A4%AA%E5%BE%AE%E8%A5%BF%E8%95%83%E4%B8%8A%E5%B0%87"
+      },
+      {
+        "year": 481,
+        "type": "encroach",
+        "reign": "太和",
+        "reign_year": 5,
+        "description": "五年九月辛巳，填犯辰星于軫",
+        "source": "魏书·天象志",
+        "url": "../chapters/07_魏书_天象志.html#find=%E4%BA%94%E5%B9%B4%E4%B9%9D%E6%9C%88%E8%BE%9B%E5%B7%B3%EF%BC%8C%E5%A1%AB%E7%8A%AF%E8%BE%B0%E6%98%9F%E4%BA%8E%E8%BB%AB"
+      }
+    ]
+  },
+  {
+    "year": 482,
+    "type": "entry",
+    "count": 2,
+    "sources": [
+      "南齐书·天文志",
+      "宋书·天文志"
+    ],
+    "events": [
+      {
+        "year": 482,
+        "type": "entry",
+        "reign": "泰始",
+        "reign_year": 18,
+        "description": "太元十八年正月乙酉，熒惑入月",
+        "source": "宋书·天文志",
+        "omen": "「三星合，是謂驚位絕行，內外有兵喪與飢，改立王公",
+        "url": "../chapters/05_宋书_天文志.html#find=%E5%A4%AA%E5%85%83%E5%8D%81%E5%85%AB%E5%B9%B4%E6%AD%A3%E6%9C%88%E4%B9%99%E9%85%89%EF%BC%8C%E7%86%92%E6%83%91%E5%85%A5%E6%9C%88"
+      },
+      {
+        "year": 482,
+        "type": "entry",
+        "reign": "建元",
+        "reign_year": 4,
+        "description": "四年七月戊辰，填星從行入氐",
+        "source": "南齐书·天文志",
+        "url": "../chapters/06_南齐书_天文志.html#find=%E5%9B%9B%E5%B9%B4%E4%B8%83%E6%9C%88%E6%88%8A%E8%BE%B0%EF%BC%8C%E5%A1%AB%E6%98%9F%E5%BE%9E%E8%A1%8C%E5%85%A5%E6%B0%90"
+      }
+    ]
+  },
+  {
+    "year": 482,
+    "type": "encroach",
+    "count": 5,
+    "sources": [
+      "南齐书·天文志",
+      "魏书·天象志"
+    ],
+    "events": [
+      {
+        "year": 482,
+        "type": "encroach",
+        "reign": "建元",
+        "reign_year": 4,
+        "description": "四年二月乙亥，月犯輿鬼西北星",
+        "source": "南齐书·天文志",
+        "url": "../chapters/06_南齐书_天文志.html#find=%E5%9B%9B%E5%B9%B4%E4%BA%8C%E6%9C%88%E4%B9%99%E4%BA%A5%EF%BC%8C%E6%9C%88%E7%8A%AF%E8%BC%BF%E9%AC%BC%E8%A5%BF%E5%8C%97%E6%98%9F"
+      },
+      {
+        "year": 482,
+        "type": "encroach",
+        "reign": "建元",
+        "reign_year": 4,
+        "description": "四年正月癸酉，月入東井，無所犯",
+        "source": "南齐书·天文志",
+        "url": "../chapters/06_南齐书_天文志.html#find=%E5%9B%9B%E5%B9%B4%E6%AD%A3%E6%9C%88%E7%99%B8%E9%85%89%EF%BC%8C%E6%9C%88%E5%85%A5%E6%9D%B1%E4%BA%95%EF%BC%8C%E7%84%A1%E6%89%80%E7%8A%AF"
+      },
+      {
+        "year": 482,
+        "type": "encroach",
+        "reign": "建元",
+        "reign_year": 4,
+        "description": "四年六月戊子，熒惑從行入東井，無所犯",
+        "source": "南齐书·天文志",
+        "url": "../chapters/06_南齐书_天文志.html#find=%E5%9B%9B%E5%B9%B4%E5%85%AD%E6%9C%88%E6%88%8A%E5%AD%90%EF%BC%8C%E7%86%92%E6%83%91%E5%BE%9E%E8%A1%8C%E5%85%A5%E6%9D%B1%E4%BA%95%EF%BC%8C%E7%84%A1%E6%89%80%E7%8A%AF"
+      },
+      {
+        "year": 482,
+        "type": "encroach",
+        "reign": "太和",
+        "reign_year": 6,
+        "description": "六年二月，又犯斗魁第二星",
+        "source": "魏书·天象志",
+        "omen": "「月犯心，亂臣在側，有亡君之戒，人主以善事除殃」",
+        "url": "../chapters/07_魏书_天象志.html#find=%E5%85%AD%E5%B9%B4%E4%BA%8C%E6%9C%88%EF%BC%8C%E5%8F%88%E7%8A%AF%E6%96%97%E9%AD%81%E7%AC%AC%E4%BA%8C%E6%98%9F"
+      },
+      {
+        "year": 482,
+        "type": "encroach",
+        "reign": "太和",
+        "reign_year": 6,
+        "description": "六年正月，又犯軒轅大星",
+        "source": "魏书·天象志",
+        "url": "../chapters/07_魏书_天象志.html#find=%E5%85%AD%E5%B9%B4%E6%AD%A3%E6%9C%88%EF%BC%8C%E5%8F%88%E7%8A%AF%E8%BB%92%E8%BD%85%E5%A4%A7%E6%98%9F"
+      }
+    ]
+  },
+  {
+    "year": 483,
+    "type": "encroach",
+    "count": 5,
+    "sources": [
+      "南齐书·天文志",
+      "宋书·天文志",
+      "魏书·天象志"
+    ],
+    "events": [
+      {
+        "year": 483,
+        "type": "encroach",
+        "reign": "泰始",
+        "reign_year": 19,
+        "description": "太元十九年十月癸丑，太白犯歲星，在斗",
+        "source": "宋书·天文志",
+        "url": "../chapters/05_宋书_天文志.html#find=%E5%A4%AA%E5%85%83%E5%8D%81%E4%B9%9D%E5%B9%B4%E5%8D%81%E6%9C%88%E7%99%B8%E4%B8%91%EF%BC%8C%E5%A4%AA%E7%99%BD%E7%8A%AF%E6%AD%B2%E6%98%9F%EF%BC%8C%E5%9C%A8%E6%96%97"
+      },
+      {
+        "year": 483,
+        "type": "encroach",
+        "reign": "建元",
+        "reign_year": 5,
+        "description": "五年正月丙午，月犯房鉤鈐",
+        "source": "南齐书·天文志",
+        "omen": "爵祿，褒賢進士，故置以為輔",
+        "url": "../chapters/06_南齐书_天文志.html#find=%E4%BA%94%E5%B9%B4%E6%AD%A3%E6%9C%88%E4%B8%99%E5%8D%88%EF%BC%8C%E6%9C%88%E7%8A%AF%E6%88%BF%E9%89%A4%E9%88%90"
+      },
+      {
+        "year": 483,
+        "type": "encroach",
+        "reign": "永明",
+        "reign_year": 1,
+        "description": "永明元年六月己酉，太白行犯太微上將星",
+        "source": "南齐书·天文志",
+        "url": "../chapters/06_南齐书_天文志.html#find=%E6%B0%B8%E6%98%8E%E5%85%83%E5%B9%B4%E5%85%AD%E6%9C%88%E5%B7%B1%E9%85%89%EF%BC%8C%E5%A4%AA%E7%99%BD%E8%A1%8C%E7%8A%AF%E5%A4%AA%E5%BE%AE%E4%B8%8A%E5%B0%87%E6%98%9F"
+      },
+      {
+        "year": 483,
+        "type": "encroach",
+        "reign": "永明",
+        "reign_year": 1,
+        "description": "永明元年正月己亥，熒惑逆犯上相",
+        "source": "南齐书·天文志",
+        "url": "../chapters/06_南齐书_天文志.html#find=%E6%B0%B8%E6%98%8E%E5%85%83%E5%B9%B4%E6%AD%A3%E6%9C%88%E5%B7%B1%E4%BA%A5%EF%BC%8C%E7%86%92%E6%83%91%E9%80%86%E7%8A%AF%E4%B8%8A%E7%9B%B8"
+      },
+      {
+        "year": 483,
+        "type": "encroach",
+        "reign": "太和",
+        "reign_year": 7,
+        "description": "七年五月辛卯，月犯南斗",
+        "source": "魏书·天象志",
+        "omen": "「貴人死」，一曰「有水」",
+        "url": "../chapters/07_魏书_天象志.html#find=%E4%B8%83%E5%B9%B4%E4%BA%94%E6%9C%88%E8%BE%9B%E5%8D%AF%EF%BC%8C%E6%9C%88%E7%8A%AF%E5%8D%97%E6%96%97"
+      }
+    ]
+  },
+  {
+    "year": 483,
+    "type": "meteor",
+    "count": 2,
+    "sources": [
+      "南齐书·天文志",
+      "魏书·天象志"
+    ],
+    "events": [
+      {
+        "year": 483,
+        "type": "meteor",
+        "reign": "永明",
+        "reign_year": 1,
+        "description": "永明元年六月己酉，有流星如二升椀，從紫宮出，南行沒氐",
+        "source": "南齐书·天文志",
+        "url": "../chapters/06_南齐书_天文志.html#find=%E6%B0%B8%E6%98%8E%E5%85%83%E5%B9%B4%E5%85%AD%E6%9C%88%E5%B7%B1%E9%85%89%EF%BC%8C%E6%9C%89%E6%B5%81%E6%98%9F%E5%A6%82%E4%BA%8C%E5%8D%87%E6%A4%80%EF%BC%8C%E5%BE%9E%E7%B4%AB%E5%AE%AE"
+      },
+      {
+        "year": 483,
+        "type": "meteor",
+        "reign": "太和",
+        "reign_year": 7,
+        "description": "七年六月庚午辰時，東北有流星一，大如太白，北流破為三段",
+        "source": "魏书·天象志",
+        "url": "../chapters/07_魏书_天象志.html#find=%E4%B8%83%E5%B9%B4%E5%85%AD%E6%9C%88%E5%BA%9A%E5%8D%88%E8%BE%B0%E6%99%82%EF%BC%8C%E6%9D%B1%E5%8C%97%E6%9C%89%E6%B5%81%E6%98%9F%E4%B8%80%EF%BC%8C%E5%A4%A7%E5%A6%82%E5%A4%AA%E7%99%BD"
+      }
+    ]
+  },
+  {
+    "year": 486,
+    "type": "encroach",
+    "count": 5,
+    "sources": [
+      "南齐书·天文志",
+      "魏书·天象志"
+    ],
+    "events": [
+      {
+        "year": 486,
+        "type": "encroach",
+        "reign": "建元",
+        "reign_year": 8,
+        "description": "八年正月丁巳，月在亢南頭第二星南七寸，為犯",
+        "source": "南齐书·天文志",
+        "url": "../chapters/06_南齐书_天文志.html#find=%E5%85%AB%E5%B9%B4%E6%AD%A3%E6%9C%88%E4%B8%81%E5%B7%B3%EF%BC%8C%E6%9C%88%E5%9C%A8%E4%BA%A2%E5%8D%97%E9%A0%AD%E7%AC%AC%E4%BA%8C%E6%98%9F%E5%8D%97%E4%B8%83%E5%AF%B8%EF%BC%8C%E7%82%BA"
+      },
+      {
+        "year": 486,
+        "type": "encroach",
+        "reign": "永明",
+        "reign_year": 4,
+        "description": "四年閏二月丙辰，歲星犯太微上將",
+        "source": "南齐书·天文志",
+        "url": "../chapters/06_南齐书_天文志.html#find=%E5%9B%9B%E5%B9%B4%E9%96%8F%E4%BA%8C%E6%9C%88%E4%B8%99%E8%BE%B0%EF%BC%8C%E6%AD%B2%E6%98%9F%E7%8A%AF%E5%A4%AA%E5%BE%AE%E4%B8%8A%E5%B0%87"
+      },
+      {
+        "year": 486,
+        "type": "encroach",
+        "reign": "永明",
+        "reign_year": 4,
+        "description": "四年十二月辛巳，填星犯建星",
+        "source": "南齐书·天文志",
+        "url": "../chapters/06_南齐书_天文志.html#find=%E5%9B%9B%E5%B9%B4%E5%8D%81%E4%BA%8C%E6%9C%88%E8%BE%9B%E5%B7%B3%EF%BC%8C%E5%A1%AB%E6%98%9F%E7%8A%AF%E5%BB%BA%E6%98%9F"
+      },
+      {
+        "year": 486,
+        "type": "encroach",
+        "reign": "太和",
+        "reign_year": 10,
+        "description": "十年十一月辛亥，月犯房",
+        "source": "魏书·天象志",
+        "url": "../chapters/07_魏书_天象志.html#find=%E5%8D%81%E5%B9%B4%E5%8D%81%E4%B8%80%E6%9C%88%E8%BE%9B%E4%BA%A5%EF%BC%8C%E6%9C%88%E7%8A%AF%E6%88%BF"
+      },
+      {
+        "year": 486,
+        "type": "encroach",
+        "reign": "太和",
+        "reign_year": 10,
+        "description": "十年九月，熒惑犯歲星",
+        "source": "魏书·天象志",
+        "omen": "「大臣有執主之命者，且歲旱糴貴」",
+        "url": "../chapters/07_魏书_天象志.html#find=%E5%8D%81%E5%B9%B4%E4%B9%9D%E6%9C%88%EF%BC%8C%E7%86%92%E6%83%91%E7%8A%AF%E6%AD%B2%E6%98%9F"
+      }
+    ]
+  },
+  {
+    "year": 487,
+    "type": "encroach",
+    "count": 4,
+    "sources": [
+      "南齐书·天文志",
+      "魏书·天象志"
+    ],
+    "events": [
+      {
+        "year": 487,
+        "type": "encroach",
+        "reign": "建元",
+        "reign_year": 9,
+        "description": "九年正月辛丑，月在畢躔西星北六寸，為犯",
+        "source": "南齐书·天文志",
+        "url": "../chapters/06_南齐书_天文志.html#find=%E4%B9%9D%E5%B9%B4%E6%AD%A3%E6%9C%88%E8%BE%9B%E4%B8%91%EF%BC%8C%E6%9C%88%E5%9C%A8%E7%95%A2%E8%BA%94%E8%A5%BF%E6%98%9F%E5%8C%97%E5%85%AD%E5%AF%B8%EF%BC%8C%E7%82%BA%E7%8A%AF"
+      },
+      {
+        "year": 487,
+        "type": "encroach",
+        "reign": "永明",
+        "reign_year": 5,
+        "description": "五年二月癸卯，歲星犯進賢",
+        "source": "南齐书·天文志",
+        "url": "../chapters/06_南齐书_天文志.html#find=%E4%BA%94%E5%B9%B4%E4%BA%8C%E6%9C%88%E7%99%B8%E5%8D%AF%EF%BC%8C%E6%AD%B2%E6%98%9F%E7%8A%AF%E9%80%B2%E8%B3%A2"
+      },
+      {
+        "year": 487,
+        "type": "encroach",
+        "reign": "太和",
+        "reign_year": 11,
+        "description": "十一年正月丙午，月犯房鈎鈐",
+        "source": "魏书·天象志",
+        "url": "../chapters/07_魏书_天象志.html#find=%E5%8D%81%E4%B8%80%E5%B9%B4%E6%AD%A3%E6%9C%88%E4%B8%99%E5%8D%88%EF%BC%8C%E6%9C%88%E7%8A%AF%E6%88%BF%E9%88%8E%E9%88%90"
+      },
+      {
+        "year": 487,
+        "type": "encroach",
+        "reign": "太和",
+        "reign_year": 11,
+        "description": "十一年六月乙丑，月犯斗",
+        "source": "魏书·天象志",
+        "omen": "「陰陽不和，不為水患且大旱」",
+        "url": "../chapters/07_魏书_天象志.html#find=%E5%8D%81%E4%B8%80%E5%B9%B4%E5%85%AD%E6%9C%88%E4%B9%99%E4%B8%91%EF%BC%8C%E6%9C%88%E7%8A%AF%E6%96%97"
+      }
+    ]
+  },
+  {
+    "year": 488,
+    "type": "encroach",
+    "count": 5,
+    "sources": [
+      "南齐书·天文志",
+      "魏书·天象志"
+    ],
+    "events": [
+      {
+        "year": 488,
+        "type": "encroach",
+        "reign": "建元",
+        "reign_year": 10,
+        "description": "十年正月庚午，月在軒轅右角大民星南八寸，為犯",
+        "source": "南齐书·天文志",
+        "url": "../chapters/06_南齐书_天文志.html#find=%E5%8D%81%E5%B9%B4%E6%AD%A3%E6%9C%88%E5%BA%9A%E5%8D%88%EF%BC%8C%E6%9C%88%E5%9C%A8%E8%BB%92%E8%BD%85%E5%8F%B3%E8%A7%92%E5%A4%A7%E6%B0%91%E6%98%9F%E5%8D%97%E5%85%AB%E5%AF%B8%EF%BC%8C"
+      },
+      {
+        "year": 488,
+        "type": "encroach",
+        "reign": "永明",
+        "reign_year": 6,
+        "description": "六年四月辛酉，太白從在熒惑北三寸，為犯，竝在東井度",
+        "source": "南齐书·天文志",
+        "url": "../chapters/06_南齐书_天文志.html#find=%E5%85%AD%E5%B9%B4%E5%9B%9B%E6%9C%88%E8%BE%9B%E9%85%89%EF%BC%8C%E5%A4%AA%E7%99%BD%E5%BE%9E%E5%9C%A8%E7%86%92%E6%83%91%E5%8C%97%E4%B8%89%E5%AF%B8%EF%BC%8C%E7%82%BA%E7%8A%AF%EF%BC%8C"
+      },
+      {
+        "year": 488,
+        "type": "encroach",
+        "reign": "太和",
+        "reign_year": 12,
+        "description": "十二年正月戊戌，月犯左角",
+        "source": "魏书·天象志",
+        "omen": "「天下有兵」",
+        "url": "../chapters/07_魏书_天象志.html#find=%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%AD%A3%E6%9C%88%E6%88%8A%E6%88%8C%EF%BC%8C%E6%9C%88%E7%8A%AF%E5%B7%A6%E8%A7%92"
+      },
+      {
+        "year": 488,
+        "type": "encroach",
+        "reign": "太和",
+        "reign_year": 12,
+        "description": "十二年七月，月犯牛",
+        "source": "魏书·天象志",
+        "omen": "「陰陽不和，不為水患且大旱」",
+        "url": "../chapters/07_魏书_天象志.html#find=%E5%8D%81%E4%BA%8C%E5%B9%B4%E4%B8%83%E6%9C%88%EF%BC%8C%E6%9C%88%E7%8A%AF%E7%89%9B"
+      },
+      {
+        "year": 488,
+        "type": "encroach",
+        "reign": "太和",
+        "reign_year": 12,
+        "description": "太和十二年十一月戊午，太白犯歲，又犯火，喪疾之祥",
+        "source": "魏书·天象志",
+        "url": "../chapters/07_魏书_天象志.html#find=%E5%A4%AA%E5%92%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%8D%81%E4%B8%80%E6%9C%88%E6%88%8A%E5%8D%88%EF%BC%8C%E5%A4%AA%E7%99%BD%E7%8A%AF%E6%AD%B2%EF%BC%8C%E5%8F%88%E7%8A%AF%E7%81%AB%EF%BC%8C"
+      }
+    ]
+  },
+  {
+    "year": 488,
+    "type": "entry",
+    "count": 2,
+    "sources": [
+      "南齐书·天文志",
+      "魏书·天象志"
+    ],
+    "events": [
+      {
+        "year": 488,
+        "type": "entry",
+        "reign": "永明",
+        "reign_year": 6,
+        "description": "六年三月甲申，歲星逆行入氐宿",
+        "source": "南齐书·天文志",
+        "url": "../chapters/06_南齐书_天文志.html#find=%E5%85%AD%E5%B9%B4%E4%B8%89%E6%9C%88%E7%94%B2%E7%94%B3%EF%BC%8C%E6%AD%B2%E6%98%9F%E9%80%86%E8%A1%8C%E5%85%A5%E6%B0%90%E5%AE%BF"
+      },
+      {
+        "year": 488,
+        "type": "entry",
+        "reign": "太和",
+        "reign_year": 12,
+        "description": "十二年三月甲申，歲星逆行入氐",
+        "source": "魏书·天象志",
+        "omen": "「陰陽不和，不為水患且大旱」",
+        "url": "../chapters/07_魏书_天象志.html#find=%E5%8D%81%E4%BA%8C%E5%B9%B4%E4%B8%89%E6%9C%88%E7%94%B2%E7%94%B3%EF%BC%8C%E6%AD%B2%E6%98%9F%E9%80%86%E8%A1%8C%E5%85%A5%E6%B0%90"
+      }
+    ]
+  },
+  {
+    "year": 489,
+    "type": "encroach",
+    "count": 4,
+    "sources": [
+      "南齐书·天文志",
+      "魏书·天象志"
+    ],
+    "events": [
+      {
+        "year": 489,
+        "type": "encroach",
+        "reign": "建元",
+        "reign_year": 11,
+        "description": "十一年正月辛酉，月入東井曠中，無所犯",
+        "source": "南齐书·天文志",
+        "url": "../chapters/06_南齐书_天文志.html#find=%E5%8D%81%E4%B8%80%E5%B9%B4%E6%AD%A3%E6%9C%88%E8%BE%9B%E9%85%89%EF%BC%8C%E6%9C%88%E5%85%A5%E6%9D%B1%E4%BA%95%E6%9B%A0%E4%B8%AD%EF%BC%8C%E7%84%A1%E6%89%80%E7%8A%AF"
+      },
+      {
+        "year": 489,
+        "type": "encroach",
+        "reign": "太和",
+        "reign_year": 13,
+        "description": "十三年三月庚申，月犯歲",
+        "source": "魏书·天象志",
+        "omen": "「不出三年，天下有兵，主子死，大君惡之」",
+        "url": "../chapters/07_魏书_天象志.html#find=%E5%8D%81%E4%B8%89%E5%B9%B4%E4%B8%89%E6%9C%88%E5%BA%9A%E7%94%B3%EF%BC%8C%E6%9C%88%E7%8A%AF%E6%AD%B2"
+      },
+      {
+        "year": 489,
+        "type": "encroach",
+        "reign": "太和",
+        "reign_year": 13,
+        "description": "十三年四月，又犯之",
+        "source": "魏书·天象志",
+        "omen": "「有亂臣，不出三年伐其主」",
+        "url": "../chapters/07_魏书_天象志.html#find=%E5%8D%81%E4%B8%89%E5%B9%B4%E5%9B%9B%E6%9C%88%EF%BC%8C%E5%8F%88%E7%8A%AF%E4%B9%8B"
+      },
+      {
+        "year": 489,
+        "type": "encroach",
+        "reign": "太和",
+        "reign_year": 13,
+        "description": "十三年二月，熒惑犯填",
+        "source": "魏书·天象志",
+        "omen": "「火主凶亂，女君應之」",
+        "url": "../chapters/07_魏书_天象志.html#find=%E5%8D%81%E4%B8%89%E5%B9%B4%E4%BA%8C%E6%9C%88%EF%BC%8C%E7%86%92%E6%83%91%E7%8A%AF%E5%A1%AB"
+      }
+    ]
+  },
+  {
+    "year": 489,
+    "type": "entry",
+    "count": 2,
+    "sources": [
+      "南齐书·天文志",
+      "魏书·天象志"
+    ],
+    "events": [
+      {
+        "year": 489,
+        "type": "entry",
+        "reign": "永明",
+        "reign_year": 7,
+        "description": "七年二月辛巳，太白從行入羽林",
+        "source": "南齐书·天文志",
+        "url": "../chapters/06_南齐书_天文志.html#find=%E4%B8%83%E5%B9%B4%E4%BA%8C%E6%9C%88%E8%BE%9B%E5%B7%B3%EF%BC%8C%E5%A4%AA%E7%99%BD%E5%BE%9E%E8%A1%8C%E5%85%A5%E7%BE%BD%E6%9E%97"
+      },
+      {
+        "year": 489,
+        "type": "entry",
+        "reign": "太和",
+        "reign_year": 13,
+        "description": "十三年正月甲寅，月入東井",
+        "source": "魏书·天象志",
+        "url": "../chapters/07_魏书_天象志.html#find=%E5%8D%81%E4%B8%89%E5%B9%B4%E6%AD%A3%E6%9C%88%E7%94%B2%E5%AF%85%EF%BC%8C%E6%9C%88%E5%85%A5%E6%9D%B1%E4%BA%95"
+      }
+    ]
+  },
+  {
+    "year": 490,
+    "type": "encroach",
+    "count": 4,
+    "sources": [
+      "南齐书·天文志",
+      "魏书·天象志"
+    ],
+    "events": [
+      {
+        "year": 490,
+        "type": "encroach",
+        "reign": "永明",
+        "reign_year": 8,
+        "description": "八年四月丙申，熒惑從行入輿鬼，在西北星東南二寸，為犯",
+        "source": "南齐书·天文志",
+        "url": "../chapters/06_南齐书_天文志.html#find=%E5%85%AB%E5%B9%B4%E5%9B%9B%E6%9C%88%E4%B8%99%E7%94%B3%EF%BC%8C%E7%86%92%E6%83%91%E5%BE%9E%E8%A1%8C%E5%85%A5%E8%BC%BF%E9%AC%BC%EF%BC%8C%E5%9C%A8%E8%A5%BF%E5%8C%97%E6%98%9F%E6%9D%B1"
+      },
+      {
+        "year": 490,
+        "type": "encroach",
+        "reign": "太和",
+        "reign_year": 14,
+        "description": "十四年四月，地豆于頻犯塞，詔征西大將軍、陽平王頤擊走之",
+        "source": "魏书·天象志",
+        "omen": "「女主當之」",
+        "url": "../chapters/07_魏书_天象志.html#find=%E5%8D%81%E5%9B%9B%E5%B9%B4%E5%9B%9B%E6%9C%88%EF%BC%8C%E5%9C%B0%E8%B1%86%E4%BA%8E%E9%A0%BB%E7%8A%AF%E5%A1%9E%EF%BC%8C%E8%A9%94%E5%BE%81%E8%A5%BF%E5%A4%A7%E5%B0%87%E8%BB%8D%E3%80%81"
+      },
+      {
+        "year": 490,
+        "type": "encroach",
+        "reign": "太和",
+        "reign_year": 14,
+        "description": "十四年二月甲戌，月犯畢",
+        "source": "魏书·天象志",
+        "omen": "「女主當之」",
+        "url": "../chapters/07_魏书_天象志.html#find=%E5%8D%81%E5%9B%9B%E5%B9%B4%E4%BA%8C%E6%9C%88%E7%94%B2%E6%88%8C%EF%BC%8C%E6%9C%88%E7%8A%AF%E7%95%A2"
+      },
+      {
+        "year": 490,
+        "type": "encroach",
+        "reign": "太和",
+        "reign_year": 14,
+        "description": "十四年十一月，月犯填星",
+        "source": "魏书·天象志",
+        "url": "../chapters/07_魏书_天象志.html#find=%E5%8D%81%E5%9B%9B%E5%B9%B4%E5%8D%81%E4%B8%80%E6%9C%88%EF%BC%8C%E6%9C%88%E7%8A%AF%E5%A1%AB%E6%98%9F"
+      }
+    ]
+  },
+  {
+    "year": 491,
+    "type": "encroach",
+    "count": 4,
+    "sources": [
+      "南齐书·天文志",
+      "魏书·天象志"
+    ],
+    "events": [
+      {
+        "year": 491,
+        "type": "encroach",
+        "reign": "永明",
+        "reign_year": 9,
+        "description": "九年三月甲午，熒惑從在填星東七寸，在歲星南六寸，同在虛度，為犯，為合宿",
+        "source": "南齐书·天文志",
+        "url": "../chapters/06_南齐书_天文志.html#find=%E4%B9%9D%E5%B9%B4%E4%B8%89%E6%9C%88%E7%94%B2%E5%8D%88%EF%BC%8C%E7%86%92%E6%83%91%E5%BE%9E%E5%9C%A8%E5%A1%AB%E6%98%9F%E6%9D%B1%E4%B8%83%E5%AF%B8%EF%BC%8C%E5%9C%A8%E6%AD%B2%E6%98%9F"
+      },
+      {
+        "year": 491,
+        "type": "encroach",
+        "reign": "永明",
+        "reign_year": 9,
+        "description": "九年七月庚戌，填星逆在泣西星東北七寸，為犯",
+        "source": "南齐书·天文志",
+        "url": "../chapters/06_南齐书_天文志.html#find=%E4%B9%9D%E5%B9%B4%E4%B8%83%E6%9C%88%E5%BA%9A%E6%88%8C%EF%BC%8C%E5%A1%AB%E6%98%9F%E9%80%86%E5%9C%A8%E6%B3%A3%E8%A5%BF%E6%98%9F%E6%9D%B1%E5%8C%97%E4%B8%83%E5%AF%B8%EF%BC%8C%E7%82%BA"
+      },
+      {
+        "year": 491,
+        "type": "encroach",
+        "reign": "太和",
+        "reign_year": 15,
+        "description": "十五年六月，又犯之",
+        "source": "魏书·天象志",
+        "omen": "「不出三年，天下有兵，主子死，大君惡之」",
+        "url": "../chapters/07_魏书_天象志.html#find=%E5%8D%81%E4%BA%94%E5%B9%B4%E5%85%AD%E6%9C%88%EF%BC%8C%E5%8F%88%E7%8A%AF%E4%B9%8B"
+      },
+      {
+        "year": 491,
+        "type": "encroach",
+        "reign": "太和",
+        "reign_year": 15,
+        "description": "十五年十月，月犯填，又犯軒轅",
+        "source": "魏书·天象志",
+        "omen": "「其君不愛親戚，貴人多喪",
+        "url": "../chapters/07_魏书_天象志.html#find=%E5%8D%81%E4%BA%94%E5%B9%B4%E5%8D%81%E6%9C%88%EF%BC%8C%E6%9C%88%E7%8A%AF%E5%A1%AB%EF%BC%8C%E5%8F%88%E7%8A%AF%E8%BB%92%E8%BD%85"
+      }
+    ]
+  },
+  {
+    "year": 492,
+    "type": "entry",
+    "count": 4,
+    "sources": [
+      "南齐书·天文志",
+      "魏书·天象志"
+    ],
+    "events": [
+      {
+        "year": 492,
+        "type": "entry",
+        "reign": "永明",
+        "reign_year": 10,
+        "description": "十年二月甲辰，太白從行入羽林",
+        "source": "南齐书·天文志",
+        "url": "../chapters/06_南齐书_天文志.html#find=%E5%8D%81%E5%B9%B4%E4%BA%8C%E6%9C%88%E7%94%B2%E8%BE%B0%EF%BC%8C%E5%A4%AA%E7%99%BD%E5%BE%9E%E8%A1%8C%E5%85%A5%E7%BE%BD%E6%9E%97"
+      },
+      {
+        "year": 492,
+        "type": "entry",
+        "reign": "太和",
+        "reign_year": 16,
+        "description": "十六年二月甲辰，月入氐",
+        "source": "魏书·天象志",
+        "omen": "「女主當之」",
+        "url": "../chapters/07_魏书_天象志.html#find=%E5%8D%81%E5%85%AD%E5%B9%B4%E4%BA%8C%E6%9C%88%E7%94%B2%E8%BE%B0%EF%BC%8C%E6%9C%88%E5%85%A5%E6%B0%90"
+      },
+      {
+        "year": 492,
+        "type": "entry",
+        "reign": "太和",
+        "reign_year": 16,
+        "description": "十六年二月壬子，太白入羽林",
+        "source": "魏书·天象志",
+        "url": "../chapters/07_魏书_天象志.html#find=%E5%8D%81%E5%85%AD%E5%B9%B4%E4%BA%8C%E6%9C%88%E5%A3%AC%E5%AD%90%EF%BC%8C%E5%A4%AA%E7%99%BD%E5%85%A5%E7%BE%BD%E6%9E%97"
+      },
+      {
+        "year": 492,
+        "type": "entry",
+        "reign": "太和",
+        "reign_year": 16,
+        "description": "十六年五月及七月，月再入畢",
+        "source": "魏书·天象志",
+        "omen": "「貴人多死」",
+        "url": "../chapters/07_魏书_天象志.html#find=%E5%8D%81%E5%85%AD%E5%B9%B4%E4%BA%94%E6%9C%88%E5%8F%8A%E4%B8%83%E6%9C%88%EF%BC%8C%E6%9C%88%E5%86%8D%E5%85%A5%E7%95%A2"
+      }
+    ]
+  },
+  {
+    "year": 493,
+    "type": "encroach",
+    "count": 5,
+    "sources": [
+      "南齐书·天文志",
+      "魏书·天象志"
+    ],
+    "events": [
+      {
+        "year": 493,
+        "type": "encroach",
+        "reign": "永明",
+        "reign_year": 11,
+        "description": "十一年正月戊辰，太白從行在歲星西北六寸，為犯，在奎度",
+        "source": "南齐书·天文志",
+        "url": "../chapters/06_南齐书_天文志.html#find=%E5%8D%81%E4%B8%80%E5%B9%B4%E6%AD%A3%E6%9C%88%E6%88%8A%E8%BE%B0%EF%BC%8C%E5%A4%AA%E7%99%BD%E5%BE%9E%E8%A1%8C%E5%9C%A8%E6%AD%B2%E6%98%9F%E8%A5%BF%E5%8C%97%E5%85%AD%E5%AF%B8%EF%BC%8C"
+      },
+      {
+        "year": 493,
+        "type": "encroach",
+        "reign": "永明",
+        "reign_year": 11,
+        "description": "十一年二月庚戌，熒惑從在填星西北六寸，為犯，同在營室",
+        "source": "南齐书·天文志",
+        "url": "../chapters/06_南齐书_天文志.html#find=%E5%8D%81%E4%B8%80%E5%B9%B4%E4%BA%8C%E6%9C%88%E5%BA%9A%E6%88%8C%EF%BC%8C%E7%86%92%E6%83%91%E5%BE%9E%E5%9C%A8%E5%A1%AB%E6%98%9F%E8%A5%BF%E5%8C%97%E5%85%AD%E5%AF%B8%EF%BC%8C%E7%82%BA"
+      },
+      {
+        "year": 493,
+        "type": "encroach",
+        "reign": "太和",
+        "reign_year": 17,
+        "description": "十七年正月己丑，月犯軒轅",
+        "source": "魏书·天象志",
+        "omen": "「國有大事，兵起」",
+        "url": "../chapters/07_魏书_天象志.html#find=%E5%8D%81%E4%B8%83%E5%B9%B4%E6%AD%A3%E6%9C%88%E5%B7%B1%E4%B8%91%EF%BC%8C%E6%9C%88%E7%8A%AF%E8%BB%92%E8%BD%85"
+      },
+      {
+        "year": 493,
+        "type": "encroach",
+        "reign": "太和",
+        "reign_year": 17,
+        "description": "十七年正月，月又犯軒轅",
+        "source": "魏书·天象志",
+        "omen": "「其君不愛親戚，貴人多喪",
+        "url": "../chapters/07_魏书_天象志.html#find=%E5%8D%81%E4%B8%83%E5%B9%B4%E6%AD%A3%E6%9C%88%EF%BC%8C%E6%9C%88%E5%8F%88%E7%8A%AF%E8%BB%92%E8%BD%85"
+      },
+      {
+        "year": 493,
+        "type": "encroach",
+        "reign": "太和",
+        "reign_year": 17,
+        "description": "十七年二月丁丑，太白犯井",
+        "source": "魏书·天象志",
+        "url": "../chapters/07_魏书_天象志.html#find=%E5%8D%81%E4%B8%83%E5%B9%B4%E4%BA%8C%E6%9C%88%E4%B8%81%E4%B8%91%EF%BC%8C%E5%A4%AA%E7%99%BD%E7%8A%AF%E4%BA%95"
+      }
+    ]
+  },
+  {
+    "year": 619,
+    "type": "clustering",
+    "count": 2,
+    "sources": [
+      "新唐书·天文志",
+      "旧唐书·天文志"
+    ],
+    "events": [
+      {
+        "year": 619,
+        "type": "clustering",
+        "reign": "武德",
+        "reign_year": 2,
+        "description": "武德二年三月二十七日，太白、辰、鎮聚于東井",
+        "source": "旧唐书·天文志",
+        "url": "../chapters/09_旧唐书_天文志.html#find=%E6%AD%A6%E5%BE%B7%E4%BA%8C%E5%B9%B4%E4%B8%89%E6%9C%88%E4%BA%8C%E5%8D%81%E4%B8%83%E6%97%A5%EF%BC%8C%E5%A4%AA%E7%99%BD%E3%80%81%E8%BE%B0%E3%80%81%E9%8E%AE%E8%81%9A%E4%BA%8E%E6%9D%B1"
+      },
+      {
+        "year": 619,
+        "type": "clustering",
+        "reign": "武德",
+        "reign_year": 2,
+        "description": "二年三月丙申，鎮星、太白、辰星復聚于東井",
+        "source": "新唐书·天文志",
+        "url": "../chapters/10_新唐书_天文志.html#find=%E4%BA%8C%E5%B9%B4%E4%B8%89%E6%9C%88%E4%B8%99%E7%94%B3%EF%BC%8C%E9%8E%AE%E6%98%9F%E3%80%81%E5%A4%AA%E7%99%BD%E3%80%81%E8%BE%B0%E6%98%9F%E5%BE%A9%E8%81%9A%E4%BA%8E%E6%9D%B1%E4%BA%95"
+      }
+    ]
+  },
+  {
+    "year": 626,
+    "type": "comet",
+    "count": 2,
+    "sources": [
+      "新唐书·天文志",
+      "旧唐书·天文志"
+    ],
+    "events": [
+      {
+        "year": 626,
+        "type": "comet",
+        "reign": "武德",
+        "reign_year": 9,
+        "description": "武德九年二月二十三日夜，星孛於胃、昴間，凡二十八日，又孛於捲舌",
+        "source": "旧唐书·天文志",
+        "url": "../chapters/09_旧唐书_天文志.html#find=%E6%AD%A6%E5%BE%B7%E4%B9%9D%E5%B9%B4%E4%BA%8C%E6%9C%88%E4%BA%8C%E5%8D%81%E4%B8%89%E6%97%A5%E5%A4%9C%EF%BC%8C%E6%98%9F%E5%AD%9B%E6%96%BC%E8%83%83%E3%80%81%E6%98%B4%E9%96%93%EF%BC%8C"
+      },
+      {
+        "year": 626,
+        "type": "comet",
+        "reign": "武德",
+        "reign_year": 9,
+        "description": "武德九年二月壬午，有星孛于胃、昴間;丁亥，孛于卷舌",
+        "source": "新唐书·天文志",
+        "url": "../chapters/10_新唐书_天文志.html#find=%E6%AD%A6%E5%BE%B7%E4%B9%9D%E5%B9%B4%E4%BA%8C%E6%9C%88%E5%A3%AC%E5%8D%88%EF%BC%8C%E6%9C%89%E6%98%9F%E5%AD%9B%E4%BA%8E%E8%83%83%E3%80%81%E6%98%B4%E9%96%93%3B%E4%B8%81%E4%BA%A5"
+      }
+    ]
+  },
+  {
+    "year": 630,
+    "type": "comet",
+    "count": 2,
+    "sources": [
+      "新唐书·天文志",
+      "旧唐书·天文志"
+    ],
+    "events": [
+      {
+        "year": 630,
+        "type": "comet",
+        "reign": "武德",
+        "reign_year": 13,
+        "description": "十三年三月二十二日夜，星孛于畢、昴",
+        "source": "旧唐书·天文志",
+        "omen": "，豈移過於小蕃哉！」二十二日星滅",
+        "url": "../chapters/09_旧唐书_天文志.html#find=%E5%8D%81%E4%B8%89%E5%B9%B4%E4%B8%89%E6%9C%88%E4%BA%8C%E5%8D%81%E4%BA%8C%E6%97%A5%E5%A4%9C%EF%BC%8C%E6%98%9F%E5%AD%9B%E4%BA%8E%E7%95%A2%E3%80%81%E6%98%B4"
+      },
+      {
+        "year": 630,
+        "type": "comet",
+        "reign": "武德",
+        "reign_year": 13,
+        "description": "十三年三月乙丑，有星孛于畢、昴",
+        "source": "新唐书·天文志",
+        "url": "../chapters/10_新唐书_天文志.html#find=%E5%8D%81%E4%B8%89%E5%B9%B4%E4%B8%89%E6%9C%88%E4%B9%99%E4%B8%91%EF%BC%8C%E6%9C%89%E6%98%9F%E5%AD%9B%E4%BA%8E%E7%95%A2%E3%80%81%E6%98%B4"
+      }
+    ]
+  },
+  {
+    "year": 632,
+    "type": "comet",
+    "count": 2,
+    "sources": [
+      "新唐书·天文志",
+      "旧唐书·天文志"
+    ],
+    "events": [
+      {
+        "year": 632,
+        "type": "comet",
+        "reign": "武德",
+        "reign_year": 15,
+        "description": "十五年六月十九日，星孛於太微，犯郎位",
+        "source": "旧唐书·天文志",
+        "omen": "，豈移過於小蕃哉！」二十二日星滅",
+        "url": "../chapters/09_旧唐书_天文志.html#find=%E5%8D%81%E4%BA%94%E5%B9%B4%E5%85%AD%E6%9C%88%E5%8D%81%E4%B9%9D%E6%97%A5%EF%BC%8C%E6%98%9F%E5%AD%9B%E6%96%BC%E5%A4%AA%E5%BE%AE%EF%BC%8C%E7%8A%AF%E9%83%8E%E4%BD%8D"
+      },
+      {
+        "year": 632,
+        "type": "comet",
+        "reign": "武德",
+        "reign_year": 15,
+        "description": "十五年六月己酉，有星孛于太微，犯郎位，七月甲戌不見",
+        "source": "新唐书·天文志",
+        "url": "../chapters/10_新唐书_天文志.html#find=%E5%8D%81%E4%BA%94%E5%B9%B4%E5%85%AD%E6%9C%88%E5%B7%B1%E9%85%89%EF%BC%8C%E6%9C%89%E6%98%9F%E5%AD%9B%E4%BA%8E%E5%A4%AA%E5%BE%AE%EF%BC%8C%E7%8A%AF%E9%83%8E%E4%BD%8D%EF%BC%8C%E4%B8%83"
+      }
+    ]
+  },
+  {
+    "year": 636,
+    "type": "encroach",
+    "count": 2,
+    "sources": [
+      "新唐书·天文志",
+      "旧唐书·天文志"
+    ],
+    "events": [
+      {
+        "year": 636,
+        "type": "encroach",
+        "reign": "武德",
+        "reign_year": 19,
+        "description": "十九年九月二十四日，太白在太微，犯左執法，光芒相及",
+        "source": "旧唐书·天文志",
+        "url": "../chapters/09_旧唐书_天文志.html#find=%E5%8D%81%E4%B9%9D%E5%B9%B4%E4%B9%9D%E6%9C%88%E4%BA%8C%E5%8D%81%E5%9B%9B%E6%97%A5%EF%BC%8C%E5%A4%AA%E7%99%BD%E5%9C%A8%E5%A4%AA%E5%BE%AE%EF%BC%8C%E7%8A%AF%E5%B7%A6%E5%9F%B7%E6%B3%95"
+      },
+      {
+        "year": 636,
+        "type": "encroach",
+        "reign": "武德",
+        "reign_year": 19,
+        "description": "十九年七月壬午，太白入太微，是夜月掩南斗，太白遂犯左執法，光芒相及箕、斗間",
+        "source": "新唐书·天文志",
+        "url": "../chapters/10_新唐书_天文志.html#find=%E5%8D%81%E4%B9%9D%E5%B9%B4%E4%B8%83%E6%9C%88%E5%A3%AC%E5%8D%88%EF%BC%8C%E5%A4%AA%E7%99%BD%E5%85%A5%E5%A4%AA%E5%BE%AE%EF%BC%8C%E6%98%AF%E5%A4%9C%E6%9C%88%E6%8E%A9%E5%8D%97%E6%96%97"
+      }
+    ]
+  },
+  {
+    "year": 652,
+    "type": "encroach",
+    "count": 3,
+    "sources": [
+      "新唐书·天文志",
+      "旧唐书·天文志"
+    ],
+    "events": [
+      {
+        "year": 652,
+        "type": "encroach",
+        "reign": "永徽",
+        "reign_year": 3,
+        "description": "永徽三年六月二日，熒惑犯右執法",
+        "source": "旧唐书·天文志",
+        "url": "../chapters/09_旧唐书_天文志.html#find=%E6%B0%B8%E5%BE%BD%E4%B8%89%E5%B9%B4%E5%85%AD%E6%9C%88%E4%BA%8C%E6%97%A5%EF%BC%8C%E7%86%92%E6%83%91%E7%8A%AF%E5%8F%B3%E5%9F%B7%E6%B3%95"
+      },
+      {
+        "year": 652,
+        "type": "encroach",
+        "reign": "永徽",
+        "reign_year": 3,
+        "description": "三年正月壬戌，犯牽牛",
+        "source": "新唐书·天文志",
+        "omen": "「君失政，大臣有誅",
+        "url": "../chapters/10_新唐书_天文志.html#find=%E4%B8%89%E5%B9%B4%E6%AD%A3%E6%9C%88%E5%A3%AC%E6%88%8C%EF%BC%8C%E7%8A%AF%E7%89%BD%E7%89%9B"
+      },
+      {
+        "year": 652,
+        "type": "encroach",
+        "reign": "永徽",
+        "reign_year": 3,
+        "description": "三年正月己卯，犯天街",
+        "source": "新唐书·天文志",
+        "url": "../chapters/10_新唐书_天文志.html#find=%E4%B8%89%E5%B9%B4%E6%AD%A3%E6%9C%88%E5%B7%B1%E5%8D%AF%EF%BC%8C%E7%8A%AF%E5%A4%A9%E8%A1%97"
+      }
+    ]
+  },
+  {
+    "year": 667,
+    "type": "entry",
+    "count": 2,
+    "sources": [
+      "新唐书·天文志",
+      "旧唐书·天文志"
+    ],
+    "events": [
+      {
+        "year": 667,
+        "type": "entry",
+        "reign": "乾封",
+        "reign_year": 2,
+        "description": "乾封二年五月，熒惑入軒轅",
+        "source": "旧唐书·天文志",
+        "url": "../chapters/09_旧唐书_天文志.html#find=%E4%B9%BE%E5%B0%81%E4%BA%8C%E5%B9%B4%E4%BA%94%E6%9C%88%EF%BC%8C%E7%86%92%E6%83%91%E5%85%A5%E8%BB%92%E8%BD%85"
+      },
+      {
+        "year": 667,
+        "type": "entry",
+        "reign": "乾封",
+        "reign_year": 2,
+        "description": "二年五月庚申，入軒轅",
+        "source": "新唐书·天文志",
+        "url": "../chapters/10_新唐书_天文志.html#find=%E4%BA%8C%E5%B9%B4%E4%BA%94%E6%9C%88%E5%BA%9A%E7%94%B3%EF%BC%8C%E5%85%A5%E8%BB%92%E8%BD%85"
+      }
+    ]
+  },
+  {
+    "year": 674,
+    "type": "occult",
+    "count": 2,
+    "sources": [
+      "新唐书·天文志",
+      "旧唐书·天文志"
+    ],
+    "events": [
+      {
+        "year": 674,
+        "type": "occult",
+        "reign": "上元",
+        "reign_year": 1,
+        "description": "上元元年十二月癸未夜，歲掩房星",
+        "source": "旧唐书·天文志",
+        "url": "../chapters/09_旧唐书_天文志.html#find=%E4%B8%8A%E5%85%83%E5%85%83%E5%B9%B4%E5%8D%81%E4%BA%8C%E6%9C%88%E7%99%B8%E6%9C%AA%E5%A4%9C%EF%BC%8C%E6%AD%B2%E6%8E%A9%E6%88%BF%E6%98%9F"
+      },
+      {
+        "year": 674,
+        "type": "occult",
+        "reign": "上元",
+        "reign_year": 1,
+        "description": "上元元年五月癸丑，月掩昴",
+        "source": "新唐书·天文志",
+        "url": "../chapters/10_新唐书_天文志.html#find=%E4%B8%8A%E5%85%83%E5%85%83%E5%B9%B4%E4%BA%94%E6%9C%88%E7%99%B8%E4%B8%91%EF%BC%8C%E6%9C%88%E6%8E%A9%E6%98%B4"
+      }
+    ]
+  },
+  {
+    "year": 675,
+    "type": "encroach",
+    "count": 2,
+    "sources": [
+      "新唐书·天文志",
+      "旧唐书·天文志"
+    ],
+    "events": [
+      {
+        "year": 675,
+        "type": "encroach",
+        "reign": "上元",
+        "reign_year": 2,
+        "description": "上元二年正月九日，熒惑犯房星",
+        "source": "旧唐书·天文志",
+        "url": "../chapters/09_旧唐书_天文志.html#find=%E4%B8%8A%E5%85%83%E4%BA%8C%E5%B9%B4%E6%AD%A3%E6%9C%88%E4%B9%9D%E6%97%A5%EF%BC%8C%E7%86%92%E6%83%91%E7%8A%AF%E6%88%BF%E6%98%9F"
+      },
+      {
+        "year": 675,
+        "type": "encroach",
+        "reign": "上元",
+        "reign_year": 2,
+        "description": "上元二年正月甲寅，熒惑犯房",
+        "source": "新唐书·天文志",
+        "url": "../chapters/10_新唐书_天文志.html#find=%E4%B8%8A%E5%85%83%E4%BA%8C%E5%B9%B4%E6%AD%A3%E6%9C%88%E7%94%B2%E5%AF%85%EF%BC%8C%E7%86%92%E6%83%91%E7%8A%AF%E6%88%BF"
+      }
+    ]
+  },
+  {
+    "year": 684,
+    "type": "comet",
+    "count": 2,
+    "sources": [
+      "新唐书·天文志",
+      "旧唐书·天文志"
+    ],
+    "events": [
+      {
+        "year": 684,
+        "type": "comet",
+        "reign": "永淳",
+        "reign_year": 3,
+        "description": "三年八月八日，星孛于紫宮",
+        "source": "旧唐书·天文志",
+        "url": "../chapters/09_旧唐书_天文志.html#find=%E4%B8%89%E5%B9%B4%E5%85%AB%E6%9C%88%E5%85%AB%E6%97%A5%EF%BC%8C%E6%98%9F%E5%AD%9B%E4%BA%8E%E7%B4%AB%E5%AE%AE"
+      },
+      {
+        "year": 684,
+        "type": "comet",
+        "reign": "永淳",
+        "reign_year": 3,
+        "description": "三年八月壬辰，有星孛于紫宮",
+        "source": "新唐书·天文志",
+        "url": "../chapters/10_新唐书_天文志.html#find=%E4%B8%89%E5%B9%B4%E5%85%AB%E6%9C%88%E5%A3%AC%E8%BE%B0%EF%BC%8C%E6%9C%89%E6%98%9F%E5%AD%9B%E4%BA%8E%E7%B4%AB%E5%AE%AE"
+      }
+    ]
+  },
+  {
+    "year": 707,
+    "type": "comet",
+    "count": 2,
+    "sources": [
+      "新唐书·天文志",
+      "旧唐书·天文志"
+    ],
+    "events": [
+      {
+        "year": 707,
+        "type": "comet",
+        "reign": "永淳",
+        "reign_year": 26,
+        "description": "二十六年三月八日，星孛於紫微垣，歷斗魁，十餘日，陰雲不見",
+        "source": "旧唐书·天文志",
+        "url": "../chapters/09_旧唐书_天文志.html#find=%E4%BA%8C%E5%8D%81%E5%85%AD%E5%B9%B4%E4%B8%89%E6%9C%88%E5%85%AB%E6%97%A5%EF%BC%8C%E6%98%9F%E5%AD%9B%E6%96%BC%E7%B4%AB%E5%BE%AE%E5%9E%A3%EF%BC%8C%E6%AD%B7%E6%96%97%E9%AD%81%EF%BC%8C"
+      },
+      {
+        "year": 707,
+        "type": "comet",
+        "reign": "永淳",
+        "reign_year": 26,
+        "description": "二十六年三月丙子，有星孛于紫宮垣，歷北斗魁，旬餘，因雲陰不見",
+        "source": "新唐书·天文志",
+        "omen": "「色白者，所生也",
+        "url": "../chapters/10_新唐书_天文志.html#find=%E4%BA%8C%E5%8D%81%E5%85%AD%E5%B9%B4%E4%B8%89%E6%9C%88%E4%B8%99%E5%AD%90%EF%BC%8C%E6%9C%89%E6%98%9F%E5%AD%9B%E4%BA%8E%E7%B4%AB%E5%AE%AE%E5%9E%A3%EF%BC%8C%E6%AD%B7%E5%8C%97%E6%96%97"
+      }
+    ]
+  },
+  {
+    "year": 770,
+    "type": "occult",
+    "count": 2,
+    "sources": [
+      "新唐书·天文志",
+      "旧唐书·天文志"
+    ],
+    "events": [
+      {
+        "year": 770,
+        "type": "occult",
+        "reign": "永泰",
+        "reign_year": 6,
+        "description": "六年七月乙巳夜，月掩畢，入昴畢中",
+        "source": "旧唐书·天文志",
+        "url": "../chapters/09_旧唐书_天文志.html#find=%E5%85%AD%E5%B9%B4%E4%B8%83%E6%9C%88%E4%B9%99%E5%B7%B3%E5%A4%9C%EF%BC%8C%E6%9C%88%E6%8E%A9%E7%95%A2%EF%BC%8C%E5%85%A5%E6%98%B4%E7%95%A2%E4%B8%AD"
+      },
+      {
+        "year": 770,
+        "type": "occult",
+        "reign": "永泰",
+        "reign_year": 6,
+        "description": "六年七月乙巳，月掩畢，入畢中",
+        "source": "新唐书·天文志",
+        "omen": "「亂臣更天子法令",
+        "url": "../chapters/10_新唐书_天文志.html#find=%E5%85%AD%E5%B9%B4%E4%B8%83%E6%9C%88%E4%B9%99%E5%B7%B3%EF%BC%8C%E6%9C%88%E6%8E%A9%E7%95%A2%EF%BC%8C%E5%85%A5%E7%95%A2%E4%B8%AD"
+      }
+    ]
+  },
+  {
+    "year": 776,
+    "type": "occult",
+    "count": 2,
+    "sources": [
+      "新唐书·天文志",
+      "旧唐书·天文志"
+    ],
+    "events": [
+      {
+        "year": 776,
+        "type": "occult",
+        "reign": "永泰",
+        "reign_year": 12,
+        "description": "十二年正月乙丑夜，月掩軒轅",
+        "source": "旧唐书·天文志",
+        "url": "../chapters/09_旧唐书_天文志.html#find=%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%AD%A3%E6%9C%88%E4%B9%99%E4%B8%91%E5%A4%9C%EF%BC%8C%E6%9C%88%E6%8E%A9%E8%BB%92%E8%BD%85"
+      },
+      {
+        "year": 776,
+        "type": "occult",
+        "reign": "永泰",
+        "reign_year": 12,
+        "description": "十二年正月乙丑，月掩軒轅",
+        "source": "新唐书·天文志",
+        "url": "../chapters/10_新唐书_天文志.html#find=%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%AD%A3%E6%9C%88%E4%B9%99%E4%B8%91%EF%BC%8C%E6%9C%88%E6%8E%A9%E8%BB%92%E8%BD%85"
+      }
+    ]
+  },
+  {
+    "year": 807,
+    "type": "meteor",
+    "count": 3,
+    "sources": [
+      "新唐书·天文志",
+      "旧唐书·天文志"
+    ],
+    "events": [
+      {
+        "year": 807,
+        "type": "meteor",
+        "reign": "元和",
+        "reign_year": 2,
+        "description": "二年正月甲戌夜，北方大流星長五丈餘，出紫微，過軫滅",
+        "source": "旧唐书·天文志",
+        "url": "../chapters/09_旧唐书_天文志.html#find=%E4%BA%8C%E5%B9%B4%E6%AD%A3%E6%9C%88%E7%94%B2%E6%88%8C%E5%A4%9C%EF%BC%8C%E5%8C%97%E6%96%B9%E5%A4%A7%E6%B5%81%E6%98%9F%E9%95%B7%E4%BA%94%E4%B8%88%E9%A4%98%EF%BC%8C%E5%87%BA%E7%B4%AB"
+      },
+      {
+        "year": 807,
+        "type": "meteor",
+        "reign": "元和",
+        "reign_year": 2,
+        "description": "元和二年十二月己巳，西北有流星亙天，尾散如珠",
+        "source": "新唐书·天文志",
+        "url": "../chapters/10_新唐书_天文志.html#find=%E5%85%83%E5%92%8C%E4%BA%8C%E5%B9%B4%E5%8D%81%E4%BA%8C%E6%9C%88%E5%B7%B1%E5%B7%B3%EF%BC%8C%E8%A5%BF%E5%8C%97%E6%9C%89%E6%B5%81%E6%98%9F%E4%BA%99%E5%A4%A9%EF%BC%8C%E5%B0%BE%E6%95%A3"
+      },
+      {
+        "year": 807,
+        "type": "meteor",
+        "reign": "元和",
+        "reign_year": 2,
+        "description": "二年四月辛亥，有流星出天市，光燭地，隱隱有聲，至郎位滅",
+        "source": "新唐书·天文志",
+        "url": "../chapters/10_新唐书_天文志.html#find=%E4%BA%8C%E5%B9%B4%E5%9B%9B%E6%9C%88%E8%BE%9B%E4%BA%A5%EF%BC%8C%E6%9C%89%E6%B5%81%E6%98%9F%E5%87%BA%E5%A4%A9%E5%B8%82%EF%BC%8C%E5%85%89%E7%87%AD%E5%9C%B0%EF%BC%8C%E9%9A%B1%E9%9A%B1"
+      }
+    ]
+  },
+  {
+    "year": 807,
+    "type": "encroach",
+    "count": 3,
+    "sources": [
+      "新唐书·天文志",
+      "旧唐书·天文志"
+    ],
+    "events": [
+      {
+        "year": 807,
+        "type": "encroach",
+        "reign": "元和",
+        "reign_year": 2,
+        "description": "二年六月乙丑，熒惑犯歲星",
+        "source": "旧唐书·天文志",
+        "url": "../chapters/09_旧唐书_天文志.html#find=%E4%BA%8C%E5%B9%B4%E5%85%AD%E6%9C%88%E4%B9%99%E4%B8%91%EF%BC%8C%E7%86%92%E6%83%91%E7%8A%AF%E6%AD%B2%E6%98%9F"
+      },
+      {
+        "year": 807,
+        "type": "encroach",
+        "reign": "元和",
+        "reign_year": 2,
+        "description": "二年正月癸丑，月犯太白于女、虛",
+        "source": "新唐书·天文志",
+        "url": "../chapters/10_新唐书_天文志.html#find=%E4%BA%8C%E5%B9%B4%E6%AD%A3%E6%9C%88%E7%99%B8%E4%B8%91%EF%BC%8C%E6%9C%88%E7%8A%AF%E5%A4%AA%E7%99%BD%E4%BA%8E%E5%A5%B3%E3%80%81%E8%99%9B"
+      },
+      {
+        "year": 807,
+        "type": "encroach",
+        "reign": "元和",
+        "reign_year": 2,
+        "description": "二年正月甲申，犯左執法",
+        "source": "新唐书·天文志",
+        "url": "../chapters/10_新唐书_天文志.html#find=%E4%BA%8C%E5%B9%B4%E6%AD%A3%E6%9C%88%E7%94%B2%E7%94%B3%EF%BC%8C%E7%8A%AF%E5%B7%A6%E5%9F%B7%E6%B3%95"
+      }
+    ]
+  },
+  {
+    "year": 809,
+    "type": "occult",
+    "count": 3,
+    "sources": [
+      "新唐书·天文志",
+      "旧唐书·天文志"
+    ],
+    "events": [
+      {
+        "year": 809,
+        "type": "occult",
+        "reign": "元和",
+        "reign_year": 4,
+        "description": "四年四月辛酉夜四更五籌後，月掩南斗第二星",
+        "source": "旧唐书·天文志",
+        "url": "../chapters/09_旧唐书_天文志.html#find=%E5%9B%9B%E5%B9%B4%E5%9B%9B%E6%9C%88%E8%BE%9B%E9%85%89%E5%A4%9C%E5%9B%9B%E6%9B%B4%E4%BA%94%E7%B1%8C%E5%BE%8C%EF%BC%8C%E6%9C%88%E6%8E%A9%E5%8D%97%E6%96%97%E7%AC%AC%E4%BA%8C%E6%98%9F"
+      },
+      {
+        "year": 809,
+        "type": "occult",
+        "reign": "元和",
+        "reign_year": 4,
+        "description": "四年四月庚申，月掩南斗杓次星",
+        "source": "新唐书·天文志",
+        "url": "../chapters/10_新唐书_天文志.html#find=%E5%9B%9B%E5%B9%B4%E5%9B%9B%E6%9C%88%E5%BA%9A%E7%94%B3%EF%BC%8C%E6%9C%88%E6%8E%A9%E5%8D%97%E6%96%97%E6%9D%93%E6%AC%A1%E6%98%9F"
+      },
+      {
+        "year": 809,
+        "type": "occult",
+        "reign": "元和",
+        "reign_year": 4,
+        "description": "四年二月丁卯，月掩歲星于畢",
+        "source": "新唐书·天文志",
+        "url": "../chapters/10_新唐书_天文志.html#find=%E5%9B%9B%E5%B9%B4%E4%BA%8C%E6%9C%88%E4%B8%81%E5%8D%AF%EF%BC%8C%E6%9C%88%E6%8E%A9%E6%AD%B2%E6%98%9F%E4%BA%8E%E7%95%A2"
+      }
+    ]
+  },
+  {
+    "year": 810,
+    "type": "occult",
+    "count": 3,
+    "sources": [
+      "新唐书·天文志",
+      "旧唐书·天文志"
+    ],
+    "events": [
+      {
+        "year": 810,
+        "type": "occult",
+        "reign": "元和",
+        "reign_year": 5,
+        "description": "五年二月五日，太白掩昴北側，在昴宿一度",
+        "source": "旧唐书·天文志",
+        "url": "../chapters/09_旧唐书_天文志.html#find=%E4%BA%94%E5%B9%B4%E4%BA%8C%E6%9C%88%E4%BA%94%E6%97%A5%EF%BC%8C%E5%A4%AA%E7%99%BD%E6%8E%A9%E6%98%B4%E5%8C%97%E5%81%B4%EF%BC%8C%E5%9C%A8%E6%98%B4%E5%AE%BF%E4%B8%80%E5%BA%A6"
+      },
+      {
+        "year": 810,
+        "type": "occult",
+        "reign": "元和",
+        "reign_year": 5,
+        "description": "五年二月甲申，月掩熒惑",
+        "source": "新唐书·天文志",
+        "url": "../chapters/10_新唐书_天文志.html#find=%E4%BA%94%E5%B9%B4%E4%BA%8C%E6%9C%88%E7%94%B2%E7%94%B3%EF%BC%8C%E6%9C%88%E6%8E%A9%E7%86%92%E6%83%91"
+      },
+      {
+        "year": 810,
+        "type": "occult",
+        "reign": "元和",
+        "reign_year": 5,
+        "description": "五年二月壬午，太白掩昴",
+        "source": "新唐书·天文志",
+        "url": "../chapters/10_新唐书_天文志.html#find=%E4%BA%94%E5%B9%B4%E4%BA%8C%E6%9C%88%E5%A3%AC%E5%8D%88%EF%BC%8C%E5%A4%AA%E7%99%BD%E6%8E%A9%E6%98%B4"
+      }
+    ]
+  },
+  {
+    "year": 812,
+    "type": "occult",
+    "count": 2,
+    "sources": [
+      "新唐书·天文志",
+      "旧唐书·天文志"
+    ],
+    "events": [
+      {
+        "year": 812,
+        "type": "occult",
+        "reign": "元和",
+        "reign_year": 7,
+        "description": "元和七年正月辛未，月掩熒惑",
+        "source": "旧唐书·天文志",
+        "url": "../chapters/09_旧唐书_天文志.html#find=%E5%85%83%E5%92%8C%E4%B8%83%E5%B9%B4%E6%AD%A3%E6%9C%88%E8%BE%9B%E6%9C%AA%EF%BC%8C%E6%9C%88%E6%8E%A9%E7%86%92%E6%83%91"
+      },
+      {
+        "year": 812,
+        "type": "occult",
+        "reign": "元和",
+        "reign_year": 7,
+        "description": "七年正月辛未，月掩熒惑",
+        "source": "新唐书·天文志",
+        "url": "../chapters/10_新唐书_天文志.html#find=%E4%B8%83%E5%B9%B4%E6%AD%A3%E6%9C%88%E8%BE%9B%E6%9C%AA%EF%BC%8C%E6%9C%88%E6%8E%A9%E7%86%92%E6%83%91"
+      }
+    ]
+  },
+  {
+    "year": 912,
+    "type": "encroach",
+    "count": 2,
+    "sources": [
+      "新五代史·司天考",
+      "旧五代史·天文志"
+    ],
+    "events": [
+      {
+        "year": 912,
+        "type": "encroach",
+        "reign": "乾化",
+        "reign_year": 2,
+        "description": "乾化二年，五月壬戌，熒惑犯心大星，去心四度，順行",
+        "source": "旧五代史·天文志",
+        "omen": "「心為帝王之星",
+        "url": "../chapters/11_旧五代史_天文志.html#find=%E4%B9%BE%E5%8C%96%E4%BA%8C%E5%B9%B4%EF%BC%8C%E4%BA%94%E6%9C%88%E5%A3%AC%E6%88%8C%EF%BC%8C%E7%86%92%E6%83%91%E7%8A%AF%E5%BF%83%E5%A4%A7%E6%98%9F%EF%BC%8C%E5%8E%BB%E5%BF%83%E5%9B%9B"
+      },
+      {
+        "year": 912,
+        "type": "encroach",
+        "reign": "乾化",
+        "reign_year": 2,
+        "description": "二年正月丙申，熒惑犯房第二星",
+        "source": "新五代史·司天考",
+        "url": "../chapters/12_新五代史_司天考.html#find=%E4%BA%8C%E5%B9%B4%E6%AD%A3%E6%9C%88%E4%B8%99%E7%94%B3%EF%BC%8C%E7%86%92%E6%83%91%E7%8A%AF%E6%88%BF%E7%AC%AC%E4%BA%8C%E6%98%9F"
+      }
+    ]
+  },
+  {
+    "year": 925,
+    "type": "encroach",
+    "count": 2,
+    "sources": [
+      "新五代史·司天考",
+      "旧五代史·天文志"
+    ],
+    "events": [
+      {
+        "year": 925,
+        "type": "encroach",
+        "reign": "同光",
+        "reign_year": 3,
+        "description": "三年，三月丙申，熒惑犯上相",
+        "source": "旧五代史·天文志",
+        "omen": "「心為帝王之星",
+        "url": "../chapters/11_旧五代史_天文志.html#find=%E4%B8%89%E5%B9%B4%EF%BC%8C%E4%B8%89%E6%9C%88%E4%B8%99%E7%94%B3%EF%BC%8C%E7%86%92%E6%83%91%E7%8A%AF%E4%B8%8A%E7%9B%B8"
+      },
+      {
+        "year": 925,
+        "type": "encroach",
+        "reign": "同光",
+        "reign_year": 3,
+        "description": "三年三月丙申，熒惑犯上相",
+        "source": "新五代史·司天考",
+        "url": "../chapters/12_新五代史_司天考.html#find=%E4%B8%89%E5%B9%B4%E4%B8%89%E6%9C%88%E4%B8%99%E7%94%B3%EF%BC%8C%E7%86%92%E6%83%91%E7%8A%AF%E4%B8%8A%E7%9B%B8"
+      }
+    ]
+  },
+  {
+    "year": 927,
+    "type": "encroach",
+    "count": 4,
+    "sources": [
+      "新五代史·司天考",
+      "旧五代史·天文志"
+    ],
+    "events": [
+      {
+        "year": 927,
+        "type": "encroach",
+        "reign": "天成",
+        "reign_year": 2,
+        "description": "二年，正月甲戌，熒惑、歲相犯",
+        "source": "旧五代史·天文志",
+        "url": "../chapters/11_旧五代史_天文志.html#find=%E4%BA%8C%E5%B9%B4%EF%BC%8C%E6%AD%A3%E6%9C%88%E7%94%B2%E6%88%8C%EF%BC%8C%E7%86%92%E6%83%91%E3%80%81%E6%AD%B2%E7%9B%B8%E7%8A%AF"
+      },
+      {
+        "year": 927,
+        "type": "encroach",
+        "reign": "天成",
+        "reign_year": 2,
+        "description": "二年，正月乙亥，太白犯羽林",
+        "source": "旧五代史·天文志",
+        "url": "../chapters/11_旧五代史_天文志.html#find=%E4%BA%8C%E5%B9%B4%EF%BC%8C%E6%AD%A3%E6%9C%88%E4%B9%99%E4%BA%A5%EF%BC%8C%E5%A4%AA%E7%99%BD%E7%8A%AF%E7%BE%BD%E6%9E%97"
+      },
+      {
+        "year": 927,
+        "type": "encroach",
+        "reign": "天成",
+        "reign_year": 2,
+        "description": "二年正月甲戌，熒惑、歲相犯",
+        "source": "新五代史·司天考",
+        "url": "../chapters/12_新五代史_司天考.html#find=%E4%BA%8C%E5%B9%B4%E6%AD%A3%E6%9C%88%E7%94%B2%E6%88%8C%EF%BC%8C%E7%86%92%E6%83%91%E3%80%81%E6%AD%B2%E7%9B%B8%E7%8A%AF"
+      },
+      {
+        "year": 927,
+        "type": "encroach",
+        "reign": "天成",
+        "reign_year": 2,
+        "description": "二年正月乙亥，太白犯羽林",
+        "source": "新五代史·司天考",
+        "url": "../chapters/12_新五代史_司天考.html#find=%E4%BA%8C%E5%B9%B4%E6%AD%A3%E6%9C%88%E4%B9%99%E4%BA%A5%EF%BC%8C%E5%A4%AA%E7%99%BD%E7%8A%AF%E7%BE%BD%E6%9E%97"
+      }
+    ]
+  },
+  {
+    "year": 928,
+    "type": "encroach",
+    "count": 2,
+    "sources": [
+      "新五代史·司天考",
+      "旧五代史·天文志"
+    ],
+    "events": [
+      {
+        "year": 928,
+        "type": "encroach",
+        "reign": "天成",
+        "reign_year": 3,
+        "description": "三年，四月庚辰，熒惑犯積屍",
+        "source": "旧五代史·天文志",
+        "url": "../chapters/11_旧五代史_天文志.html#find=%E4%B8%89%E5%B9%B4%EF%BC%8C%E5%9B%9B%E6%9C%88%E5%BA%9A%E8%BE%B0%EF%BC%8C%E7%86%92%E6%83%91%E7%8A%AF%E7%A9%8D%E5%B1%8D"
+      },
+      {
+        "year": 928,
+        "type": "encroach",
+        "reign": "天成",
+        "reign_year": 3,
+        "description": "三年四月庚辰，熒惑犯積尸",
+        "source": "新五代史·司天考",
+        "url": "../chapters/12_新五代史_司天考.html#find=%E4%B8%89%E5%B9%B4%E5%9B%9B%E6%9C%88%E5%BA%9A%E8%BE%B0%EF%BC%8C%E7%86%92%E6%83%91%E7%8A%AF%E7%A9%8D%E5%B0%B8"
+      }
+    ]
+  },
+  {
+    "year": 936,
+    "type": "encroach",
+    "count": 2,
+    "sources": [
+      "新五代史·司天考",
+      "旧五代史·天文志"
+    ],
+    "events": [
+      {
+        "year": 936,
+        "type": "encroach",
+        "reign": "天福",
+        "reign_year": 1,
+        "description": "晉天福元年，三月壬子，熒惑犯積屍",
+        "source": "旧五代史·天文志",
+        "url": "../chapters/11_旧五代史_天文志.html#find=%E6%99%89%E5%A4%A9%E7%A6%8F%E5%85%83%E5%B9%B4%EF%BC%8C%E4%B8%89%E6%9C%88%E5%A3%AC%E5%AD%90%EF%BC%8C%E7%86%92%E6%83%91%E7%8A%AF%E7%A9%8D%E5%B1%8D"
+      },
+      {
+        "year": 936,
+        "type": "encroach",
+        "reign": "天福",
+        "reign_year": 1,
+        "description": "天福元年三月壬子，熒惑犯積尸",
+        "source": "新五代史·司天考",
+        "url": "../chapters/12_新五代史_司天考.html#find=%E5%A4%A9%E7%A6%8F%E5%85%83%E5%B9%B4%E4%B8%89%E6%9C%88%E5%A3%AC%E5%AD%90%EF%BC%8C%E7%86%92%E6%83%91%E7%8A%AF%E7%A9%8D%E5%B0%B8"
+      }
+    ]
+  },
+  {
+    "year": 937,
+    "type": "encroach",
+    "count": 2,
+    "sources": [
+      "新五代史·司天考",
+      "旧五代史·天文志"
+    ],
+    "events": [
+      {
+        "year": 937,
+        "type": "encroach",
+        "reign": "天福",
+        "reign_year": 2,
+        "description": "二年，八月甲戌，歲犯東井",
+        "source": "旧五代史·天文志",
+        "url": "../chapters/11_旧五代史_天文志.html#find=%E4%BA%8C%E5%B9%B4%EF%BC%8C%E5%85%AB%E6%9C%88%E7%94%B2%E6%88%8C%EF%BC%8C%E6%AD%B2%E7%8A%AF%E6%9D%B1%E4%BA%95"
+      },
+      {
+        "year": 937,
+        "type": "encroach",
+        "reign": "天福",
+        "reign_year": 2,
+        "description": "二年七月乙未朔，月犯角",
+        "source": "新五代史·司天考",
+        "url": "../chapters/12_新五代史_司天考.html#find=%E4%BA%8C%E5%B9%B4%E4%B8%83%E6%9C%88%E4%B9%99%E6%9C%AA%E6%9C%94%EF%BC%8C%E6%9C%88%E7%8A%AF%E8%A7%92"
+      }
+    ]
+  },
+  {
+    "year": 939,
+    "type": "encroach",
+    "count": 2,
+    "sources": [
+      "新五代史·司天考",
+      "旧五代史·天文志"
+    ],
+    "events": [
+      {
+        "year": 939,
+        "type": "encroach",
+        "reign": "天福",
+        "reign_year": 4,
+        "description": "四年，四月辛巳，太白犯東井北轅",
+        "source": "旧五代史·天文志",
+        "url": "../chapters/11_旧五代史_天文志.html#find=%E5%9B%9B%E5%B9%B4%EF%BC%8C%E5%9B%9B%E6%9C%88%E8%BE%9B%E5%B7%B3%EF%BC%8C%E5%A4%AA%E7%99%BD%E7%8A%AF%E6%9D%B1%E4%BA%95%E5%8C%97%E8%BD%85"
+      },
+      {
+        "year": 939,
+        "type": "encroach",
+        "reign": "天福",
+        "reign_year": 4,
+        "description": "四年四月辛巳，太白犯東井北轅",
+        "source": "新五代史·司天考",
+        "url": "../chapters/12_新五代史_司天考.html#find=%E5%9B%9B%E5%B9%B4%E5%9B%9B%E6%9C%88%E8%BE%9B%E5%B7%B3%EF%BC%8C%E5%A4%AA%E7%99%BD%E7%8A%AF%E6%9D%B1%E4%BA%95%E5%8C%97%E8%BD%85"
+      }
+    ]
+  },
+  {
+    "year": 941,
+    "type": "encroach",
+    "count": 2,
+    "sources": [
+      "新五代史·司天考",
+      "旧五代史·天文志"
+    ],
+    "events": [
+      {
+        "year": 941,
+        "type": "encroach",
+        "reign": "天福",
+        "reign_year": 6,
+        "description": "六年，八月辛卯，太白犯軒轅",
+        "source": "旧五代史·天文志",
+        "url": "../chapters/11_旧五代史_天文志.html#find=%E5%85%AD%E5%B9%B4%EF%BC%8C%E5%85%AB%E6%9C%88%E8%BE%9B%E5%8D%AF%EF%BC%8C%E5%A4%AA%E7%99%BD%E7%8A%AF%E8%BB%92%E8%BD%85"
+      },
+      {
+        "year": 941,
+        "type": "encroach",
+        "reign": "天福",
+        "reign_year": 6,
+        "description": "六年八月辛卯，太白犯軒轅",
+        "source": "新五代史·司天考",
+        "url": "../chapters/12_新五代史_司天考.html#find=%E5%85%AD%E5%B9%B4%E5%85%AB%E6%9C%88%E8%BE%9B%E5%8D%AF%EF%BC%8C%E5%A4%AA%E7%99%BD%E7%8A%AF%E8%BB%92%E8%BD%85"
+      }
+    ]
+  },
+  {
+    "year": 950,
+    "type": "encroach",
+    "count": 4,
+    "sources": [
+      "新五代史·司天考",
+      "旧五代史·天文志"
+    ],
+    "events": [
+      {
+        "year": 950,
+        "type": "encroach",
+        "reign": "乾祐",
+        "reign_year": 3,
+        "description": "三年，六月乙卯，鎮犯左掖",
+        "source": "旧五代史·天文志",
+        "url": "../chapters/11_旧五代史_天文志.html#find=%E4%B8%89%E5%B9%B4%EF%BC%8C%E5%85%AD%E6%9C%88%E4%B9%99%E5%8D%AF%EF%BC%8C%E9%8E%AE%E7%8A%AF%E5%B7%A6%E6%8E%96"
+      },
+      {
+        "year": 950,
+        "type": "encroach",
+        "reign": "乾祐",
+        "reign_year": 3,
+        "description": "三年，四月乙丑，熒惑犯靈臺",
+        "source": "旧五代史·天文志",
+        "url": "../chapters/11_旧五代史_天文志.html#find=%E4%B8%89%E5%B9%B4%EF%BC%8C%E5%9B%9B%E6%9C%88%E4%B9%99%E4%B8%91%EF%BC%8C%E7%86%92%E6%83%91%E7%8A%AF%E9%9D%88%E8%87%BA"
+      },
+      {
+        "year": 950,
+        "type": "encroach",
+        "reign": "乾祐",
+        "reign_year": 3,
+        "description": "三年二月甲戌，月犯昴",
+        "source": "新五代史·司天考",
+        "url": "../chapters/12_新五代史_司天考.html#find=%E4%B8%89%E5%B9%B4%E4%BA%8C%E6%9C%88%E7%94%B2%E6%88%8C%EF%BC%8C%E6%9C%88%E7%8A%AF%E6%98%B4"
+      },
+      {
+        "year": 950,
+        "type": "encroach",
+        "reign": "乾祐",
+        "reign_year": 3,
+        "description": "三年四月乙丑，熒惑犯靈臺",
+        "source": "新五代史·司天考",
+        "url": "../chapters/12_新五代史_司天考.html#find=%E4%B8%89%E5%B9%B4%E5%9B%9B%E6%9C%88%E4%B9%99%E4%B8%91%EF%BC%8C%E7%86%92%E6%83%91%E7%8A%AF%E9%9D%88%E8%87%BA"
+      }
+    ]
+  },
+  {
+    "year": 1166,
+    "type": "encroach",
+    "count": 5,
+    "sources": [
+      "宋史·天文志",
+      "金史·天文志"
+    ],
+    "events": [
+      {
+        "year": 1166,
+        "type": "encroach",
+        "reign": "乾道",
+        "reign_year": 2,
+        "description": "二年正月壬子，犯諸王",
+        "source": "宋史·天文志",
+        "url": "../chapters/13_宋史_天文志.html#find=%E4%BA%8C%E5%B9%B4%E6%AD%A3%E6%9C%88%E5%A3%AC%E5%AD%90%EF%BC%8C%E7%8A%AF%E8%AB%B8%E7%8E%8B"
+      },
+      {
+        "year": 1166,
+        "type": "encroach",
+        "reign": "乾道",
+        "reign_year": 2,
+        "description": "二年正月乙卯，順行犯天江",
+        "source": "宋史·天文志",
+        "url": "../chapters/13_宋史_天文志.html#find=%E4%BA%8C%E5%B9%B4%E6%AD%A3%E6%9C%88%E4%B9%99%E5%8D%AF%EF%BC%8C%E9%A0%86%E8%A1%8C%E7%8A%AF%E5%A4%A9%E6%B1%9F"
+      },
+      {
+        "year": 1166,
+        "type": "encroach",
+        "reign": "乾道",
+        "reign_year": 2,
+        "description": "二年二月甲午，犯牛",
+        "source": "宋史·天文志",
+        "url": "../chapters/13_宋史_天文志.html#find=%E4%BA%8C%E5%B9%B4%E4%BA%8C%E6%9C%88%E7%94%B2%E5%8D%88%EF%BC%8C%E7%8A%AF%E7%89%9B"
+      },
+      {
+        "year": 1166,
+        "type": "encroach",
+        "reign": "乾道",
+        "reign_year": 2,
+        "description": "二年三月己酉，順行犯天街",
+        "source": "宋史·天文志",
+        "url": "../chapters/13_宋史_天文志.html#find=%E4%BA%8C%E5%B9%B4%E4%B8%89%E6%9C%88%E5%B7%B1%E9%85%89%EF%BC%8C%E9%A0%86%E8%A1%8C%E7%8A%AF%E5%A4%A9%E8%A1%97"
+      },
+      {
+        "year": 1166,
+        "type": "encroach",
+        "reign": "大定",
+        "reign_year": 6,
+        "description": "六年二月丙申，月犯南半東南第二星",
+        "source": "金史·天文志",
+        "url": "../chapters/15_金史_天文志.html#find=%E5%85%AD%E5%B9%B4%E4%BA%8C%E6%9C%88%E4%B8%99%E7%94%B3%EF%BC%8C%E6%9C%88%E7%8A%AF%E5%8D%97%E5%8D%8A%E6%9D%B1%E5%8D%97%E7%AC%AC%E4%BA%8C%E6%98%9F"
+      }
+    ]
+  },
+  {
+    "year": 1171,
+    "type": "encroach",
+    "count": 7,
+    "sources": [
+      "宋史·天文志",
+      "金史·天文志"
+    ],
+    "events": [
+      {
+        "year": 1171,
+        "type": "encroach",
+        "reign": "乾道",
+        "reign_year": 7,
+        "description": "七年三月辛巳，又犯",
+        "source": "宋史·天文志",
+        "url": "../chapters/13_宋史_天文志.html#find=%E4%B8%83%E5%B9%B4%E4%B8%89%E6%9C%88%E8%BE%9B%E5%B7%B3%EF%BC%8C%E5%8F%88%E7%8A%AF"
+      },
+      {
+        "year": 1171,
+        "type": "encroach",
+        "reign": "乾道",
+        "reign_year": 7,
+        "description": "七年正月甲申，犯五車",
+        "source": "宋史·天文志",
+        "url": "../chapters/13_宋史_天文志.html#find=%E4%B8%83%E5%B9%B4%E6%AD%A3%E6%9C%88%E7%94%B2%E7%94%B3%EF%BC%8C%E7%8A%AF%E4%BA%94%E8%BB%8A"
+      },
+      {
+        "year": 1171,
+        "type": "encroach",
+        "reign": "乾道",
+        "reign_year": 7,
+        "description": "七年六月癸酉，犯天樽",
+        "source": "宋史·天文志",
+        "url": "../chapters/13_宋史_天文志.html#find=%E4%B8%83%E5%B9%B4%E5%85%AD%E6%9C%88%E7%99%B8%E9%85%89%EF%BC%8C%E7%8A%AF%E5%A4%A9%E6%A8%BD"
+      },
+      {
+        "year": 1171,
+        "type": "encroach",
+        "reign": "乾道",
+        "reign_year": 7,
+        "description": "七年二月壬戌，犯東井",
+        "source": "宋史·天文志",
+        "url": "../chapters/13_宋史_天文志.html#find=%E4%B8%83%E5%B9%B4%E4%BA%8C%E6%9C%88%E5%A3%AC%E6%88%8C%EF%BC%8C%E7%8A%AF%E6%9D%B1%E4%BA%95"
+      },
+      {
+        "year": 1171,
+        "type": "encroach",
+        "reign": "乾道",
+        "reign_year": 7,
+        "description": "七年八月丁卯，退行犯壁壘陣東勝星",
+        "source": "宋史·天文志",
+        "url": "../chapters/13_宋史_天文志.html#find=%E4%B8%83%E5%B9%B4%E5%85%AB%E6%9C%88%E4%B8%81%E5%8D%AF%EF%BC%8C%E9%80%80%E8%A1%8C%E7%8A%AF%E5%A3%81%E5%A3%98%E9%99%A3%E6%9D%B1%E5%8B%9D%E6%98%9F"
+      },
+      {
+        "year": 1171,
+        "type": "encroach",
+        "reign": "乾道",
+        "reign_year": 7,
+        "description": "七年八月丁卯，犯權左角少民星",
+        "source": "宋史·天文志",
+        "url": "../chapters/13_宋史_天文志.html#find=%E4%B8%83%E5%B9%B4%E5%85%AB%E6%9C%88%E4%B8%81%E5%8D%AF%EF%BC%8C%E7%8A%AF%E6%AC%8A%E5%B7%A6%E8%A7%92%E5%B0%91%E6%B0%91%E6%98%9F"
+      },
+      {
+        "year": 1171,
+        "type": "encroach",
+        "reign": "大定",
+        "reign_year": 11,
+        "description": "十一年二月壬戌，熒惑犯井東扇北第一星",
+        "source": "金史·天文志",
+        "url": "../chapters/15_金史_天文志.html#find=%E5%8D%81%E4%B8%80%E5%B9%B4%E4%BA%8C%E6%9C%88%E5%A3%AC%E6%88%8C%EF%BC%8C%E7%86%92%E6%83%91%E7%8A%AF%E4%BA%95%E6%9D%B1%E6%89%87%E5%8C%97%E7%AC%AC%E4%B8%80%E6%98%9F"
+      }
+    ]
+  },
+  {
+    "year": 1176,
+    "type": "lunar_eclipse",
+    "count": 2,
+    "sources": [
+      "宋史·天文志",
+      "金史·天文志"
+    ],
+    "events": [
+      {
+        "year": 1176,
+        "type": "lunar_eclipse",
+        "reign": "淳熙",
+        "reign_year": 3,
+        "description": "三年七月己未，月食，既",
+        "source": "宋史·天文志",
+        "url": "../chapters/13_宋史_天文志.html#find=%E4%B8%89%E5%B9%B4%E4%B8%83%E6%9C%88%E5%B7%B1%E6%9C%AA%EF%BC%8C%E6%9C%88%E9%A3%9F%EF%BC%8C%E6%97%A2"
+      },
+      {
+        "year": 1176,
+        "type": "lunar_eclipse",
+        "reign": "大定",
+        "reign_year": 16,
+        "description": "十六年三月庚申，月食",
+        "source": "金史·天文志",
+        "url": "../chapters/15_金史_天文志.html#find=%E5%8D%81%E5%85%AD%E5%B9%B4%E4%B8%89%E6%9C%88%E5%BA%9A%E7%94%B3%EF%BC%8C%E6%9C%88%E9%A3%9F"
+      }
+    ]
+  },
+  {
+    "year": 1177,
+    "type": "encroach",
+    "count": 8,
+    "sources": [
+      "宋史·天文志",
+      "金史·天文志"
+    ],
+    "events": [
+      {
+        "year": 1177,
+        "type": "encroach",
+        "reign": "淳熙",
+        "reign_year": 4,
+        "description": "四年七月丁亥，犯天關",
+        "source": "宋史·天文志",
+        "url": "../chapters/13_宋史_天文志.html#find=%E5%9B%9B%E5%B9%B4%E4%B8%83%E6%9C%88%E4%B8%81%E4%BA%A5%EF%BC%8C%E7%8A%AF%E5%A4%A9%E9%97%9C"
+      },
+      {
+        "year": 1177,
+        "type": "encroach",
+        "reign": "淳熙",
+        "reign_year": 4,
+        "description": "四年六月庚寅，犯畢西第二星",
+        "source": "宋史·天文志",
+        "url": "../chapters/13_宋史_天文志.html#find=%E5%9B%9B%E5%B9%B4%E5%85%AD%E6%9C%88%E5%BA%9A%E5%AF%85%EF%BC%8C%E7%8A%AF%E7%95%A2%E8%A5%BF%E7%AC%AC%E4%BA%8C%E6%98%9F"
+      },
+      {
+        "year": 1177,
+        "type": "encroach",
+        "reign": "淳熙",
+        "reign_year": 4,
+        "description": "四年三月乙巳，入太微，犯右執法",
+        "source": "宋史·天文志",
+        "url": "../chapters/13_宋史_天文志.html#find=%E5%9B%9B%E5%B9%B4%E4%B8%89%E6%9C%88%E4%B9%99%E5%B7%B3%EF%BC%8C%E5%85%A5%E5%A4%AA%E5%BE%AE%EF%BC%8C%E7%8A%AF%E5%8F%B3%E5%9F%B7%E6%B3%95"
+      },
+      {
+        "year": 1177,
+        "type": "encroach",
+        "reign": "淳熙",
+        "reign_year": 4,
+        "description": "四年六月丁丑，十月甲申，犯天關",
+        "source": "宋史·天文志",
+        "url": "../chapters/13_宋史_天文志.html#find=%E5%9B%9B%E5%B9%B4%E5%85%AD%E6%9C%88%E4%B8%81%E4%B8%91%EF%BC%8C%E5%8D%81%E6%9C%88%E7%94%B2%E7%94%B3%EF%BC%8C%E7%8A%AF%E5%A4%A9%E9%97%9C"
+      },
+      {
+        "year": 1177,
+        "type": "encroach",
+        "reign": "淳熙",
+        "reign_year": 4,
+        "description": "四年七月己卯，犯角宿距星",
+        "source": "宋史·天文志",
+        "url": "../chapters/13_宋史_天文志.html#find=%E5%9B%9B%E5%B9%B4%E4%B8%83%E6%9C%88%E5%B7%B1%E5%8D%AF%EF%BC%8C%E7%8A%AF%E8%A7%92%E5%AE%BF%E8%B7%9D%E6%98%9F"
+      },
+      {
+        "year": 1177,
+        "type": "encroach",
+        "reign": "淳熙",
+        "reign_year": 4,
+        "description": "四年九月甲戌，犯心東星",
+        "source": "宋史·天文志",
+        "url": "../chapters/13_宋史_天文志.html#find=%E5%9B%9B%E5%B9%B4%E4%B9%9D%E6%9C%88%E7%94%B2%E6%88%8C%EF%BC%8C%E7%8A%AF%E5%BF%83%E6%9D%B1%E6%98%9F"
+      },
+      {
+        "year": 1177,
+        "type": "encroach",
+        "reign": "淳熙",
+        "reign_year": 4,
+        "description": "四年十月壬午，太白犯歲星",
+        "source": "宋史·天文志",
+        "url": "../chapters/13_宋史_天文志.html#find=%E5%9B%9B%E5%B9%B4%E5%8D%81%E6%9C%88%E5%A3%AC%E5%8D%88%EF%BC%8C%E5%A4%AA%E7%99%BD%E7%8A%AF%E6%AD%B2%E6%98%9F"
+      },
+      {
+        "year": 1177,
+        "type": "encroach",
+        "reign": "大定",
+        "reign_year": 17,
+        "description": "十七年春正月丙寅，熒惑犯太微西籓上相",
+        "source": "金史·天文志",
+        "url": "../chapters/15_金史_天文志.html#find=%E5%8D%81%E4%B8%83%E5%B9%B4%E6%98%A5%E6%AD%A3%E6%9C%88%E4%B8%99%E5%AF%85%EF%BC%8C%E7%86%92%E6%83%91%E7%8A%AF%E5%A4%AA%E5%BE%AE%E8%A5%BF%E7%B1%93%E4%B8%8A%E7%9B%B8"
+      }
+    ]
+  },
+  {
+    "year": 1178,
+    "type": "encroach",
+    "count": 5,
+    "sources": [
+      "宋史·天文志",
+      "金史·天文志"
+    ],
+    "events": [
+      {
+        "year": 1178,
+        "type": "encroach",
+        "reign": "淳熙",
+        "reign_year": 5,
+        "description": "五年十二月己卯，犯房",
+        "source": "宋史·天文志",
+        "url": "../chapters/13_宋史_天文志.html#find=%E4%BA%94%E5%B9%B4%E5%8D%81%E4%BA%8C%E6%9C%88%E5%B7%B1%E5%8D%AF%EF%BC%8C%E7%8A%AF%E6%88%BF"
+      },
+      {
+        "year": 1178,
+        "type": "encroach",
+        "reign": "淳熙",
+        "reign_year": 5,
+        "description": "五年九月乙亥，犯太微右執法",
+        "source": "宋史·天文志",
+        "url": "../chapters/13_宋史_天文志.html#find=%E4%BA%94%E5%B9%B4%E4%B9%9D%E6%9C%88%E4%B9%99%E4%BA%A5%EF%BC%8C%E7%8A%AF%E5%A4%AA%E5%BE%AE%E5%8F%B3%E5%9F%B7%E6%B3%95"
+      },
+      {
+        "year": 1178,
+        "type": "encroach",
+        "reign": "淳熙",
+        "reign_year": 5,
+        "description": "五年七月癸酉，犯氐",
+        "source": "宋史·天文志",
+        "url": "../chapters/13_宋史_天文志.html#find=%E4%BA%94%E5%B9%B4%E4%B8%83%E6%9C%88%E7%99%B8%E9%85%89%EF%BC%8C%E7%8A%AF%E6%B0%90"
+      },
+      {
+        "year": 1178,
+        "type": "encroach",
+        "reign": "淳熙",
+        "reign_year": 5,
+        "description": "五年十一月辛丑，熒惑犯歲星",
+        "source": "宋史·天文志",
+        "url": "../chapters/13_宋史_天文志.html#find=%E4%BA%94%E5%B9%B4%E5%8D%81%E4%B8%80%E6%9C%88%E8%BE%9B%E4%B8%91%EF%BC%8C%E7%86%92%E6%83%91%E7%8A%AF%E6%AD%B2%E6%98%9F"
+      },
+      {
+        "year": 1178,
+        "type": "encroach",
+        "reign": "大定",
+        "reign_year": 18,
+        "description": "十八年七月庚辰，土星犯井東扇北第二星",
+        "source": "金史·天文志",
+        "url": "../chapters/15_金史_天文志.html#find=%E5%8D%81%E5%85%AB%E5%B9%B4%E4%B8%83%E6%9C%88%E5%BA%9A%E8%BE%B0%EF%BC%8C%E5%9C%9F%E6%98%9F%E7%8A%AF%E4%BA%95%E6%9D%B1%E6%89%87%E5%8C%97%E7%AC%AC%E4%BA%8C%E6%98%9F"
+      }
+    ]
+  },
+  {
+    "year": 1179,
+    "type": "lunar_eclipse",
+    "count": 2,
+    "sources": [
+      "宋史·天文志",
+      "金史·天文志"
+    ],
+    "events": [
+      {
+        "year": 1179,
+        "type": "lunar_eclipse",
+        "reign": "淳熙",
+        "reign_year": 6,
+        "description": "六年正月甲戌，月食，既",
+        "source": "宋史·天文志",
+        "url": "../chapters/13_宋史_天文志.html#find=%E5%85%AD%E5%B9%B4%E6%AD%A3%E6%9C%88%E7%94%B2%E6%88%8C%EF%BC%8C%E6%9C%88%E9%A3%9F%EF%BC%8C%E6%97%A2"
+      },
+      {
+        "year": 1179,
+        "type": "lunar_eclipse",
+        "reign": "大定",
+        "reign_year": 19,
+        "description": "十九年正月甲戌，月食，既",
+        "source": "金史·天文志",
+        "url": "../chapters/15_金史_天文志.html#find=%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%AD%A3%E6%9C%88%E7%94%B2%E6%88%8C%EF%BC%8C%E6%9C%88%E9%A3%9F%EF%BC%8C%E6%97%A2"
+      }
+    ]
+  },
+  {
+    "year": 1181,
+    "type": "encroach",
+    "count": 3,
+    "sources": [
+      "宋史·天文志",
+      "金史·天文志"
+    ],
+    "events": [
+      {
+        "year": 1181,
+        "type": "encroach",
+        "reign": "淳熙",
+        "reign_year": 8,
+        "description": "八年七月丁丑，太白犯填星",
+        "source": "宋史·天文志",
+        "url": "../chapters/13_宋史_天文志.html#find=%E5%85%AB%E5%B9%B4%E4%B8%83%E6%9C%88%E4%B8%81%E4%B8%91%EF%BC%8C%E5%A4%AA%E7%99%BD%E7%8A%AF%E5%A1%AB%E6%98%9F"
+      },
+      {
+        "year": 1181,
+        "type": "encroach",
+        "reign": "淳熙",
+        "reign_year": 8,
+        "description": "淳熙八年六月己巳，出奎宿，犯傳舍星，至明年正月癸酉，凡一百八十五日始滅",
+        "source": "宋史·天文志",
+        "url": "../chapters/13_宋史_天文志.html#find=%E6%B7%B3%E7%86%99%E5%85%AB%E5%B9%B4%E5%85%AD%E6%9C%88%E5%B7%B1%E5%B7%B3%EF%BC%8C%E5%87%BA%E5%A5%8E%E5%AE%BF%EF%BC%8C%E7%8A%AF%E5%82%B3%E8%88%8D%E6%98%9F%EF%BC%8C%E8%87%B3%E6%98%8E"
+      },
+      {
+        "year": 1181,
+        "type": "encroach",
+        "reign": "大定",
+        "reign_year": 21,
+        "description": "二十一年二月戊子，月犯鎮星",
+        "source": "金史·天文志",
+        "url": "../chapters/15_金史_天文志.html#find=%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E4%BA%8C%E6%9C%88%E6%88%8A%E5%AD%90%EF%BC%8C%E6%9C%88%E7%8A%AF%E9%8E%AE%E6%98%9F"
+      }
+    ]
+  },
+  {
+    "year": 1183,
+    "type": "lunar_eclipse",
+    "count": 2,
+    "sources": [
+      "宋史·天文志",
+      "金史·天文志"
+    ],
+    "events": [
+      {
+        "year": 1183,
+        "type": "lunar_eclipse",
+        "reign": "淳熙",
+        "reign_year": 10,
+        "description": "十年五月己卯，月食",
+        "source": "宋史·天文志",
+        "url": "../chapters/13_宋史_天文志.html#find=%E5%8D%81%E5%B9%B4%E4%BA%94%E6%9C%88%E5%B7%B1%E5%8D%AF%EF%BC%8C%E6%9C%88%E9%A3%9F"
+      },
+      {
+        "year": 1183,
+        "type": "lunar_eclipse",
+        "reign": "大定",
+        "reign_year": 23,
+        "description": "二十三年五月己卯，月食，既",
+        "source": "金史·天文志",
+        "url": "../chapters/15_金史_天文志.html#find=%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E4%BA%94%E6%9C%88%E5%B7%B1%E5%8D%AF%EF%BC%8C%E6%9C%88%E9%A3%9F%EF%BC%8C%E6%97%A2"
+      }
+    ]
+  },
+  {
+    "year": 1185,
+    "type": "encroach",
+    "count": 3,
+    "sources": [
+      "宋史·天文志",
+      "金史·天文志"
+    ],
+    "events": [
+      {
+        "year": 1185,
+        "type": "encroach",
+        "reign": "淳熙",
+        "reign_year": 12,
+        "description": "十二年十月辛亥，犯太微右執法",
+        "source": "宋史·天文志",
+        "url": "../chapters/13_宋史_天文志.html#find=%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%8D%81%E6%9C%88%E8%BE%9B%E4%BA%A5%EF%BC%8C%E7%8A%AF%E5%A4%AA%E5%BE%AE%E5%8F%B3%E5%9F%B7%E6%B3%95"
+      },
+      {
+        "year": 1185,
+        "type": "encroach",
+        "reign": "淳熙",
+        "reign_year": 12,
+        "description": "十二年六月癸酉，犯太微右執法",
+        "source": "宋史·天文志",
+        "url": "../chapters/13_宋史_天文志.html#find=%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%85%AD%E6%9C%88%E7%99%B8%E9%85%89%EF%BC%8C%E7%8A%AF%E5%A4%AA%E5%BE%AE%E5%8F%B3%E5%9F%B7%E6%B3%95"
+      },
+      {
+        "year": 1185,
+        "type": "encroach",
+        "reign": "大定",
+        "reign_year": 25,
+        "description": "二十五年三月乙酉，太白與月相犯，九月丁亥，月在斗魁中，犯西第五星",
+        "source": "金史·天文志",
+        "url": "../chapters/15_金史_天文志.html#find=%E4%BA%8C%E5%8D%81%E4%BA%94%E5%B9%B4%E4%B8%89%E6%9C%88%E4%B9%99%E9%85%89%EF%BC%8C%E5%A4%AA%E7%99%BD%E8%88%87%E6%9C%88%E7%9B%B8%E7%8A%AF%EF%BC%8C%E4%B9%9D%E6%9C%88%E4%B8%81%E4%BA%A5"
+      }
+    ]
+  },
+  {
+    "year": 1186,
+    "type": "entry",
+    "count": 2,
+    "sources": [
+      "宋史·天文志",
+      "金史·天文志"
+    ],
+    "events": [
+      {
+        "year": 1186,
+        "type": "entry",
+        "reign": "淳熙",
+        "reign_year": 13,
+        "description": "十三年四月己巳，入羽林軍",
+        "source": "宋史·天文志",
+        "url": "../chapters/13_宋史_天文志.html#find=%E5%8D%81%E4%B8%89%E5%B9%B4%E5%9B%9B%E6%9C%88%E5%B7%B1%E5%B7%B3%EF%BC%8C%E5%85%A5%E7%BE%BD%E6%9E%97%E8%BB%8D"
+      },
+      {
+        "year": 1186,
+        "type": "entry",
+        "reign": "大定",
+        "reign_year": 26,
+        "description": "二十六年三月丙戌，熒惑入井",
+        "source": "金史·天文志",
+        "url": "../chapters/15_金史_天文志.html#find=%E4%BA%8C%E5%8D%81%E5%85%AD%E5%B9%B4%E4%B8%89%E6%9C%88%E4%B8%99%E6%88%8C%EF%BC%8C%E7%86%92%E6%83%91%E5%85%A5%E4%BA%95"
+      }
+    ]
+  },
+  {
+    "year": 1187,
+    "type": "encroach",
+    "count": 4,
+    "sources": [
+      "宋史·天文志",
+      "金史·天文志"
+    ],
+    "events": [
+      {
+        "year": 1187,
+        "type": "encroach",
+        "reign": "淳熙",
+        "reign_year": 14,
+        "description": "十四年三月戊申，犯心距星",
+        "source": "宋史·天文志",
+        "url": "../chapters/13_宋史_天文志.html#find=%E5%8D%81%E5%9B%9B%E5%B9%B4%E4%B8%89%E6%9C%88%E6%88%8A%E7%94%B3%EF%BC%8C%E7%8A%AF%E5%BF%83%E8%B7%9D%E6%98%9F"
+      },
+      {
+        "year": 1187,
+        "type": "encroach",
+        "reign": "淳熙",
+        "reign_year": 14,
+        "description": "十四年七月壬寅，犯諸王星",
+        "source": "宋史·天文志",
+        "url": "../chapters/13_宋史_天文志.html#find=%E5%8D%81%E5%9B%9B%E5%B9%B4%E4%B8%83%E6%9C%88%E5%A3%AC%E5%AF%85%EF%BC%8C%E7%8A%AF%E8%AB%B8%E7%8E%8B%E6%98%9F"
+      },
+      {
+        "year": 1187,
+        "type": "encroach",
+        "reign": "淳熙",
+        "reign_year": 14,
+        "description": "十四年十月庚辰，填星犯太白",
+        "source": "宋史·天文志",
+        "url": "../chapters/13_宋史_天文志.html#find=%E5%8D%81%E5%9B%9B%E5%B9%B4%E5%8D%81%E6%9C%88%E5%BA%9A%E8%BE%B0%EF%BC%8C%E5%A1%AB%E6%98%9F%E7%8A%AF%E5%A4%AA%E7%99%BD"
+      },
+      {
+        "year": 1187,
+        "type": "encroach",
+        "reign": "大定",
+        "reign_year": 27,
+        "description": "二十七年五月壬子，月犯心大星",
+        "source": "金史·天文志",
+        "url": "../chapters/15_金史_天文志.html#find=%E4%BA%8C%E5%8D%81%E4%B8%83%E5%B9%B4%E4%BA%94%E6%9C%88%E5%A3%AC%E5%AD%90%EF%BC%8C%E6%9C%88%E7%8A%AF%E5%BF%83%E5%A4%A7%E6%98%9F"
+      }
+    ]
+  },
+  {
+    "year": 1203,
+    "type": "lunar_eclipse",
+    "count": 2,
+    "sources": [
+      "宋史·天文志",
+      "金史·天文志"
+    ],
+    "events": [
+      {
+        "year": 1203,
+        "type": "lunar_eclipse",
+        "reign": "嘉泰",
+        "reign_year": 3,
+        "description": "三年正月壬辰，月食",
+        "source": "宋史·天文志",
+        "url": "../chapters/13_宋史_天文志.html#find=%E4%B8%89%E5%B9%B4%E6%AD%A3%E6%9C%88%E5%A3%AC%E8%BE%B0%EF%BC%8C%E6%9C%88%E9%A3%9F"
+      },
+      {
+        "year": 1203,
+        "type": "lunar_eclipse",
+        "reign": "泰和",
+        "reign_year": 3,
+        "description": "三年三月癸未，月食",
+        "source": "金史·天文志",
+        "url": "../chapters/15_金史_天文志.html#find=%E4%B8%89%E5%B9%B4%E4%B8%89%E6%9C%88%E7%99%B8%E6%9C%AA%EF%BC%8C%E6%9C%88%E9%A3%9F"
+      }
+    ]
+  },
+  {
+    "year": 1210,
+    "type": "lunar_eclipse",
+    "count": 3,
+    "sources": [
+      "宋史·天文志",
+      "金史·天文志"
+    ],
+    "events": [
+      {
+        "year": 1210,
+        "type": "lunar_eclipse",
+        "reign": "嘉定",
+        "reign_year": 3,
+        "description": "三年十一月己亥，月食",
+        "source": "宋史·天文志",
+        "url": "../chapters/13_宋史_天文志.html#find=%E4%B8%89%E5%B9%B4%E5%8D%81%E4%B8%80%E6%9C%88%E5%B7%B1%E4%BA%A5%EF%BC%8C%E6%9C%88%E9%A3%9F"
+      },
+      {
+        "year": 1210,
+        "type": "lunar_eclipse",
+        "reign": "大安",
+        "reign_year": 2,
+        "description": "二年二月庚戌，月食",
+        "source": "金史·天文志",
+        "url": "../chapters/15_金史_天文志.html#find=%E4%BA%8C%E5%B9%B4%E4%BA%8C%E6%9C%88%E5%BA%9A%E6%88%8C%EF%BC%8C%E6%9C%88%E9%A3%9F"
+      },
+      {
+        "year": 1210,
+        "type": "lunar_eclipse",
+        "reign": "大安",
+        "reign_year": 2,
+        "description": "二年六月乙卯，月食",
+        "source": "金史·天文志",
+        "url": "../chapters/15_金史_天文志.html#find=%E4%BA%8C%E5%B9%B4%E5%85%AD%E6%9C%88%E4%B9%99%E5%8D%AF%EF%BC%8C%E6%9C%88%E9%A3%9F"
+      }
+    ]
+  },
+  {
+    "year": 1211,
+    "type": "lunar_eclipse",
+    "count": 2,
+    "sources": [
+      "宋史·天文志",
+      "金史·天文志"
+    ],
+    "events": [
+      {
+        "year": 1211,
+        "type": "lunar_eclipse",
+        "reign": "嘉定",
+        "reign_year": 4,
+        "description": "四年四月庚午，月食",
+        "source": "宋史·天文志",
+        "url": "../chapters/13_宋史_天文志.html#find=%E5%9B%9B%E5%B9%B4%E5%9B%9B%E6%9C%88%E5%BA%9A%E5%8D%88%EF%BC%8C%E6%9C%88%E9%A3%9F"
+      },
+      {
+        "year": 1211,
+        "type": "lunar_eclipse",
+        "reign": "大安",
+        "reign_year": 3,
+        "description": "三年五月庚戌，月食，既",
+        "source": "金史·天文志",
+        "url": "../chapters/15_金史_天文志.html#find=%E4%B8%89%E5%B9%B4%E4%BA%94%E6%9C%88%E5%BA%9A%E6%88%8C%EF%BC%8C%E6%9C%88%E9%A3%9F%EF%BC%8C%E6%97%A2"
+      }
+    ]
+  },
+  {
+    "year": 1211,
+    "type": "entry",
+    "count": 4,
+    "sources": [
+      "宋史·天文志",
+      "金史·天文志"
+    ],
+    "events": [
+      {
+        "year": 1211,
+        "type": "entry",
+        "reign": "嘉定",
+        "reign_year": 4,
+        "description": "四年閏二月己丑，入東井",
+        "source": "宋史·天文志",
+        "url": "../chapters/13_宋史_天文志.html#find=%E5%9B%9B%E5%B9%B4%E9%96%8F%E4%BA%8C%E6%9C%88%E5%B7%B1%E4%B8%91%EF%BC%8C%E5%85%A5%E6%9D%B1%E4%BA%95"
+      },
+      {
+        "year": 1211,
+        "type": "entry",
+        "reign": "嘉定",
+        "reign_year": 4,
+        "description": "四年正月辛卯，入氐宿方口內",
+        "source": "宋史·天文志",
+        "url": "../chapters/13_宋史_天文志.html#find=%E5%9B%9B%E5%B9%B4%E6%AD%A3%E6%9C%88%E8%BE%9B%E5%8D%AF%EF%BC%8C%E5%85%A5%E6%B0%90%E5%AE%BF%E6%96%B9%E5%8F%A3%E5%85%A7"
+      },
+      {
+        "year": 1211,
+        "type": "entry",
+        "reign": "嘉定",
+        "reign_year": 4,
+        "description": "四年六月庚子，入井",
+        "source": "宋史·天文志",
+        "url": "../chapters/13_宋史_天文志.html#find=%E5%9B%9B%E5%B9%B4%E5%85%AD%E6%9C%88%E5%BA%9A%E5%AD%90%EF%BC%8C%E5%85%A5%E4%BA%95"
+      },
+      {
+        "year": 1211,
+        "type": "entry",
+        "reign": "大安",
+        "reign_year": 3,
+        "description": "三年正月乙酉，熒惑入氐中，凡十有一日乃出",
+        "source": "金史·天文志",
+        "url": "../chapters/15_金史_天文志.html#find=%E4%B8%89%E5%B9%B4%E6%AD%A3%E6%9C%88%E4%B9%99%E9%85%89%EF%BC%8C%E7%86%92%E6%83%91%E5%85%A5%E6%B0%90%E4%B8%AD%EF%BC%8C%E5%87%A1%E5%8D%81%E6%9C%89%E4%B8%80%E6%97%A5%E4%B9%83%E5%87%BA"
+      }
+    ]
+  },
+  {
+    "year": 1212,
+    "type": "encroach",
+    "count": 3,
+    "sources": [
+      "宋史·天文志",
+      "金史·天文志"
+    ],
+    "events": [
+      {
+        "year": 1212,
+        "type": "encroach",
+        "reign": "嘉定",
+        "reign_year": 5,
+        "description": "五年九月丁未，犯歲星",
+        "source": "宋史·天文志",
+        "url": "../chapters/13_宋史_天文志.html#find=%E4%BA%94%E5%B9%B4%E4%B9%9D%E6%9C%88%E4%B8%81%E6%9C%AA%EF%BC%8C%E7%8A%AF%E6%AD%B2%E6%98%9F"
+      },
+      {
+        "year": 1212,
+        "type": "encroach",
+        "reign": "嘉定",
+        "reign_year": 5,
+        "description": "五年四月乙巳，退行犯房宿",
+        "source": "宋史·天文志",
+        "url": "../chapters/13_宋史_天文志.html#find=%E4%BA%94%E5%B9%B4%E5%9B%9B%E6%9C%88%E4%B9%99%E5%B7%B3%EF%BC%8C%E9%80%80%E8%A1%8C%E7%8A%AF%E6%88%BF%E5%AE%BF"
+      },
+      {
+        "year": 1212,
+        "type": "encroach",
+        "reign": "大安",
+        "reign_year": 4,
+        "description": "四年正月庚子，月犯東井",
+        "source": "金史·天文志",
+        "url": "../chapters/15_金史_天文志.html#find=%E5%9B%9B%E5%B9%B4%E6%AD%A3%E6%9C%88%E5%BA%9A%E5%AD%90%EF%BC%8C%E6%9C%88%E7%8A%AF%E6%9D%B1%E4%BA%95"
+      }
+    ]
+  },
+  {
+    "year": 1214,
+    "type": "encroach",
+    "count": 2,
+    "sources": [
+      "宋史·天文志",
+      "金史·天文志"
+    ],
+    "events": [
+      {
+        "year": 1214,
+        "type": "encroach",
+        "reign": "嘉定",
+        "reign_year": 7,
+        "description": "七年十月甲寅，順行犯氐",
+        "source": "宋史·天文志",
+        "url": "../chapters/13_宋史_天文志.html#find=%E4%B8%83%E5%B9%B4%E5%8D%81%E6%9C%88%E7%94%B2%E5%AF%85%EF%BC%8C%E9%A0%86%E8%A1%8C%E7%8A%AF%E6%B0%90"
+      },
+      {
+        "year": 1214,
+        "type": "encroach",
+        "reign": "大安",
+        "reign_year": 6,
+        "description": "六年正月辛酉，月犯熒惑",
+        "source": "金史·天文志",
+        "url": "../chapters/15_金史_天文志.html#find=%E5%85%AD%E5%B9%B4%E6%AD%A3%E6%9C%88%E8%BE%9B%E9%85%89%EF%BC%8C%E6%9C%88%E7%8A%AF%E7%86%92%E6%83%91"
+      }
+    ]
+  },
+  {
+    "year": 1224,
+    "type": "encroach",
+    "count": 2,
+    "sources": [
+      "宋史·天文志",
+      "金史·天文志"
+    ],
+    "events": [
+      {
+        "year": 1224,
+        "type": "encroach",
+        "reign": "嘉定",
+        "reign_year": 17,
+        "description": "嘉定十七年六月己丑，犯尾宿",
+        "source": "宋史·天文志",
+        "url": "../chapters/13_宋史_天文志.html#find=%E5%98%89%E5%AE%9A%E5%8D%81%E4%B8%83%E5%B9%B4%E5%85%AD%E6%9C%88%E5%B7%B1%E4%B8%91%EF%BC%8C%E7%8A%AF%E5%B0%BE%E5%AE%BF"
+      },
+      {
+        "year": 1224,
+        "type": "encroach",
+        "reign": "正大",
+        "reign_year": 1,
+        "description": "哀宗正大元年正月丙午，月犯昴",
+        "source": "金史·天文志",
+        "url": "../chapters/15_金史_天文志.html#find=%E5%93%80%E5%AE%97%E6%AD%A3%E5%A4%A7%E5%85%83%E5%B9%B4%E6%AD%A3%E6%9C%88%E4%B8%99%E5%8D%88%EF%BC%8C%E6%9C%88%E7%8A%AF%E6%98%B4"
+      }
+    ]
+  },
+  {
+    "year": 1238,
+    "type": "encroach",
+    "count": 2,
+    "sources": [
+      "宋史·天文志",
+      "金史·天文志"
+    ],
+    "events": [
+      {
+        "year": 1238,
+        "type": "encroach",
+        "reign": "嘉熙",
+        "reign_year": 2,
+        "description": "二年七月壬寅，順行入鬼，犯積屍氣",
+        "source": "宋史·天文志",
+        "url": "../chapters/13_宋史_天文志.html#find=%E4%BA%8C%E5%B9%B4%E4%B8%83%E6%9C%88%E5%A3%AC%E5%AF%85%EF%BC%8C%E9%A0%86%E8%A1%8C%E5%85%A5%E9%AC%BC%EF%BC%8C%E7%8A%AF%E7%A9%8D%E5%B1%8D%E6%B0%A3"
+      },
+      {
+        "year": 1238,
+        "type": "encroach",
+        "reign": "正大",
+        "reign_year": 15,
+        "description": "十五年正月戊辰，歲星犯積屍氣",
+        "source": "金史·天文志",
+        "url": "../chapters/15_金史_天文志.html#find=%E5%8D%81%E4%BA%94%E5%B9%B4%E6%AD%A3%E6%9C%88%E6%88%8A%E8%BE%B0%EF%BC%8C%E6%AD%B2%E6%98%9F%E7%8A%AF%E7%A9%8D%E5%B1%8D%E6%B0%A3"
+      }
+    ]
+  },
+  {
+    "year": 1264,
+    "type": "encroach",
+    "count": 3,
+    "sources": [
+      "元史·天文志",
+      "宋史·天文志"
+    ],
+    "events": [
+      {
+        "year": 1264,
+        "type": "encroach",
+        "reign": "景定",
+        "reign_year": 5,
+        "description": "五年二月甲子，犯房",
+        "source": "宋史·天文志",
+        "url": "../chapters/13_宋史_天文志.html#find=%E4%BA%94%E5%B9%B4%E4%BA%8C%E6%9C%88%E7%94%B2%E5%AD%90%EF%BC%8C%E7%8A%AF%E6%88%BF"
+      },
+      {
+        "year": 1264,
+        "type": "encroach",
+        "reign": "景定",
+        "reign_year": 5,
+        "description": "五年六月戊午，順行犯天關",
+        "source": "宋史·天文志",
+        "url": "../chapters/13_宋史_天文志.html#find=%E4%BA%94%E5%B9%B4%E5%85%AD%E6%9C%88%E6%88%8A%E5%8D%88%EF%BC%8C%E9%A0%86%E8%A1%8C%E7%8A%AF%E5%A4%A9%E9%97%9C"
+      },
+      {
+        "year": 1264,
+        "type": "encroach",
+        "reign": "至元",
+        "reign_year": 1,
+        "description": "至元元年二月丁卯，太陰犯南斗",
+        "source": "元史·天文志",
+        "url": "../chapters/16_元史_天文志.html#find=%E8%87%B3%E5%85%83%E5%85%83%E5%B9%B4%E4%BA%8C%E6%9C%88%E4%B8%81%E5%8D%AF%EF%BC%8C%E5%A4%AA%E9%99%B0%E7%8A%AF%E5%8D%97%E6%96%97"
+      }
+    ]
+  },
+  {
+    "year": 1265,
+    "type": "solar_eclipse",
+    "count": 2,
+    "sources": [
+      "元史·天文志",
+      "宋史·天文志"
+    ],
+    "events": [
+      {
+        "year": 1265,
+        "type": "solar_eclipse",
+        "reign": "咸淳",
+        "reign_year": 1,
+        "description": "咸淳元年正月辛未朔，日有食之",
+        "source": "宋史·天文志",
+        "url": "../chapters/13_宋史_天文志.html#find=%E5%92%B8%E6%B7%B3%E5%85%83%E5%B9%B4%E6%AD%A3%E6%9C%88%E8%BE%9B%E6%9C%AA%E6%9C%94%EF%BC%8C%E6%97%A5%E6%9C%89%E9%A3%9F%E4%B9%8B"
+      },
+      {
+        "year": 1265,
+        "type": "solar_eclipse",
+        "reign": "至元",
+        "reign_year": 2,
+        "description": "至元二年正月辛未朔，日有食之",
+        "source": "元史·天文志",
+        "url": "../chapters/16_元史_天文志.html#find=%E8%87%B3%E5%85%83%E4%BA%8C%E5%B9%B4%E6%AD%A3%E6%9C%88%E8%BE%9B%E6%9C%AA%E6%9C%94%EF%BC%8C%E6%97%A5%E6%9C%89%E9%A3%9F%E4%B9%8B"
+      }
+    ]
+  },
+  {
+    "year": 1267,
+    "type": "solar_eclipse",
+    "count": 2,
+    "sources": [
+      "元史·天文志",
+      "宋史·天文志"
+    ],
+    "events": [
+      {
+        "year": 1267,
+        "type": "solar_eclipse",
+        "reign": "咸淳",
+        "reign_year": 3,
+        "description": "三年五月丁亥朔，日有食之",
+        "source": "宋史·天文志",
+        "url": "../chapters/13_宋史_天文志.html#find=%E4%B8%89%E5%B9%B4%E4%BA%94%E6%9C%88%E4%B8%81%E4%BA%A5%E6%9C%94%EF%BC%8C%E6%97%A5%E6%9C%89%E9%A3%9F%E4%B9%8B"
+      },
+      {
+        "year": 1267,
+        "type": "solar_eclipse",
+        "reign": "至元",
+        "reign_year": 4,
+        "description": "四年五月丁亥朔，日有食之",
+        "source": "元史·天文志",
+        "url": "../chapters/16_元史_天文志.html#find=%E5%9B%9B%E5%B9%B4%E4%BA%94%E6%9C%88%E4%B8%81%E4%BA%A5%E6%9C%94%EF%BC%8C%E6%97%A5%E6%9C%89%E9%A3%9F%E4%B9%8B"
+      }
+    ]
+  },
+  {
+    "year": 1268,
+    "type": "solar_eclipse",
+    "count": 2,
+    "sources": [
+      "元史·天文志",
+      "宋史·天文志"
+    ],
+    "events": [
+      {
+        "year": 1268,
+        "type": "solar_eclipse",
+        "reign": "咸淳",
+        "reign_year": 4,
+        "description": "四年十月戊寅朔，日有食之",
+        "source": "宋史·天文志",
+        "url": "../chapters/13_宋史_天文志.html#find=%E5%9B%9B%E5%B9%B4%E5%8D%81%E6%9C%88%E6%88%8A%E5%AF%85%E6%9C%94%EF%BC%8C%E6%97%A5%E6%9C%89%E9%A3%9F%E4%B9%8B"
+      },
+      {
+        "year": 1268,
+        "type": "solar_eclipse",
+        "reign": "至元",
+        "reign_year": 5,
+        "description": "五年十月戊寅朔，日有食之",
+        "source": "元史·天文志",
+        "url": "../chapters/16_元史_天文志.html#find=%E4%BA%94%E5%B9%B4%E5%8D%81%E6%9C%88%E6%88%8A%E5%AF%85%E6%9C%94%EF%BC%8C%E6%97%A5%E6%9C%89%E9%A3%9F%E4%B9%8B"
+      }
+    ]
+  },
+  {
+    "year": 1270,
+    "type": "solar_eclipse",
+    "count": 2,
+    "sources": [
+      "元史·天文志",
+      "宋史·天文志"
+    ],
+    "events": [
+      {
+        "year": 1270,
+        "type": "solar_eclipse",
+        "reign": "咸淳",
+        "reign_year": 6,
+        "description": "六年三月庚子朔，日有食之",
+        "source": "宋史·天文志",
+        "url": "../chapters/13_宋史_天文志.html#find=%E5%85%AD%E5%B9%B4%E4%B8%89%E6%9C%88%E5%BA%9A%E5%AD%90%E6%9C%94%EF%BC%8C%E6%97%A5%E6%9C%89%E9%A3%9F%E4%B9%8B"
+      },
+      {
+        "year": 1270,
+        "type": "solar_eclipse",
+        "reign": "至元",
+        "reign_year": 7,
+        "description": "七年三月庚子朔，日有食之",
+        "source": "元史·天文志",
+        "url": "../chapters/16_元史_天文志.html#find=%E4%B8%83%E5%B9%B4%E4%B8%89%E6%9C%88%E5%BA%9A%E5%AD%90%E6%9C%94%EF%BC%8C%E6%97%A5%E6%9C%89%E9%A3%9F%E4%B9%8B"
+      }
+    ]
+  },
+  {
+    "year": 1271,
+    "type": "solar_eclipse",
+    "count": 2,
+    "sources": [
+      "元史·天文志",
+      "宋史·天文志"
+    ],
+    "events": [
+      {
+        "year": 1271,
+        "type": "solar_eclipse",
+        "reign": "咸淳",
+        "reign_year": 7,
+        "description": "七年八月壬辰朔，日有食之",
+        "source": "宋史·天文志",
+        "url": "../chapters/13_宋史_天文志.html#find=%E4%B8%83%E5%B9%B4%E5%85%AB%E6%9C%88%E5%A3%AC%E8%BE%B0%E6%9C%94%EF%BC%8C%E6%97%A5%E6%9C%89%E9%A3%9F%E4%B9%8B"
+      },
+      {
+        "year": 1271,
+        "type": "solar_eclipse",
+        "reign": "至元",
+        "reign_year": 8,
+        "description": "八年八月壬辰朔，日有食之",
+        "source": "元史·天文志",
+        "url": "../chapters/16_元史_天文志.html#find=%E5%85%AB%E5%B9%B4%E5%85%AB%E6%9C%88%E5%A3%AC%E8%BE%B0%E6%9C%94%EF%BC%8C%E6%97%A5%E6%9C%89%E9%A3%9F%E4%B9%8B"
+      }
+    ]
+  },
+  {
+    "year": 1272,
+    "type": "solar_eclipse",
+    "count": 2,
+    "sources": [
+      "元史·天文志",
+      "宋史·天文志"
+    ],
+    "events": [
+      {
+        "year": 1272,
+        "type": "solar_eclipse",
+        "reign": "咸淳",
+        "reign_year": 8,
+        "description": "八年八月丙戌朔，日有食之",
+        "source": "宋史·天文志",
+        "url": "../chapters/13_宋史_天文志.html#find=%E5%85%AB%E5%B9%B4%E5%85%AB%E6%9C%88%E4%B8%99%E6%88%8C%E6%9C%94%EF%BC%8C%E6%97%A5%E6%9C%89%E9%A3%9F%E4%B9%8B"
+      },
+      {
+        "year": 1272,
+        "type": "solar_eclipse",
+        "reign": "至元",
+        "reign_year": 9,
+        "description": "九年八月丙戌朔，日有食之",
+        "source": "元史·天文志",
+        "url": "../chapters/16_元史_天文志.html#find=%E4%B9%9D%E5%B9%B4%E5%85%AB%E6%9C%88%E4%B8%99%E6%88%8C%E6%9C%94%EF%BC%8C%E6%97%A5%E6%9C%89%E9%A3%9F%E4%B9%8B"
+      }
+    ]
+  },
+  {
+    "year": 1274,
+    "type": "encroach",
+    "count": 2,
+    "sources": [
+      "元史·天文志",
+      "宋史·天文志"
+    ],
+    "events": [
+      {
+        "year": 1274,
+        "type": "encroach",
+        "reign": "咸淳",
+        "reign_year": 10,
+        "description": "咸淳十年十月丙寅，熒惑犯填星",
+        "source": "宋史·天文志",
+        "url": "../chapters/13_宋史_天文志.html#find=%E5%92%B8%E6%B7%B3%E5%8D%81%E5%B9%B4%E5%8D%81%E6%9C%88%E4%B8%99%E5%AF%85%EF%BC%8C%E7%86%92%E6%83%91%E7%8A%AF%E5%A1%AB%E6%98%9F"
+      },
+      {
+        "year": 1274,
+        "type": "encroach",
+        "reign": "至元",
+        "reign_year": 11,
+        "description": "十一年二月甲寅，太陰犯井宿",
+        "source": "元史·天文志",
+        "url": "../chapters/16_元史_天文志.html#find=%E5%8D%81%E4%B8%80%E5%B9%B4%E4%BA%8C%E6%9C%88%E7%94%B2%E5%AF%85%EF%BC%8C%E5%A4%AA%E9%99%B0%E7%8A%AF%E4%BA%95%E5%AE%BF"
+      }
+    ]
+  }
+]

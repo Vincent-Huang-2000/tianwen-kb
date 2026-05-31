@@ -16,6 +16,20 @@
     --purple: #8b6baf;
     --star-glow: #e8dcc8;
   }
+  [data-theme="light"] {
+    --bg: #f5f0e3;
+    --surface: #fdfaf3;
+    --text: #3d3226;
+    --gold: #b8860b;
+    --jade: #2d8a7e;
+    --steel: #5b7fa0;
+    --coral: #c46b5a;
+    --purple: #7b5baf;
+    --star-glow: #b0a395;
+  }
+  [data-theme="light"] body {
+    background-image: none;
+  }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
     background: var(--bg);
@@ -32,6 +46,27 @@
     align-items: center;
     min-height: 100vh;
     padding: 20px;
+  }
+  .home-btn {
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    z-index: 100;
+    text-decoration: none;
+    color: var(--gold);
+    font-size: 1.2rem;
+    font-family: 'Noto Serif SC', serif;
+    padding: 8px 16px;
+    border: 1px solid rgba(196, 163, 90, 0.3);
+    border-radius: 6px;
+    background: rgba(13, 17, 23, 0.85);
+    backdrop-filter: blur(8px);
+    transition: all 0.25s;
+  }
+  .home-btn:hover {
+    background: rgba(196, 163, 90, 0.15);
+    border-color: var(--gold);
+    text-shadow: 0 0 12px rgba(196, 163, 90, 0.5);
   }
   .star-map-wrapper {
     position: relative;
@@ -151,6 +186,8 @@
 <script src="../js/anti-copy.js"></script>
 </head>
 <body>
+
+<a href="../index.html" class="home-btn">&#9737; 返回首页</a>
 
 <div class="star-map-wrapper">
   <svg viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg" id="starMap">
@@ -614,5 +651,8 @@
 })();
 </script>
 
+<script src="../js/qr-popup.js"></script>
+
+<script src="../js/theme.js"></script>
 </body>
 </html>

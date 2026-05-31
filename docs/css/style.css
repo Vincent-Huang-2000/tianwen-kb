@@ -35,6 +35,30 @@
     --radius-lg:     10px;
 }
 
+/* --- Light Theme (昼) --- */
+[data-theme="light"] {
+    --bg-deepest:    #f5f0e3;
+    --bg-card:       #fdfaf3;
+    --bg-sidebar:    #ede6d8;
+    --bg-nav:        rgba(245, 240, 227, 0.96);
+    --bg-hover:      #e8e0cf;
+
+    --text-body:     #3d3226;
+    --text-heading:  #2a1f14;
+    --text-muted:    #8c7b6b;
+    --text-dim:      #b0a395;
+
+    --accent-gold:   #b8860b;
+    --accent-warm:   #c17817;
+    --accent-jade:   #2d8a7e;
+
+    --border:        #d8cfbc;
+    --border-light:  #e8e0cf;
+}
+
+/* Light theme entity color overrides */
+[data-theme="light"] .ent-星 { color: #8b5cf6; border-color: #8b5cf688; }
+
 /* --- Reset & Base --- */
 *,
 *::before,
@@ -860,4 +884,57 @@ a, button, .chapter-card, .top-nav, .search-result-item {
         width: 100%;
         border-radius: var(--radius);
     }
+}
+
+/* ============================================================
+   QR Code Popup (hover on nav-logo)
+   ============================================================ */
+.nav-logo-wrap {
+    position: relative;
+    display: inline-block;
+}
+.nav-logo-wrap .qr-popup {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 12px;
+    z-index: 1100;
+    background: var(--bg-card);
+    border: 1px solid var(--accent-gold);
+    border-radius: 12px;
+    padding: 16px 16px 12px;
+    box-shadow: 0 4px 28px rgba(0,0,0,0.7);
+    text-align: center;
+    min-width: 180px;
+}
+.nav-logo-wrap .qr-popup::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid var(--accent-gold);
+}
+.nav-logo-wrap:hover .qr-popup {
+    display: block;
+}
+.nav-logo-wrap .qr-popup img {
+    display: block;
+    width: 160px;
+    height: 160px;
+    border-radius: 6px;
+    margin: 0 auto;
+}
+.nav-logo-wrap .qr-popup .qr-label {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: var(--accent-gold);
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.05em;
 }
