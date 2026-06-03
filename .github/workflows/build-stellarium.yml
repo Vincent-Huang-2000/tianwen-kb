@@ -27,57 +27,87 @@ jobs:
         run: |
           python3 -m pip install scons
 
+      - name: Debug emsdk environment
+        run: |
+          echo "=== EMSDK ==="
+          echo "EMSDK=$EMSDK"
+          echo "PATH includes emsdk: $(echo $PATH | tr ':' '\n' | grep -i emsdk || echo 'NOT FOUND')"
+          echo "=== emsdk_env.sh ==="
+          find / -name "emsdk_env.sh" -type f 2>/dev/null | head -5
+          echo "=== scons ==="
+          which scons || echo "scons not found"
+          echo "=== emscons ==="
+          which emscons || echo "emscons not found (this is expected on newer emsdk)"
+          echo "=== emmake ==="
+          which emmake || echo "emmake not found"
+
       - name: Build Stellarium Web Engine
         working-directory: /tmp/stellarium
         run: |
-          # Verify emsdk is available
-          which emscons || echo "emscons not in PATH, trying emmake..."
-          emsdk_env_path=$(find / -name "emsdk_env.sh" 2>/dev/null | head -1)
-          if [ -n "$emsdk_env_path" ]; then
-            source "$emsdk_env_path"
+          set -e  # Fail on any error
+
+          # Find and source emsdk environment
+          EMSDK_ENV=$(find / -name "emsdk_env.sh" -type f 2>/dev/null | head -1)
+          if [ -z "$EMSDK_ENV" ]; then
+            echo "ERROR: emsdk_env.sh not found!"
+            exit 1
+          fi
+          echo "Sourcing: $EMSDK_ENV"
+          source "$EMSDK_ENV"
+
+          # Verify critical env var
+          echo "EMSCRIPTEN_TOOL_PATH=$EMSCRIPTEN_TOOL_PATH"
+          if [ -z "$EMSCRIPTEN_TOOL_PATH" ]; then
+            echo "ERROR: EMSCRIPTEN_TOOL_PATH not set!"
+            exit 1
           fi
 
-          # Build using make
+          # Install scons if needed
+          pip install scons 2>/dev/null || true
+
+          # Build! This will take ~20-40 minutes
+          echo "Starting build at $(date)"
           make js 2>&1 | tee /tmp/build.log
+          echo "Build finished at $(date)"
+          echo "Exit code: ${PIPESTATUS[0]}"
 
       - name: Verify build output
         run: |
-          echo "=== Build output ==="
-          ls -lh /tmp/stellarium/build/stellarium-web-engine.* 2>/dev/null || echo "Build output NOT found!"
-          echo "=== All build files ==="
-          find /tmp/stellarium/build/ -type f -ls 2>/dev/null || echo "No build directory"
+          echo "=== Build artifacts ==="
+          if [ -f /tmp/stellarium/build/stellarium-web-engine.js ]; then
+            echo "JS: $(ls -lh /tmp/stellarium/build/stellarium-web-engine.js | awk '{print $5}')"
+          else
+            echo "JS file NOT FOUND - build likely failed"
+            echo "=== Build log (last 50 lines) ==="
+            tail -50 /tmp/build.log 2>/dev/null || echo "No log"
+            exit 1
+          fi
+          if [ -f /tmp/stellarium/build/stellarium-web-engine.wasm ]; then
+            echo "WASM: $(ls -lh /tmp/stellarium/build/stellarium-web-engine.wasm | awk '{print $5}')"
+          else
+            echo "WASM file NOT FOUND"
+          fi
 
       - name: Copy build artifacts to tianwen-kb
         run: |
-          mkdir -p docs/kg/stellarium/build
+          mkdir -p docs/kg/stellarium
 
-          # Core engine files
-          if [ -f /tmp/stellarium/build/stellarium-web-engine.js ]; then
-            cp /tmp/stellarium/build/stellarium-web-engine.js docs/kg/stellarium/
-            echo "Copied: stellarium-web-engine.js ($(du -h docs/kg/stellarium/stellarium-web-engine.js | cut -f1))"
-          fi
+          cp /tmp/stellarium/build/stellarium-web-engine.js docs/kg/stellarium/
+          cp /tmp/stellarium/build/stellarium-web-engine.wasm docs/kg/stellarium/
 
-          if [ -f /tmp/stellarium/build/stellarium-web-engine.wasm ]; then
-            cp /tmp/stellarium/build/stellarium-web-engine.wasm docs/kg/stellarium/
-            echo "Copied: stellarium-web-engine.wasm ($(du -h docs/kg/stellarium/stellarium-web-engine.wasm | cut -f1))"
-          fi
-
-          # Copy any other build artifacts
-          if [ -d /tmp/stellarium/build ]; then
-            cp -r /tmp/stellarium/build/* docs/kg/stellarium/build/ 2>/dev/null || true
-          fi
-
-          echo "=== Final artifact listing ==="
-          find docs/kg/stellarium/ -type f -ls
+          echo "=== Copied files ==="
+          ls -lh docs/kg/stellarium/
 
       - name: Commit and push artifacts
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add docs/kg/stellarium/
+
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
             git commit -m "chore: update Stellarium Web Engine build artifacts"
             git push
+            echo "Pushed successfully!"
           fi
