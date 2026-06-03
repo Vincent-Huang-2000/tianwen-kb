@@ -3,13 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>交互星图 · 古星图</title>
+<title>星图 · 天问知识库</title>
 <style>
   :root {
     --bg: #06080f;
     --text: #c8c0a8;
     --gold: #c4a35a;
-    --jade: #4a9b8e;
     --surface: rgba(13, 17, 23, 0.85);
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -22,7 +21,6 @@
     width: 100vw;
   }
 
-  /* iframe fills the screen */
   #stel-frame {
     position: fixed;
     top: 0; left: 0;
@@ -31,49 +29,34 @@
     z-index: 1;
   }
 
-  /* Top bar */
-  .top-bar {
-    position: fixed;
-    top: 0; left: 0; right: 0;
-    z-index: 10;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 16px;
-    background: linear-gradient(180deg, rgba(6,8,15,0.95) 0%, rgba(6,8,15,0) 100%);
-    pointer-events: none;
-  }
-  .top-bar > * { pointer-events: auto; }
-
+  /* Home button — top right, compact, semi-transparent */
   .home-btn {
+    position: fixed;
+    top: 12px;
+    right: 12px;
+    z-index: 20;
     text-decoration: none;
-    color: var(--gold);
-    font-size: 1.1rem;
-    padding: 6px 14px;
-    border: 1px solid rgba(196, 163, 90, 0.3);
-    border-radius: 6px;
-    background: var(--surface);
-    backdrop-filter: blur(8px);
+    color: rgba(200, 192, 168, 0.7);
+    font-size: 0.85rem;
+    font-family: 'Noto Serif SC', 'STSong', serif;
+    padding: 5px 12px;
+    border: 1px solid rgba(200, 192, 168, 0.15);
+    border-radius: 14px;
+    background: rgba(6, 8, 15, 0.6);
+    backdrop-filter: blur(6px);
     transition: all 0.25s;
+    letter-spacing: 1px;
   }
   .home-btn:hover {
-    background: rgba(196, 163, 90, 0.15);
-    border-color: var(--gold);
-  }
-
-  .info-text {
-    color: var(--gold);
-    font-size: 0.85rem;
-    opacity: 0.8;
-    text-align: right;
-    line-height: 1.4;
+    background: rgba(196, 163, 90, 0.12);
+    border-color: rgba(196, 163, 90, 0.35);
+    color: #c4a35a;
   }
 </style>
 <script src="../js/anti-copy.js"></script>
 </head>
 <body>
 
-<!-- Stellarium Web iframe -->
 <iframe
   id="stel-frame"
   src="https://stellarium-web.org/"
@@ -81,14 +64,7 @@
   allowfullscreen>
 </iframe>
 
-<!-- Top bar -->
-<div class="top-bar">
-  <a href="starmap.html" class="home-btn">☉ 返回古星图</a>
-  <span class="info-text">
-    Stellarium Web 3D 交互星图<br>
-    <span style="font-size:0.75rem;opacity:0.6">鼠标拖拽旋转 · 滚轮缩放 · 点击天体查看信息</span>
-  </span>
-</div>
+<a href="../index.html" class="home-btn">← 返回首页</a>
 
 </body>
 </html>
