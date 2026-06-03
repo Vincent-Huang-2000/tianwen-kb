@@ -10,81 +10,47 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout tianwen-kb
+      - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Install system deps
-        run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq python3-pip git
-
-      - name: Setup Emscripten SDK
-        run: |
-          cd /tmp
-          git clone --depth 1 https://github.com/emscripten-core/emsdk.git
-          cd emsdk
-          ./emsdk install 3.1.45
-          ./emsdk activate 3.1.45
-          echo "EMSDK=/tmp/emsdk" >> $GITHUB_ENV
+      - name: Setup Emscripten
+        uses: mymindstorm/setup-emsdk@v14
+        with:
+          version: 2.0.34
+          actions-cache-folder: 'emsdk-cache'
 
       - name: Install scons
         run: pip3 install scons
 
-      - name: Clone Stellarium Web Engine
-        run: |
-          git clone --depth 1 https://github.com/Stellarium/stellarium-web-engine.git /tmp/stellarium
+      - name: Clone Stellarium
+        run: git clone --depth 1 https://github.com/Stellarium/stellarium-web-engine.git /tmp/s
 
-      - name: Build Stellarium Web Engine
-        working-directory: /tmp/stellarium
+      - name: Build
+        working-directory: /tmp/s
         run: |
           set -e
-          source /tmp/emsdk/emsdk_env.sh
-
-          # EMSCRIPTEN_TOOL_PATH is required by SConstruct but not always set
-          if [ -z "$EMSCRIPTEN_TOOL_PATH" ]; then
-            TOOLS_DIR="$EMSDK/upstream/emscripten/tools"
-            if [ -d "$TOOLS_DIR" ]; then
-              export EMSCRIPTEN_TOOL_PATH="$TOOLS_DIR"
-            else
-              # Fallback: search for the scons tool directory
-              TOOLS_DIR=$(find "$EMSDK/upstream/emscripten" -name "site_scons" -type d 2>/dev/null | head -1)
-              if [ -n "$TOOLS_DIR" ]; then
-                export EMSCRIPTEN_TOOL_PATH=$(dirname "$TOOLS_DIR")
-              else
-                echo "Cannot find emscripten tools directory"
-                exit 1
-              fi
-            fi
-          fi
+          EMSDK_ENV=$(find / -name "emsdk_env.sh" -type f 2>/dev/null | head -1)
+          source "$EMSDK_ENV"
+          echo "EMSDK=$EMSDK"
+          echo "EMSCRIPTEN=$EMSCRIPTEN"
+          ls -la "$EMSDK/upstream/emscripten/tools/" 2>/dev/null || echo "tools dir missing"
+          # Set EMSCRIPTEN_TOOL_PATH explicitly
+          export EMSCRIPTEN_TOOL_PATH="$EMSDK/upstream/emscripten/tools"
+          export EMSCRIPTEN_ROOT="$EMSDK/upstream/emscripten"
           echo "EMSCRIPTEN_TOOL_PATH=$EMSCRIPTEN_TOOL_PATH"
+          echo "Start: $(date)"
+          scons -j4 mode=release 2>&1 | tee /tmp/build.log
+          echo "Done: $(date)"
 
-          echo "Build started at $(date)"
-          make js 2>&1 | tee /tmp/build.log
-          echo "Build finished at $(date)"
+      - name: Verify
+        run: ls -lh /tmp/s/build/stellarium-web-engine.* || { tail -80 /tmp/build.log; exit 1; }
 
-      - name: Verify output
-        run: |
-          ls -lh /tmp/stellarium/build/stellarium-web-engine.* || {
-            echo "=== Build failed ==="
-            tail -80 /tmp/build.log
-            exit 1
-          }
-
-      - name: Copy to repo
+      - name: Copy & Push
         run: |
           mkdir -p docs/kg/stellarium
-          cp /tmp/stellarium/build/stellarium-web-engine.js docs/kg/stellarium/
-          cp /tmp/stellarium/build/stellarium-web-engine.wasm docs/kg/stellarium/
-          ls -lh docs/kg/stellarium/
-
-      - name: Commit and push
-        run: |
+          cp /tmp/s/build/stellarium-web-engine.js docs/kg/stellarium/
+          cp /tmp/s/build/stellarium-web-engine.wasm docs/kg/stellarium/
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add docs/kg/stellarium/
-          if git diff --cached --quiet; then
-            echo "No changes"
-          else
-            git commit -m "chore: update Stellarium Web Engine artifacts"
-            git push
-          fi
+          git diff --cached --quiet || git commit -m "chore: Stellarium Web Engine artifacts" && git push
