@@ -25,40 +25,47 @@ jobs:
       - name: Clone Stellarium
         run: git clone --depth 1 https://github.com/Stellarium/stellarium-web-engine.git /tmp/s
 
-      - name: Patch & build assets
+      - name: Patch & pre-build
         working-directory: /tmp/s
         run: |
-          # Remove -Werror block (2 lines: if + append)
           sed -i "/if env\['werror'\]:/,+1d" SConstruct
-          # Remove the root-dir check block from make-assets.py (3 lines: if + print + exit)
           sed -i '/if os.path.dirname/,+2d' tools/make-assets.py
-          # Generate embedded assets (star catalog, textures, fonts)
+          # Generate assets FIRST
           python3 tools/make-assets.py
-          echo "=== Assets generated ==="
-          ls src/assets/ 2>/dev/null | head -10
+          echo "=== Assets OK ==="
 
-      - name: Build
+      - name: Build (force rebuild)
         working-directory: /tmp/s
         run: |
           set -e
           EMSDK_ENV=$(find / -name "emsdk_env.sh" -type f 2>/dev/null | head -1)
           source "$EMSDK_ENV"
           echo "Build start: $(date)"
-          emscons scons -j4 mode=release 2>&1 | tee /tmp/build.log
+          # Clean + rebuild from scratch
+          emscons scons -c mode=release 2>/dev/null || true
+          emscons scons -j2 mode=release 2>&1 | tee /tmp/build.log
           echo "Build done: $(date)"
 
       - name: Verify & Push
         run: |
-          ls -lh /tmp/s/build/stellarium-web-engine.*
-          if [ -f /tmp/s/build/stellarium-web-engine.js ]; then
+          echo "=== Build output ==="
+          ls -lh /tmp/s/build/stellarium-web-engine.* 2>/dev/null || echo "NO OUTPUT"
+          if [ -f /tmp/s/build/stellarium-web-engine.js ] && [ -f /tmp/s/build/stellarium-web-engine.wasm ]; then
             mkdir -p docs/kg/stellarium
             cp /tmp/s/build/stellarium-web-engine.js docs/kg/stellarium/
             cp /tmp/s/build/stellarium-web-engine.wasm docs/kg/stellarium/
+            echo "WASM size: $(du -h /tmp/s/build/stellarium-web-engine.wasm | cut -f1)"
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
             git add docs/kg/stellarium/
-            git diff --cached --quiet || (git commit -m "chore: Stellarium Web Engine artifacts" && git push)
+            if git diff --cached --quiet; then
+              echo "No changes"
+            else
+              git commit -m "chore: Stellarium Web Engine artifacts" && git push
+              echo "Pushed OK"
+            fi
           else
+            echo "=== BUILD FAILED ==="
             tail -80 /tmp/build.log
             exit 1
           fi
