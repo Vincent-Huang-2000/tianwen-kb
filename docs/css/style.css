@@ -938,3 +938,86 @@ a, button, .chapter-card, .top-nav, .search-result-item {
     text-align: center;
     letter-spacing: 0.05em;
 }
+
+/* ============================================================
+   PARAGRAPH PERMALINK (¶)
+   ============================================================ */
+
+/* Paragraph wrapper */
+.chapter-body .para {
+    position: relative;
+    display: block;
+}
+
+/* Permalink button — hidden by default, shown on paragraph hover */
+.para-link {
+    position: absolute;
+    left: -24px;
+    top: 0;
+    width: 20px;
+    height: 1.4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    color: var(--text-dim);
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.15s ease, color 0.15s ease;
+    user-select: none;
+    -webkit-user-select: none;
+    z-index: 5;
+}
+
+.chapter-body .para:hover .para-link,
+.chapter-body p[id^="para-"]:hover .para-link {
+    opacity: 1;
+}
+
+.para-link:hover {
+    color: var(--accent-gold);
+}
+
+/* Highlight animation for target paragraph */
+.para-highlight {
+    animation: para-flash 2.5s ease-out;
+}
+
+@keyframes para-flash {
+    0% {
+        background: rgba(201, 169, 110, 0.25);
+        box-shadow: 0 0 20px rgba(201, 169, 110, 0.15);
+    }
+    60% {
+        background: rgba(201, 169, 110, 0.08);
+    }
+    100% {
+        background: transparent;
+        box-shadow: none;
+    }
+}
+
+/* Toast notification */
+.para-toast {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    background: var(--accent-gold);
+    color: var(--bg-deepest);
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    font-weight: 600;
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+.para-toast.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
