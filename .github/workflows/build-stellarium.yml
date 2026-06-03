@@ -25,15 +25,17 @@ jobs:
       - name: Clone Stellarium
         run: git clone --depth 1 https://github.com/Stellarium/stellarium-web-engine.git /tmp/s
 
-      - name: Patch source
+      - name: Patch & build assets
         working-directory: /tmp/s
         run: |
-          # Remove -Werror block
+          # Remove -Werror block from SConstruct
           sed -i "/if env\['werror'\]:/,+1d" SConstruct
-          # Fix make-assets.py path check (compares './tools' != 'tools')
-          sed -i 's|!= "./tools"|!= "tools"|' tools/make-assets.py
-          # Run asset generation now (embeds star catalogs, textures, fonts)
+          # Remove the broken path check in make-assets.py
+          sed -i '/Should be run from root directory/d' tools/make-assets.py
+          sed -i '/sys.exit(-1)/d' tools/make-assets.py
+          # Generate embedded assets (star catalog, textures, fonts)
           python3 tools/make-assets.py
+          echo "Assets generated OK"
 
       - name: Build
         working-directory: /tmp/s
