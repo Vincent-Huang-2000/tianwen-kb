@@ -68,6 +68,27 @@
     border-color: var(--gold);
     text-shadow: 0 0 12px rgba(196, 163, 90, 0.5);
   }
+  .stel-btn {
+    position: fixed;
+    top: 16px;
+    left: 140px;
+    z-index: 100;
+    text-decoration: none;
+    color: #4a9b8e;
+    font-size: 1.1rem;
+    font-family: 'Noto Serif SC', serif;
+    padding: 8px 16px;
+    border: 1px solid rgba(74, 155, 142, 0.3);
+    border-radius: 6px;
+    background: rgba(13, 17, 23, 0.85);
+    backdrop-filter: blur(8px);
+    transition: all 0.25s;
+  }
+  .stel-btn:hover {
+    background: rgba(74, 155, 142, 0.15);
+    border-color: #4a9b8e;
+    text-shadow: 0 0 12px rgba(74, 155, 142, 0.5);
+  }
   .star-map-wrapper {
     position: relative;
     max-width: 900px;
@@ -188,6 +209,7 @@
 <body>
 
 <a href="../index.html" class="home-btn">&#9737; 返回首页</a>
+<a href="stellarium-sky.html" class="stel-btn" title="Stellarium 3D 交互星图">🌐 交互星图</a>
 
 <div class="star-map-wrapper">
   <svg viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg" id="starMap">

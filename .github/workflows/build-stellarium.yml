@@ -1,0 +1,83 @@
+name: Build Stellarium Web Engine
+
+on:
+  workflow_dispatch:  # 手动触发
+  push:
+    paths:
+      - '.github/workflows/build-stellarium.yml'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout tianwen-kb
+        uses: actions/checkout@v4
+
+      - name: Clone Stellarium Web Engine
+        run: |
+          git clone --depth 1 https://github.com/Stellarium/stellarium-web-engine.git /tmp/stellarium
+
+      - name: Setup Emscripten
+        uses: mymindstorm/setup-emsdk@v14
+        with:
+          version: 3.1.45
+          actions-cache-folder: 'emsdk-cache'
+
+      - name: Install build dependencies
+        run: |
+          python3 -m pip install scons
+
+      - name: Build Stellarium Web Engine
+        working-directory: /tmp/stellarium
+        run: |
+          # Verify emsdk is available
+          which emscons || echo "emscons not in PATH, trying emmake..."
+          emsdk_env_path=$(find / -name "emsdk_env.sh" 2>/dev/null | head -1)
+          if [ -n "$emsdk_env_path" ]; then
+            source "$emsdk_env_path"
+          fi
+
+          # Build using make
+          make js 2>&1 | tee /tmp/build.log
+
+      - name: Verify build output
+        run: |
+          echo "=== Build output ==="
+          ls -lh /tmp/stellarium/build/stellarium-web-engine.* 2>/dev/null || echo "Build output NOT found!"
+          echo "=== All build files ==="
+          find /tmp/stellarium/build/ -type f -ls 2>/dev/null || echo "No build directory"
+
+      - name: Copy build artifacts to tianwen-kb
+        run: |
+          mkdir -p docs/kg/stellarium/build
+
+          # Core engine files
+          if [ -f /tmp/stellarium/build/stellarium-web-engine.js ]; then
+            cp /tmp/stellarium/build/stellarium-web-engine.js docs/kg/stellarium/
+            echo "Copied: stellarium-web-engine.js ($(du -h docs/kg/stellarium/stellarium-web-engine.js | cut -f1))"
+          fi
+
+          if [ -f /tmp/stellarium/build/stellarium-web-engine.wasm ]; then
+            cp /tmp/stellarium/build/stellarium-web-engine.wasm docs/kg/stellarium/
+            echo "Copied: stellarium-web-engine.wasm ($(du -h docs/kg/stellarium/stellarium-web-engine.wasm | cut -f1))"
+          fi
+
+          # Copy any other build artifacts
+          if [ -d /tmp/stellarium/build ]; then
+            cp -r /tmp/stellarium/build/* docs/kg/stellarium/build/ 2>/dev/null || true
+          fi
+
+          echo "=== Final artifact listing ==="
+          find docs/kg/stellarium/ -type f -ls
+
+      - name: Commit and push artifacts
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/kg/stellarium/
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: update Stellarium Web Engine build artifacts"
+            git push
+          fi

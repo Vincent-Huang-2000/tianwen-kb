@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>交互星图 · 古星图</title>
+<style>
+  :root {
+    --bg: #06080f;
+    --text: #c8c0a8;
+    --gold: #c4a35a;
+    --surface: rgba(13, 17, 23, 0.85);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Noto Serif SC', 'STSong', 'SimSun', 'KaiTi', serif;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  /* Canvas fills the screen */
+  #stel-canvas {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: 1;
+  }
+
+  /* Header bar */
+  .top-bar {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 16px;
+    background: linear-gradient(180deg, rgba(6,8,15,0.95) 0%, rgba(6,8,15,0) 100%);
+    pointer-events: none;
+  }
+  .top-bar > * { pointer-events: auto; }
+
+  .home-btn {
+    text-decoration: none;
+    color: var(--gold);
+    font-size: 1.1rem;
+    padding: 6px 14px;
+    border: 1px solid rgba(196, 163, 90, 0.3);
+    border-radius: 6px;
+    background: var(--surface);
+    backdrop-filter: blur(8px);
+    transition: all 0.25s;
+  }
+  .home-btn:hover {
+    background: rgba(196, 163, 90, 0.15);
+    border-color: var(--gold);
+  }
+
+  .info-text {
+    color: var(--gold);
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+
+  /* Bottom control bar */
+  .bottom-bar {
+    position: fixed;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    display: flex;
+    gap: 8px;
+    background: var(--surface);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 24px;
+    padding: 6px 12px;
+  }
+
+  .ctrl-btn {
+    background: none;
+    border: 1px solid rgba(255,255,255,0.1);
+    color: var(--text);
+    font-family: inherit;
+    font-size: 0.8rem;
+    padding: 6px 14px;
+    border-radius: 18px;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+  .ctrl-btn:hover {
+    background: rgba(196, 163, 90, 0.15);
+    border-color: var(--gold);
+    color: var(--gold);
+  }
+  .ctrl-btn.active {
+    background: rgba(196, 163, 90, 0.2);
+    border-color: var(--gold);
+    color: var(--gold);
+  }
+
+  /* Loading overlay */
+  .loading-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    background: var(--bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s;
+  }
+  .loading-overlay.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  .loading-text {
+    color: var(--gold);
+    font-size: 1.2rem;
+    letter-spacing: 4px;
+    margin-bottom: 12px;
+  }
+  .loading-dots {
+    display: flex;
+    gap: 8px;
+  }
+  .loading-dot {
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--gold);
+    animation: pulse 1.2s infinite;
+  }
+  .loading-dot:nth-child(2) { animation-delay: 0.2s; }
+  .loading-dot:nth-child(3) { animation-delay: 0.4s; }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 0.3; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.5); }
+  }
+</style>
+<script src="../js/anti-copy.js"></script>
+</head>
+<body>
+
+<!-- Loading overlay -->
+<div class="loading-overlay" id="loadingOverlay">
+  <div class="loading-text">加载星图引擎</div>
+  <div class="loading-dots">
+    <div class="loading-dot"></div>
+    <div class="loading-dot"></div>
+    <div class="loading-dot"></div>
+  </div>
+</div>
+
+<!-- Canvas for Stellarium -->
+<canvas id="stel-canvas"></canvas>
+
+<!-- Top bar -->
+<div class="top-bar">
+  <a href="starmap.html" class="home-btn">☉ 返回古星图</a>
+  <span class="info-text" id="timeDisplay"></span>
+</div>
+
+<!-- Bottom controls -->
+<div class="bottom-bar" id="controls">
+  <button class="ctrl-btn" onclick="resetView()" title="重置视角">⟳ 重置</button>
+  <button class="ctrl-btn" id="btnStars" onclick="toggleStars()">★ 恒星</button>
+  <button class="ctrl-btn" id="btnConst" onclick="toggleConstellations()">✧ 星座线</button>
+  <button class="ctrl-btn" id="btnAtmo" onclick="toggleAtmosphere()">☁ 大气</button>
+  <button class="ctrl-btn" id="btnGrid" onclick="toggleGrid()">◎ 赤道网格</button>
+  <button class="ctrl-btn" onclick="setNow()">◷ 当前时刻</button>
+</div>
+
+<script src="stellarium/stellarium-web-engine.js"></script>
+<script>
+(function() {
+  const canvas = document.getElementById('stel-canvas');
+  const loadingOverlay = document.getElementById('loadingOverlay');
+  const timeDisplay = document.getElementById('timeDisplay');
+
+  let stel = null;
+  let animationId = null;
+
+  // --- Initialize Stellarium Web Engine ---
+  StelWebEngine({
+    wasmFile: 'stellarium/stellarium-web-engine.wasm',
+    canvasElement: canvas,
+    onReady: function(module) {
+      stel = module;
+
+      // Hide loading
+      loadingOverlay.classList.add('hidden');
+      setTimeout(() => loadingOverlay.remove(), 600);
+
+      // Configure observer: Beijing, China
+      // 39.9°N, 116.4°E
+      if (stel.observer && stel.observer.setLatLong) {
+        stel.observer.setLatLong(39.9, 116.4);
+      }
+
+      // Update time display
+      updateTimeDisplay();
+
+      // Setup keyboard controls
+      setupControls();
+
+      // Start render loop
+      requestAnimationFrame(renderLoop);
+
+      // Mark active buttons based on initial state
+      updateButtonStates();
+
+      console.log('Stellarium Web Engine ready');
+      console.log('Core modules:', Object.keys(stel.core || {}));
+    }
+  });
+
+  // --- Render loop ---
+  function renderLoop(ts) {
+    if (stel && stel.core && stel.core.render) {
+      stel.core.render(ts / 1000);
+    }
+    animationId = requestAnimationFrame(renderLoop);
+  }
+
+  // --- Time display ---
+  function updateTimeDisplay() {
+    if (!stel || !stel.observer) return;
+    // Stellarium uses MJD internally
+    const now = new Date();
+    const h = String(now.getHours()).padStart(2, '0');
+    const m = String(now.getMinutes()).padStart(2, '0');
+    const s = String(now.getSeconds()).padStart(2, '0');
+    timeDisplay.textContent = `观测时间: ${h}:${m}:${s} CST`;
+    setTimeout(updateTimeDisplay, 1000);
+  }
+
+  // --- Keyboard ---
+  function setupControls() {
+    document.addEventListener('keydown', function(e) {
+      if (!stel || !stel.observer) return;
+      // Arrow keys: pan
+      // +/-: zoom
+      switch(e.key) {
+        case 'ArrowUp':    moveView(0, -5); break;
+        case 'ArrowDown':  moveView(0, 5); break;
+        case 'ArrowLeft':  moveView(-5, 0); break;
+        case 'ArrowRight': moveView(5, 0); break;
+        case '+': case '=': zoomView(0.8); break;
+        case '-': zoomView(1.2); break;
+      }
+    });
+  }
+
+  function moveView(dx, dy) {
+    // Simple pan simulation
+    if (stel && stel.core && stel.core.move) {
+      stel.core.move(dx, dy);
+    }
+  }
+
+  function zoomView(factor) {
+    if (stel && stel.core && stel.core.zoom) {
+      stel.core.zoom(factor);
+    }
+  }
+
+  // --- Button actions ---
+  window.resetView = function() {
+    if (stel && stel.observer && stel.observer.setLatLong) {
+      stel.observer.setLatLong(39.9, 116.4);
+    }
+    if (stel && stel.core && stel.core.resetView) {
+      stel.core.resetView();
+    }
+  };
+
+  window.toggleStars = function() {
+    if (stel && stel.core && stel.core.stars) {
+      stel.core.stars.visible = !stel.core.stars.visible;
+      updateButtonStates();
+    }
+  };
+
+  window.toggleConstellations = function() {
+    if (stel && stel.core && stel.core.constellations) {
+      stel.core.constellations.lines_visible = !stel.core.constellations.lines_visible;
+      updateButtonStates();
+    }
+  };
+
+  window.toggleAtmosphere = function() {
+    if (stel && stel.core && stel.core.atmosphere) {
+      stel.core.atmosphere.visible = !stel.core.atmosphere.visible;
+      updateButtonStates();
+    }
+  };
+
+  window.toggleGrid = function() {
+    if (stel && stel.core && stel.core.lines && stel.core.lines.equatorial) {
+      stel.core.lines.equatorial.visible = !stel.core.lines.equatorial.visible;
+      updateButtonStates();
+    }
+  };
+
+  window.setNow = function() {
+    // Set to current time
+    if (stel && stel.observer) {
+      const now = new Date();
+      const mjd = now / 86400000 - 2400000.5 + 2440587.5;
+      // Try setting time via observer
+      if (stel.observer.setTime) {
+        stel.observer.setTime(mjd);
+      }
+    }
+  };
+
+  function updateButtonStates() {
+    if (!stel || !stel.core) return;
+    const stars = stel.core.stars;
+    const constl = stel.core.constellations;
+    const atmo = stel.core.atmosphere;
+    const grid = stel.core.lines && stel.core.lines.equatorial;
+
+    document.getElementById('btnStars')?.classList.toggle('active', stars && stars.visible);
+    document.getElementById('btnConst')?.classList.toggle('active', constl && constl.lines_visible);
+    document.getElementById('btnAtmo')?.classList.toggle('active', atmo && atmo.visible);
+    document.getElementById('btnGrid')?.classList.toggle('active', grid && grid.visible);
+  }
+
+})();
+</script>
+
+</body>
+</html>
