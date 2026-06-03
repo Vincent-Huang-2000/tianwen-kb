@@ -30,42 +30,42 @@ jobs:
         run: |
           sed -i "/if env\['werror'\]:/,+1d" SConstruct
           sed -i '/if os.path.dirname/,+2d' tools/make-assets.py
-          # Generate assets FIRST
           python3 tools/make-assets.py
           echo "=== Assets OK ==="
 
-      - name: Build (force rebuild)
+      - name: Build
         working-directory: /tmp/s
         run: |
           set -e
           EMSDK_ENV=$(find / -name "emsdk_env.sh" -type f 2>/dev/null | head -1)
           source "$EMSDK_ENV"
           echo "Build start: $(date)"
-          # Clean + rebuild from scratch
           emscons scons -c mode=release 2>/dev/null || true
           emscons scons -j2 mode=release 2>&1 | tee /tmp/build.log
           echo "Build done: $(date)"
 
       - name: Verify & Push
         run: |
-          echo "=== Build output ==="
-          ls -lh /tmp/s/build/stellarium-web-engine.* 2>/dev/null || echo "NO OUTPUT"
-          if [ -f /tmp/s/build/stellarium-web-engine.js ] && [ -f /tmp/s/build/stellarium-web-engine.wasm ]; then
-            mkdir -p docs/kg/stellarium
+          if [ -f /tmp/s/build/stellarium-web-engine.js ]; then
+            mkdir -p docs/kg/stellarium/build
             cp /tmp/s/build/stellarium-web-engine.js docs/kg/stellarium/
             cp /tmp/s/build/stellarium-web-engine.wasm docs/kg/stellarium/
-            echo "WASM size: $(du -h /tmp/s/build/stellarium-web-engine.wasm | cut -f1)"
+            # Copy runtime data files (star catalogs, etc.)
+            cp -r /tmp/s/data docs/kg/stellarium/ 2>/dev/null || echo "no data dir"
+            cp -r /tmp/s/apps/simple-html/static docs/kg/stellarium/ 2>/dev/null || echo "no static dir"
+            echo "=== Output ==="
+            du -sh docs/kg/stellarium/
+            ls -lh docs/kg/stellarium/*.wasm docs/kg/stellarium/*.js
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
             git add docs/kg/stellarium/
             if git diff --cached --quiet; then
               echo "No changes"
             else
-              git commit -m "chore: Stellarium Web Engine artifacts" && git push
-              echo "Pushed OK"
+              git commit -m "chore: Stellarium Web Engine + data files" && git push
+              echo "Pushed"
             fi
           else
-            echo "=== BUILD FAILED ==="
             tail -80 /tmp/build.log
             exit 1
           fi

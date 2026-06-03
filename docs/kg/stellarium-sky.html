@@ -5,22 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>星图 · 天问知识库</title>
 <style>
-  :root {
-    --bg: #06080f;
-    --gold: #c4a35a;
-  }
+  :root { --bg: #06080f; --gold: #c4a35a; }
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    background: var(--bg);
-    overflow: hidden;
-    height: 100vh; width: 100vw;
-  }
-  #stel-canvas {
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    z-index: 1;
-  }
+  body { background: var(--bg); overflow: hidden; height: 100vh; width: 100vw; }
+  #stel-canvas { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; }
   .home-btn {
     position: fixed; top: 48px; right: 12px; z-index: 20;
     text-decoration: none; color: rgba(200,192,168,0.7);
@@ -43,41 +31,31 @@
   var canvas = document.getElementById('stel-canvas');
 
   if (typeof StelWebEngine === 'undefined') {
-    document.body.innerHTML = '<div style="color:#c4a35a;text-align:center;padding-top:40vh;font-family:serif">引擎加载失败 — 请刷新重试</div>';
+    document.body.innerHTML = '<div style="color:#c4a35a;text-align:center;padding-top:40vh;font-family:serif">引擎未构建，请等待 CI 完成</div>';
     return;
   }
 
   StelWebEngine({
     wasmFile: 'stellarium/stellarium-web-engine.wasm',
     canvasElement: canvas,
+    // Tell engine where to find data files (star catalogs, etc.)
+    locateFile: function(path) {
+      if (path.endsWith('.wasm')) return 'stellarium/' + path;
+      // Data files relative to this page
+      return 'stellarium/data/' + path;
+    },
     onReady: function(stel) {
       console.log('Stellarium ready');
+      console.log('core:', !!stel.core, 'observer:', !!stel.observer);
 
-      // Print available modules for debugging
-      console.log('core keys:', stel.core ? Object.keys(stel.core) : 'no core');
-      console.log('observer:', stel.observer);
-      console.log('Has render:', typeof stel.core.render);
-
-      // Start render loop
       function loop(ts) {
-        if (stel.core && stel.core.render) {
-          stel.core.render(ts / 1000);
-        }
+        if (stel.core && stel.core.render) stel.core.render(ts / 1000);
         requestAnimationFrame(loop);
       }
       requestAnimationFrame(loop);
 
-      // Try to enable features
-      if (stel.core.constellations) {
-        stel.core.constellations.lines_visible = true;
-        console.log('constellation lines on');
-      }
-      if (stel.core.atmosphere) {
-        stel.core.atmosphere.visible = false;
-        console.log('atmosphere off');
-      }
-
-      console.log('Engine initialized successfully');
+      if (stel.core && stel.core.constellations) stel.core.constellations.lines_visible = true;
+      if (stel.core && stel.core.atmosphere) stel.core.atmosphere.visible = false;
     }
   });
 })();
