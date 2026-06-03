@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>星图（中国星空）· 天问知识库</title>
+<style>
+  :root { --bg: #06080f; --gold: #c4a35a; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--bg); overflow: hidden; height: 100vh; width: 100vw; }
+  #stel-canvas { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; }
+  .home-btn {
+    position: fixed; top: 48px; right: 12px; z-index: 20;
+    text-decoration: none; color: rgba(200,192,168,0.7);
+    font-size: 0.85rem; font-family: 'Noto Serif SC', serif;
+    padding: 5px 12px; border: 1px solid rgba(200,192,168,0.15);
+    border-radius: 14px; background: rgba(6,8,15,0.6);
+    backdrop-filter: blur(6px); transition: all 0.25s; letter-spacing: 1px;
+  }
+  .home-btn:hover { background: rgba(196,163,90,0.12); border-color: rgba(196,163,90,0.35); color: #c4a35a; }
+</style>
+</head>
+<body>
+
+<canvas id="stel-canvas"></canvas>
+<a href="../index.html" class="home-btn">← 返回首页</a>
+
+<script src="stellarium/stellarium-web-engine.js"></script>
+<script>
+(function(){
+  var canvas = document.getElementById('stel-canvas');
+
+  if (typeof StelWebEngine === 'undefined') {
+    document.body.innerHTML = '<div style="color:#c4a35a;text-align:center;padding-top:40vh;font-family:serif">引擎未构建，请等待 CI 完成</div>';
+    return;
+  }
+
+  StelWebEngine({
+    wasmFile: 'stellarium/stellarium-web-engine.wasm',
+    canvasElement: canvas,
+    // Route data files to correct directory
+    locateFile: function(path) {
+      if (path.endsWith('.wasm')) return 'stellarium/' + path;
+      // Data files (star catalogs) and sky cultures
+      return 'stellarium/' + path;
+    },
+    onReady: function(stel) {
+      console.log('Stellarium ready');
+      console.log('core:', !!stel.core);
+
+      // Start render
+      function loop(ts) {
+        if (stel.core && stel.core.render) stel.core.render(ts / 1000);
+        requestAnimationFrame(loop);
+      }
+      requestAnimationFrame(loop);
+
+      // Enable constellation lines
+      if (stel.core && stel.core.constellations) {
+        stel.core.constellations.lines_visible = true;
+      }
+      if (stel.core && stel.core.atmosphere) {
+        stel.core.atmosphere.visible = false;
+      }
+
+      // Try to set Chinese sky culture if API available
+      if (stel.core && typeof stel.core.setSkyCulture === 'function') {
+        stel.core.setSkyCulture('chinese');
+        console.log('Sky culture set to chinese');
+      }
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

@@ -25,13 +25,17 @@ jobs:
       - name: Clone Stellarium
         run: git clone --depth 1 https://github.com/Stellarium/stellarium-web-engine.git /tmp/s
 
-      - name: Patch & pre-build
+      - name: Clone Chinese sky culture data
+        run: |
+          git clone --depth 1 https://github.com/Stellarium/stellarium-skycultures.git /tmp/skycultures
+
+      - name: Patch source
         working-directory: /tmp/s
         run: |
           sed -i "/if env\['werror'\]:/,+1d" SConstruct
           sed -i '/if os.path.dirname/,+2d' tools/make-assets.py
           python3 tools/make-assets.py
-          echo "=== Assets OK ==="
+          echo "=== Assets generated ==="
 
       - name: Build
         working-directory: /tmp/s
@@ -44,28 +48,39 @@ jobs:
           emscons scons -j2 mode=release 2>&1 | tee /tmp/build.log
           echo "Build done: $(date)"
 
-      - name: Verify & Push
+      - name: Deploy to repo
         run: |
-          if [ -f /tmp/s/build/stellarium-web-engine.js ]; then
-            mkdir -p docs/kg/stellarium/build
-            cp /tmp/s/build/stellarium-web-engine.js docs/kg/stellarium/
-            cp /tmp/s/build/stellarium-web-engine.wasm docs/kg/stellarium/
-            # Copy runtime data files (star catalogs, etc.)
-            cp -r /tmp/s/data docs/kg/stellarium/ 2>/dev/null || echo "no data dir"
-            cp -r /tmp/s/apps/simple-html/static docs/kg/stellarium/ 2>/dev/null || echo "no static dir"
-            echo "=== Output ==="
-            du -sh docs/kg/stellarium/
-            ls -lh docs/kg/stellarium/*.wasm docs/kg/stellarium/*.js
-            git config user.name "github-actions[bot]"
-            git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add docs/kg/stellarium/
-            if git diff --cached --quiet; then
-              echo "No changes"
-            else
-              git commit -m "chore: Stellarium Web Engine + data files" && git push
-              echo "Pushed"
-            fi
+          WASM_DIR=docs/kg/stellarium
+
+          # Core engine
+          mkdir -p "$WASM_DIR"
+          cp /tmp/s/build/stellarium-web-engine.js "$WASM_DIR/"
+          cp /tmp/s/build/stellarium-web-engine.wasm "$WASM_DIR/"
+
+          # Runtime data (star catalogs)
+          if [ -d /tmp/s/data ]; then
+            cp -r /tmp/s/data "$WASM_DIR/data"
+            echo "Data: $(du -sh /tmp/s/data | cut -f1)"
+          fi
+
+          # Chinese sky culture
+          if [ -d /tmp/skycultures/chinese ]; then
+            mkdir -p "$WASM_DIR/skycultures"
+            cp -r /tmp/skycultures/chinese "$WASM_DIR/skycultures/"
+            echo "Sky culture: chinese OK"
+          fi
+
+          echo "=== Output ==="
+          du -sh "$WASM_DIR"
+          ls -lh "$WASM_DIR"/*.wasm "$WASM_DIR"/*.js
+
+          # Commit
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/kg/stellarium/
+          if git diff --cached --quiet; then
+            echo "No changes"
           else
-            tail -80 /tmp/build.log
-            exit 1
+            git commit -m "chore: Stellarium Web Engine + data + Chinese sky culture" && git push
+            echo "Pushed OK"
           fi
