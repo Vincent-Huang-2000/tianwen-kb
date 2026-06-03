@@ -25,12 +25,12 @@ jobs:
       - name: Clone Stellarium
         run: git clone --depth 1 https://github.com/Stellarium/stellarium-web-engine.git /tmp/s
 
-      - name: Patch for newer emcc
+      - name: Patch SConstruct for newer emcc
         working-directory: /tmp/s
         run: |
-          # Newer emcc warns about linker flags during compilation
-          # With -Werror this becomes a fatal error
-          sed -i "s/'-Werror'//" SConstruct
+          # Newer emcc warns about linker flags during compilation.
+          # With -Werror this becomes fatal. Remove the -Werror line entirely.
+          sed -i "/env.Append(CCFLAGS='-Werror')/d" SConstruct
 
       - name: Build
         working-directory: /tmp/s
