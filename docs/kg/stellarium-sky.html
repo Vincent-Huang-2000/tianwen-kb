@@ -9,6 +9,7 @@
     --bg: #06080f;
     --text: #c8c0a8;
     --gold: #c4a35a;
+    --jade: #4a9b8e;
     --surface: rgba(13, 17, 23, 0.85);
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -21,7 +22,6 @@
     width: 100vw;
   }
 
-  /* Canvas fills the screen */
   #stel-canvas {
     position: fixed;
     top: 0; left: 0;
@@ -29,7 +29,6 @@
     z-index: 1;
   }
 
-  /* Header bar */
   .top-bar {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -65,7 +64,6 @@
     opacity: 0.8;
   }
 
-  /* Bottom control bar */
   .bottom-bar {
     position: fixed;
     bottom: 16px;
@@ -104,8 +102,8 @@
     color: var(--gold);
   }
 
-  /* Loading overlay */
-  .loading-overlay {
+  /* Overlay */
+  .overlay {
     position: fixed;
     inset: 0;
     z-index: 100;
@@ -116,16 +114,19 @@
     justify-content: center;
     transition: opacity 0.5s;
   }
-  .loading-overlay.hidden {
+  .overlay.hidden {
     opacity: 0;
     pointer-events: none;
   }
+
   .loading-text {
     color: var(--gold);
     font-size: 1.2rem;
     letter-spacing: 4px;
     margin-bottom: 12px;
   }
+
+  /* Loading dots */
   .loading-dots {
     display: flex;
     gap: 8px;
@@ -143,31 +144,74 @@
     0%, 100% { opacity: 0.3; transform: scale(1); }
     50% { opacity: 1; transform: scale(1.5); }
   }
+
+  /* Error state */
+  .error-box {
+    display: none;
+    text-align: center;
+    max-width: 400px;
+    padding: 32px;
+    border: 1px solid rgba(196, 107, 90, 0.3);
+    border-radius: 12px;
+    background: rgba(196, 107, 90, 0.05);
+  }
+  .error-box.show { display: block; }
+  .error-icon { font-size: 2.5rem; margin-bottom: 12px; }
+  .error-title { color: #c46b5a; font-size: 1.1rem; margin-bottom: 8px; }
+  .error-detail { color: #8a8070; font-size: 0.85rem; line-height: 1.6; }
+  .error-detail code {
+    background: rgba(255,255,255,0.05);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+  }
+  .back-link {
+    display: inline-block;
+    margin-top: 16px;
+    color: var(--jade);
+    text-decoration: none;
+    font-size: 0.9rem;
+    border: 1px solid rgba(74,155,142,0.3);
+    padding: 6px 18px;
+    border-radius: 6px;
+    transition: all 0.2s;
+  }
+  .back-link:hover {
+    background: rgba(74,155,142,0.15);
+    border-color: var(--jade);
+  }
 </style>
 <script src="../js/anti-copy.js"></script>
 </head>
 <body>
 
-<!-- Loading overlay -->
-<div class="loading-overlay" id="loadingOverlay">
-  <div class="loading-text">加载星图引擎</div>
-  <div class="loading-dots">
-    <div class="loading-dot"></div>
-    <div class="loading-dot"></div>
-    <div class="loading-dot"></div>
+<!-- Overlay (loading / error) -->
+<div class="overlay" id="overlay">
+  <!-- Loading state -->
+  <div id="loadingState">
+    <div class="loading-text">加载星图引擎</div>
+    <div class="loading-dots">
+      <div class="loading-dot"></div>
+      <div class="loading-dot"></div>
+      <div class="loading-dot"></div>
+    </div>
+  </div>
+  <!-- Error state -->
+  <div class="error-box" id="errorState">
+    <div class="error-icon">⚠️</div>
+    <div class="error-title" id="errorTitle">引擎加载失败</div>
+    <div class="error-detail" id="errorDetail"></div>
+    <a href="starmap.html" class="back-link">← 返回古星图</a>
   </div>
 </div>
 
-<!-- Canvas for Stellarium -->
 <canvas id="stel-canvas"></canvas>
 
-<!-- Top bar -->
 <div class="top-bar">
   <a href="starmap.html" class="home-btn">☉ 返回古星图</a>
   <span class="info-text" id="timeDisplay"></span>
 </div>
 
-<!-- Bottom controls -->
 <div class="bottom-bar" id="controls">
   <button class="ctrl-btn" onclick="resetView()" title="重置视角">⟳ 重置</button>
   <button class="ctrl-btn" id="btnStars" onclick="toggleStars()">★ 恒星</button>
@@ -177,49 +221,87 @@
   <button class="ctrl-btn" onclick="setNow()">◷ 当前时刻</button>
 </div>
 
-<script src="stellarium/stellarium-web-engine.js"></script>
 <script>
 (function() {
-  const canvas = document.getElementById('stel-canvas');
-  const loadingOverlay = document.getElementById('loadingOverlay');
-  const timeDisplay = document.getElementById('timeDisplay');
+  var overlay = document.getElementById('overlay');
+  var loadingState = document.getElementById('loadingState');
+  var errorState = document.getElementById('errorState');
+  var errorTitle = document.getElementById('errorTitle');
+  var errorDetail = document.getElementById('errorDetail');
+  var canvas = document.getElementById('stel-canvas');
+  var timeDisplay = document.getElementById('timeDisplay');
 
-  let stel = null;
-  let animationId = null;
+  var stel = null;
+  var animationId = null;
+  var engineReady = false;
 
-  // --- Initialize Stellarium Web Engine ---
-  StelWebEngine({
-    wasmFile: 'stellarium/stellarium-web-engine.wasm',
-    canvasElement: canvas,
-    onReady: function(module) {
-      stel = module;
+  // --- Show error ---
+  function showError(title, detail) {
+    loadingState.style.display = 'none';
+    errorState.classList.add('show');
+    errorTitle.textContent = title;
+    errorDetail.innerHTML = detail;
+    // Keep overlay visible, don't add 'hidden'
+  }
 
-      // Hide loading
-      loadingOverlay.classList.add('hidden');
-      setTimeout(() => loadingOverlay.remove(), 600);
+  // --- 1. Check if StelWebEngine loaded ---
+  if (typeof StelWebEngine === 'undefined') {
+    showError(
+      '引擎文件缺失',
+      'Stellarium Web Engine 尚未构建。<br><br>' +
+      '请在 GitHub Actions 中运行 <code>Build Stellarium Web Engine</code> 工作流，' +
+      '构建完成后 <code>stellarium-web-engine.js</code> 和 <code>.wasm</code> 文件将自动部署。'
+    );
+    return; // Stop — no engine to initialize
+  }
 
-      // Configure observer: Beijing, China
-      // 39.9°N, 116.4°E
-      if (stel.observer && stel.observer.setLatLong) {
-        stel.observer.setLatLong(39.9, 116.4);
-      }
-
-      // Update time display
-      updateTimeDisplay();
-
-      // Setup keyboard controls
-      setupControls();
-
-      // Start render loop
-      requestAnimationFrame(renderLoop);
-
-      // Mark active buttons based on initial state
-      updateButtonStates();
-
-      console.log('Stellarium Web Engine ready');
-      console.log('Core modules:', Object.keys(stel.core || {}));
+  // --- 2. Set a timeout — if engine doesn't init within 30s, show error ---
+  var loadTimeout = setTimeout(function() {
+    if (!engineReady) {
+      showError(
+        '引擎初始化超时',
+        'WASM 引擎在 30 秒内未能完成初始化。<br><br>' +
+        '可能原因：<br>' +
+        '· 网络加载 <code>.wasm</code> 文件过慢<br>' +
+        '· 浏览器不支持 WebAssembly<br>' +
+        '· 文件路径错误'
+      );
     }
-  });
+  }, 30000);
+
+  // --- 3. Initialize Stellarium Web Engine ---
+  try {
+    StelWebEngine({
+      wasmFile: 'stellarium/stellarium-web-engine.wasm',
+      canvasElement: canvas,
+      onReady: function(module) {
+        engineReady = true;
+        clearTimeout(loadTimeout);
+        stel = module;
+
+        // Hide overlay
+        overlay.classList.add('hidden');
+        setTimeout(function() { overlay.remove(); }, 600);
+
+        // Observer: Beijing, China
+        if (stel.observer && stel.observer.setLatLong) {
+          stel.observer.setLatLong(39.9, 116.4);
+        }
+
+        updateTimeDisplay();
+        setupControls();
+        requestAnimationFrame(renderLoop);
+        updateButtonStates();
+
+        console.log('Stellarium Web Engine ready');
+      }
+    });
+  } catch(e) {
+    showError(
+      '引擎初始化异常',
+      '初始化 Stellarium Web Engine 时发生错误：<br><code>' + e.message + '</code>'
+    );
+  }
 
   // --- Render loop ---
   function renderLoop(ts) {
@@ -231,22 +313,19 @@
 
   // --- Time display ---
   function updateTimeDisplay() {
-    if (!stel || !stel.observer) return;
-    // Stellarium uses MJD internally
-    const now = new Date();
-    const h = String(now.getHours()).padStart(2, '0');
-    const m = String(now.getMinutes()).padStart(2, '0');
-    const s = String(now.getSeconds()).padStart(2, '0');
-    timeDisplay.textContent = `观测时间: ${h}:${m}:${s} CST`;
+    if (!stel) return;
+    var now = new Date();
+    var h = String(now.getHours()).padStart(2, '0');
+    var m = String(now.getMinutes()).padStart(2, '0');
+    var s = String(now.getSeconds()).padStart(2, '0');
+    timeDisplay.textContent = '观测时间: ' + h + ':' + m + ':' + s + ' CST';
     setTimeout(updateTimeDisplay, 1000);
   }
 
   // --- Keyboard ---
   function setupControls() {
     document.addEventListener('keydown', function(e) {
-      if (!stel || !stel.observer) return;
-      // Arrow keys: pan
-      // +/-: zoom
+      if (!stel) return;
       switch(e.key) {
         case 'ArrowUp':    moveView(0, -5); break;
         case 'ArrowDown':  moveView(0, 5); break;
@@ -259,26 +338,18 @@
   }
 
   function moveView(dx, dy) {
-    // Simple pan simulation
-    if (stel && stel.core && stel.core.move) {
-      stel.core.move(dx, dy);
-    }
+    if (stel && stel.core && stel.core.move) stel.core.move(dx, dy);
   }
 
   function zoomView(factor) {
-    if (stel && stel.core && stel.core.zoom) {
-      stel.core.zoom(factor);
-    }
+    if (stel && stel.core && stel.core.zoom) stel.core.zoom(factor);
   }
 
   // --- Button actions ---
   window.resetView = function() {
-    if (stel && stel.observer && stel.observer.setLatLong) {
-      stel.observer.setLatLong(39.9, 116.4);
-    }
-    if (stel && stel.core && stel.core.resetView) {
-      stel.core.resetView();
-    }
+    if (!stel) return;
+    if (stel.observer && stel.observer.setLatLong) stel.observer.setLatLong(39.9, 116.4);
+    if (stel.core && stel.core.resetView) stel.core.resetView();
   };
 
   window.toggleStars = function() {
@@ -310,28 +381,28 @@
   };
 
   window.setNow = function() {
-    // Set to current time
-    if (stel && stel.observer) {
-      const now = new Date();
-      const mjd = now / 86400000 - 2400000.5 + 2440587.5;
-      // Try setting time via observer
-      if (stel.observer.setTime) {
-        stel.observer.setTime(mjd);
-      }
+    if (stel && stel.observer && stel.observer.setTime) {
+      var now = new Date();
+      var mjd = now / 86400000 - 2400000.5 + 2440587.5;
+      stel.observer.setTime(mjd);
     }
   };
 
   function updateButtonStates() {
     if (!stel || !stel.core) return;
-    const stars = stel.core.stars;
-    const constl = stel.core.constellations;
-    const atmo = stel.core.atmosphere;
-    const grid = stel.core.lines && stel.core.lines.equatorial;
+    var stars = stel.core.stars;
+    var constl = stel.core.constellations;
+    var atmo = stel.core.atmosphere;
+    var grid = stel.core.lines && stel.core.lines.equatorial;
 
-    document.getElementById('btnStars')?.classList.toggle('active', stars && stars.visible);
-    document.getElementById('btnConst')?.classList.toggle('active', constl && constl.lines_visible);
-    document.getElementById('btnAtmo')?.classList.toggle('active', atmo && atmo.visible);
-    document.getElementById('btnGrid')?.classList.toggle('active', grid && grid.visible);
+    var btnStars = document.getElementById('btnStars');
+    var btnConst = document.getElementById('btnConst');
+    var btnAtmo = document.getElementById('btnAtmo');
+    var btnGrid = document.getElementById('btnGrid');
+    if (btnStars) btnStars.classList.toggle('active', stars && stars.visible);
+    if (btnConst) btnConst.classList.toggle('active', constl && constl.lines_visible);
+    if (btnAtmo) btnAtmo.classList.toggle('active', atmo && atmo.visible);
+    if (btnGrid) btnGrid.classList.toggle('active', grid && grid.visible);
   }
 
 })();
